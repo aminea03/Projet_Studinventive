@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 53 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-214.478,-304.768)">
+        <g transform="matrix(1,0,0,1,-6649,171)">
+            <g id="account_icon" transform="matrix(2.66667,0,0,2.66667,6863.48,133.771)">
+                <path d="M9.871,11.281C12.966,11.281 15.512,8.735 15.512,5.64C15.512,2.545 12.966,-0.001 9.871,-0.001C6.776,-0.001 4.23,2.545 4.23,5.64C4.23,5.64 4.23,5.641 4.23,5.641C4.23,8.735 6.776,11.281 9.87,11.281C9.87,11.281 9.871,11.281 9.871,11.281ZM12.105,13.4L7.637,13.4C3.449,13.401 0.003,16.845 0,21.033C-0,21.871 0.689,22.56 1.527,22.561L18.215,22.561C18.215,22.561 18.216,22.561 18.216,22.561C19.053,22.561 19.741,21.873 19.741,21.036C19.741,21.035 19.741,21.034 19.741,21.033C19.739,16.845 16.293,13.401 12.105,13.4Z" style="fill:white;fill-rule:nonzero;"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,236 @@
+/* GENERAL */
+
+@font-face {
+	font-family: "MontserratRegular";
+	src: url("fonts/MontserratRegular.eot");
+	src: url("fonts/MontserratRegular.eot") format("embedded-opentype"),
+		url("fonts/MontserratRegular.woff2") format("woff2"),
+		url("fonts/MontserratRegular.woff") format("woff"),
+		url("fonts/MontserratRegular.ttf") format("truetype"),
+		url("fonts/MontserratRegular.svg#MontserratRegular") format("svg");
+}
+
+@font-face {
+	font-family: "MontserratMedium";
+	src: url("fonts/MontserratMedium.eot");
+	src: url("fonts/MontserratMedium.eot") format("embedded-opentype"),
+		url("fonts/MontserratMedium.woff2") format("woff2"),
+		url("fonts/MontserratMedium.woff") format("woff"),
+		url("fonts/MontserratMedium.ttf") format("truetype"),
+		url("fonts/MontserratMedium.svg#MontserratMedium") format("svg");
+}
+
+@font-face {
+	font-family: "MontserratBold";
+	src: url("fonts/MontserratBold.eot");
+	src: url("fonts/MontserratBold.eot") format("embedded-opentype"),
+		url("fonts/MontserratBold.woff2") format("woff2"),
+		url("fonts/MontserratBold.woff") format("woff"),
+		url("fonts/MontserratBold.ttf") format("truetype"),
+		url("fonts/MontserratBold.svg#MontserratBold") format("svg");
+}
+
+@font-face {
+	font-family: "MontserratExtraBold";
+	src: url("fonts/MontserratExtraBold.eot");
+	src: url("fonts/MontserratExtraBold.eot") format("embedded-opentype"),
+		url("fonts/MontserratExtraBold.woff2") format("woff2"),
+		url("fonts/MontserratExtraBold.woff") format("woff"),
+		url("fonts/MontserratExtraBold.ttf") format("truetype"),
+		url("fonts/MontserratExtraBold.svg#MontserratExtraBold") format("svg");
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1024px) {
+	html {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-family: "MontserratRegular", sans-serif;
+	}
+
+	body {
+		max-width: 1920px;
+		width: 100%;
+	}
+
+	/* Header */
+
+	header {
+		width: 100%;
+		height: 18vw;
+		max-height: 350px;
+		background-image: url("images/header_background.svg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: sticky;
+		z-index: 1;
+		top: 0;
+	}
+
+	.top_menu_bar {
+		height: 75px;
+		width: 100%;
+		background-color: black;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		color: white;
+	}
+	.top_menu_bar_social {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-left: 3vw;
+		width: 168px;
+	}
+
+	.top_menu_bar_social img {
+		height: 24px;
+	}
+
+	.top_menu_bar_links {
+		margin-right: 3vw;
+		width: 28%;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.top_menu_bar_links a {
+		display: flex;
+		align-items: center;
+	}
+
+	.top_menu_bar_links img {
+		height: 22px;
+		padding: 0 10px;
+	}
+
+	.nav_container {
+		height: 58%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: sticky;
+	}
+
+	.nav_logo_studinventive {
+		width: 20vw;
+		min-width: 200px;
+		margin-left: 3vw;
+	}
+
+	nav {
+		height: 58%;
+		width: 75%;
+		display: flex;
+		align-items: center;
+		font-family: "MontserratBold", sans-serif;
+	}
+
+	nav ul {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		font-family: "MontserratBold", sans-serif;
+		font-size: 20px;
+		text-transform: uppercase;
+	}
+
+	nav a {
+		padding: 0 1vw;
+	}
+
+	.nav_li_campus a {
+		padding-right: 0;
+		color: white;
+	}
+
+	/* Landing section */
+
+	.landing_section {
+		height: 900px;
+		width: 100%;
+		position: relative;
+		top: -180px;
+		background-image: url("images/landing_background.jpg");
+		background-repeat: no-repeat;
+		background-position: top left;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.landing_section_left {
+		padding-top: 150px;
+		width: 60%;
+	}
+
+	.landing_section_left .slogan {
+		color: #fb9505;
+		text-transform: uppercase;
+		font-family: "MontserratMedium", sans-serif;
+		font-size: 32px;
+		margin-bottom: 50px;
+	}
+
+	.landing_section_left h1 {
+		font-family: "MontserratExtraBold", sans-serif;
+		font-size: 64px;
+		margin-bottom: 60px;
+	}
+
+	.landing_section_left p {
+		font-family: "MontserratRegular", sans-serif;
+		font-size: 32px;
+		text-align: justify;
+	}
+
+	.landing_section_right {
+		align-self: bottom;
+		padding-bottom: 220px;
+
+		height: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		align-self: flex-end;
+	}
+
+	.landing_section_right img {
+		height: 167px;
+	}
+
+	.landing_section_buttons {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 180px;
+	}
+
+	.landing_section_buttons a {
+		height: 70px;
+		width: 280px;
+		border-radius: 20px;
+		color: white;
+		font-family: "MontserratMedium";
+		font-size: 24px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+
+	.campus_button {
+		background-color: #f5b848;
+	}
+
+	.register_button {
+		background-color: #39277d;
+	}
+}
