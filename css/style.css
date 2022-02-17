@@ -92,7 +92,7 @@
 	}
 
 	.top_menu_bar_links {
-		margin-right: 15px;
+		margin-right: 3vw;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -247,19 +247,18 @@
 		background-color: #39277d;
 	}
 
-		/* Method section */
+	/* Method section */
 
 	.method_section {
 		height: 1000px;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		background-color: #533CA8;
+		background-color: #533ca8;
 		color: white;
-
 	}
 
-	.method_section h2{
+	.method_section h2 {
 		font-family: "MontserratBold", sans-serif;
 		font-size: 4rem;
 	}
@@ -275,22 +274,21 @@
 
 	.method_section a {
 		display: flexbox;
-		background-color: #F5B848;
+		background-color: #f5b848;
 	}
 
-		/* Model section */
+	/* Model section */
 
 	.model_section {
 		height: 1080px;
 		width: 100%;
-		position: relative;		
+		position: relative;
 		display: flex;
-		background-color: #39277D;
+		background-color: #39277d;
 		color: white;
-
 	}
 
-	.model_section h2{
+	.model_section h2 {
 		font-family: "MontserratBold", sans-serif;
 		font-size: 4rem;
 	}
@@ -298,6 +296,4 @@
 	.model_section_img {
 		height: 130px;
 	}
-
-
 }
