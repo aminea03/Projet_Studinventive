@@ -2,42 +2,42 @@
 
 @font-face {
 	font-family: "MontserratRegular";
-	src: url("fonts/MontserratRegular.eot");
-	src: url("fonts/MontserratRegular.eot") format("embedded-opentype"),
-		url("fonts/MontserratRegular.woff2") format("woff2"),
-		url("fonts/MontserratRegular.woff") format("woff"),
-		url("fonts/MontserratRegular.ttf") format("truetype"),
-		url("fonts/MontserratRegular.svg#MontserratRegular") format("svg");
+	src: url("/fonts/MontserratRegular.eot");
+	src: url("/fonts/MontserratRegular.eot") format("embedded-opentype"),
+		url("/fonts/MontserratRegular.woff2") format("woff2"),
+		url("/fonts/MontserratRegular.woff") format("woff"),
+		url("/fonts/MontserratRegular.ttf") format("truetype"),
+		url("/fonts/MontserratRegular.svg#MontserratRegular") format("svg");
 }
 
 @font-face {
 	font-family: "MontserratMedium";
-	src: url("fonts/MontserratMedium.eot");
-	src: url("fonts/MontserratMedium.eot") format("embedded-opentype"),
-		url("fonts/MontserratMedium.woff2") format("woff2"),
-		url("fonts/MontserratMedium.woff") format("woff"),
-		url("fonts/MontserratMedium.ttf") format("truetype"),
-		url("fonts/MontserratMedium.svg#MontserratMedium") format("svg");
+	src: url("/fonts/MontserratMedium.eot");
+	src: url("/fonts/MontserratMedium.eot") format("embedded-opentype"),
+		url("/fonts/MontserratMedium.woff2") format("woff2"),
+		url("/fonts/MontserratMedium.woff") format("woff"),
+		url("/fonts/MontserratMedium.ttf") format("truetype"),
+		url("/fonts/MontserratMedium.svg#MontserratMedium") format("svg");
 }
 
 @font-face {
 	font-family: "MontserratBold";
-	src: url("fonts/MontserratBold.eot");
-	src: url("fonts/MontserratBold.eot") format("embedded-opentype"),
-		url("fonts/MontserratBold.woff2") format("woff2"),
-		url("fonts/MontserratBold.woff") format("woff"),
-		url("fonts/MontserratBold.ttf") format("truetype"),
-		url("fonts/MontserratBold.svg#MontserratBold") format("svg");
+	src: url("/fonts/MontserratBold.eot");
+	src: url("/fonts/MontserratBold.eot") format("embedded-opentype"),
+		url("/fonts/MontserratBold.woff2") format("woff2"),
+		url("/fonts/MontserratBold.woff") format("woff"),
+		url("/fonts/MontserratBold.ttf") format("truetype"),
+		url("/fonts/MontserratBold.svg#MontserratBold") format("svg");
 }
 
 @font-face {
 	font-family: "MontserratExtraBold";
-	src: url("fonts/MontserratExtraBold.eot");
-	src: url("fonts/MontserratExtraBold.eot") format("embedded-opentype"),
-		url("fonts/MontserratExtraBold.woff2") format("woff2"),
-		url("fonts/MontserratExtraBold.woff") format("woff"),
-		url("fonts/MontserratExtraBold.ttf") format("truetype"),
-		url("fonts/MontserratExtraBold.svg#MontserratExtraBold") format("svg");
+	src: url("/fonts/MontserratExtraBold.eot");
+	src: url("/fonts/MontserratExtraBold.eot") format("embedded-opentype"),
+		url("/fonts/MontserratExtraBold.woff2") format("woff2"),
+		url("/fonts/MontserratExtraBold.woff") format("woff"),
+		url("/fonts/MontserratExtraBold.ttf") format("truetype"),
+		url("/fonts/MontserratExtraBold.svg#MontserratExtraBold") format("svg");
 }
 
 /* DESKTOP */
@@ -60,18 +60,18 @@
 
 	header {
 		width: 100%;
-		height: 18vw;
-		max-height: 350px;
-		background-image: url("images/header_background.svg");
-		background-size: contain;
+		height: 120px;
+		background-image: url("/images/header_background.svg");
 		background-repeat: no-repeat;
+		background-size: 1950px;
+		background-position: right;
 		position: sticky;
 		z-index: 1;
 		top: 0;
 	}
 
 	.top_menu_bar {
-		height: 75px;
+		height: 40px;
 		width: 100%;
 		background-color: black;
 		display: flex;
@@ -88,24 +88,27 @@
 	}
 
 	.top_menu_bar_social img {
-		height: 24px;
+		height: 16px;
 	}
 
 	.top_menu_bar_links {
-		margin-right: 3vw;
-		width: 28%;
+		margin-right: 15px;
 		display: flex;
 		align-items: center;
-		justify-content: space-around;
+		justify-content: space-between;
+		color: white;
 	}
 
 	.top_menu_bar_links a {
 		display: flex;
 		align-items: center;
+		color: white;
+		font-size: 14px;
+		margin-left: 20px;
 	}
 
 	.top_menu_bar_links img {
-		height: 22px;
+		height: 16px;
 		padding: 0 10px;
 	}
 
@@ -119,17 +122,18 @@
 	}
 
 	.nav_logo_studinventive {
-		width: 20vw;
-		min-width: 200px;
+		width: 10vw;
+		min-width: 150px;
 		margin-left: 3vw;
 	}
 
 	nav {
 		height: 58%;
-		width: 75%;
 		display: flex;
 		align-items: center;
 		font-family: "MontserratBold", sans-serif;
+		box-shadow: none !important;
+		-webkit-box-shadow: none !important;
 	}
 
 	nav ul {
@@ -137,18 +141,26 @@
 		width: 100%;
 		display: flex;
 		align-items: center;
-		justify-content: space-evenly;
+		margin-top: 6px;
+		justify-content: flex-end;
 		font-family: "MontserratBold", sans-serif;
 		font-size: 1.25rem;
 		text-transform: uppercase;
 	}
 
-	nav a {
-		padding: 0 1vw;
+	nav ul a:hover {
+		background-color: transparent;
+		color: #39277d;
+	}
+
+	nav ul a {
+		padding: 0 1vw 0 0;
+		color: black;
+		font-size: 14px;
 	}
 
 	.nav_li_campus a {
-		padding-right: 0;
+		padding: 0 15px 0 2vw;
 		color: white;
 	}
 
@@ -158,8 +170,8 @@
 		height: 900px;
 		width: 100%;
 		position: relative;
-		top: -180px;
-		background-image: url("images/landing_background.jpg");
+		top: -120px;
+		background-image: url("/images/landing_background.jpg");
 		background-repeat: no-repeat;
 		background-position: top left;
 		display: flex;
