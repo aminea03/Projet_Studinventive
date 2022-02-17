@@ -273,7 +273,7 @@
 		height: 280px;
 	}
 
-	.method_section button {
+	.method_section a {
 		display: flexbox;
 		background-color: #F5B848;
 	}
