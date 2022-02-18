@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/logo_rocket.svg" />
     <script type="text/javascript" src="js/materialize.js"></script>
+    <script>
+        /* nav "Formation" dropdown initializer */
+        document.addEventListener("DOMContentLoaded", function () {
+            var elems = document.querySelectorAll(".dropdown-trigger");
+            var instances = M.Dropdown.init(elems, {
+                hover: true,
+                coverTrigger: false,
+            });
+        });</script>
     <title>Studinventive : la formation révinventée</title>
 </head>
 
@@ -100,26 +109,29 @@
             <a class="orange_button learn_more_button" href="">En savoir plus</a>
         </section>
         <section class="model_section">
-            <h2>Notre modèle pédagogique</h2>
-            <p>Utilisez un nouveau modèle pédagogique pour réussir votre projet de formation.</p>
-            <div class="model_card_section">
-                <div class="pedagogy_card">
+            <div class="model_section_title">
+                <h2>Notre modèle pédagogique</h2>
+                <p>Utilisez un nouveau modèle pédagogique pour réussir votre projet de formation.</p>
+            </div>
+            <div class="model_section_card_container">
+                <div class="pedagogy_card model_section_card">
                     <h3>Pédagogie par projet</h3>
-                    <img src="images/rocket_image.svg" class="model_section_img" alt="illustration d'une fusée">
+                    <div class="card_circle1"></div>
+                    <img src="images/method1.png" class="model_section_img" alt="Illustration d'une fusée">
                     <p>Développez des compétences en relevant des challenges sous forme de projets conçus à partir d'un
                         contexte professionnel.</p>
                 </div>
-                <div class="approach_card">
+                <div class="approach_card model_section_card">
                     <h3>Approche personnalisée</h3>
-                    <img src="images/brain_image.svg" class="model_section_img"
-                        alt="illustration d'engrenages dans une tête">
+                    <div class="card_circle2"></div>
+                    <img src="images/method2.png" class="model_section_img" alt="Illustration d'engrenage">
                     <p>Bénéficiez de conseils personnalisés qui tiennent compte de votre personnalité, votre type
                         d'intelligence et de votre style d'apprentissage.</p>
                 </div>
-                <div class="community_card">
+                <div class="community_card model_section_card">
                     <h3>Communauté d'apprentissage</h3>
-                    <img src="images/binocular_image.svg" class="model_section_img"
-                        alt="illustration d'une paire de jumelles">
+                    <div class="card_circle3"></div>
+                    <img src="images/method3.webp" class="model_section_img" alt="Illustration d'élèves">
                     <p>Partagez des moments forts avec d'autres membres de la communauté et vivez des expériences
                         d'apprentissage collaboratif et constructif.</p>
                 </div>

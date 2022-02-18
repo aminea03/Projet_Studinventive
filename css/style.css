@@ -65,6 +65,12 @@
 		font-size: 3rem;
 	}
 
+	h3 {
+		margin: 0;
+		font-size: 2rem;
+		font-family: "MontserratBold", sans-serif;
+	}
+
 	.orange_button {
 		background-color: #f5b848;
 		height: 50px;
@@ -353,20 +359,95 @@
 	/* Model section */
 
 	.model_section {
-		height: 1080px;
-		width: 100%;
 		position: relative;
+		top: -225px;
+		height: 800px;
+		width: 100%;
 		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
 		background-color: #39277d;
 		color: white;
+		padding: 0 3vw;
 	}
 
 	.model_section h2 {
-		font-family: "MontserratBold", sans-serif;
-		font-size: 4rem;
+		text-align: center;
+	}
+
+	.model_section p {
+		font-size: 1.5rem;
+	}
+
+	.model_section_card_container {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		background-color: #533ca8;
+		border-radius: 25px;
+		padding: 30px 0;
+	}
+
+	.model_section_card {
+		position: relative;
+		width: 320px;
+		height: 296px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		background-color: white;
+		border-top-right-radius: 30px;
+		border-bottom-right-radius: 30px;
+		box-sizing: border-box;
+		border: 2px solid #533ca8;
 	}
 
 	.model_section_img {
-		height: 130px;
+		width: 130px;
+		margin: 20px 0 10px 0;
+	}
+
+	.model_section_card h3 {
+		width: 254px;
+		min-height: 37px;
+		align-self: flex-start;
+		padding-top: 10px;
+		font-size: 0.85rem;
+		background-color: #533ca8;
+		border-bottom-right-radius: 20px;
+	}
+
+	.model_section_card .card_circle1,
+	.model_section_card .card_circle2,
+	.model_section_card .card_circle3 {
+		min-width: 30px;
+		min-height: 30px;
+		border-radius: 50px;
+		content: "";
+		position: absolute;
+		top: -1px;
+		right: 76px;
+	}
+
+	.card_circle1 {
+		background-color: #39277d;
+	}
+
+	.card_circle2 {
+		background-color: #f5b848;
+	}
+
+	.card_circle3 {
+		background-color: #fb9505;
+	}
+
+	.model_section_card p {
+		color: #39277d;
+		font-size: 1rem;
+		text-align: center;
+		padding: 0 10px 20px 10px;
 	}
 }
