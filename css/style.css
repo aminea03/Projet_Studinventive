@@ -275,7 +275,7 @@
 
 	.landing_section_right {
 		align-self: bottom;
-		padding-bottom: 220px;
+		padding-bottom: 550px;
 		height: 50%;
 		display: flex;
 		flex-direction: column;
@@ -299,7 +299,7 @@
 	/* Method section */
 
 	.method_section {
-		height: 975px;
+		height: 600px;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -345,7 +345,7 @@
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
-		height: 350px;
+		height: 300px;
 	}
 	.method_section_content img {
 		height: 280px;
@@ -361,12 +361,12 @@
 	.model_section {
 		position: relative;
 		top: -225px;
-		height: 800px;
+		height: 600px;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: space-around;
+		justify-content: space-evenly;
 		background-color: #39277d;
 		color: white;
 		padding: 0 3vw;
