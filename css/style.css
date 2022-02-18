@@ -164,6 +164,35 @@
 		color: white;
 	}
 
+	#dropdown1 a {
+		color: black;
+	}
+
+	nav .dropdown-content {
+		min-height: 420px;
+		overflow-y: visible;
+		box-shadow: 0 2px 2px 0 #533ca8, 0 3px 1px -2px #533ca8, 0 1px 5px 0 #533ca8;
+	}
+
+	nav .dropdown-content li {
+		min-height: 0px;
+	}
+
+	nav .dropdown-content a {
+		padding: 10px 0;
+		font-size: 14px;
+		text-align: center;
+	}
+
+	nav .dropdown-content a:hover {
+		color: white !important;
+		background-color: transparent;
+	}
+
+	nav .dropdown-content li:hover {
+		background-color: #533ca8;
+	}
+
 	/* Landing section */
 
 	.landing_section {
@@ -188,25 +217,23 @@
 		text-transform: uppercase;
 		font-family: "MontserratMedium", sans-serif;
 		font-size: 2rem;
-		margin-bottom: 50px;
+		margin-bottom: 20px;
 	}
 
 	.landing_section_left h2 {
 		font-family: "MontserratExtraBold", sans-serif;
-		font-size: 4rem;
-		margin-bottom: 60px;
+		font-size: 3rem;
+		margin: 0 0 40px 0;
 	}
 
 	.landing_section_left p {
 		font-family: "MontserratRegular", sans-serif;
-		font-size: 2rem;
-		text-align: justify;
+		font-size: 1.5rem;
 	}
 
 	.landing_section_right {
 		align-self: bottom;
 		padding-bottom: 220px;
-
 		height: 50%;
 		display: flex;
 		flex-direction: column;
@@ -223,16 +250,17 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		height: 180px;
+		min-height: 130px;
+		margin-top: 40px;
 	}
 
 	.landing_section_buttons a {
-		height: 70px;
-		width: 280px;
+		height: 50px;
+		width: 250px;
 		border-radius: 20px;
 		color: white;
 		font-family: "MontserratMedium";
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
