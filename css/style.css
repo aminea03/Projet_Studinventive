@@ -327,8 +327,11 @@
 	}
 
 	.method_section li {
-		list-style-image: url("../images/list_style_orange_square.svg");
-		padding: 20px 0;
+		padding: 0 0 20px 30px;
+		background-image: url("../images/list_style_orange_square.svg");
+		background-repeat: no-repeat;
+		background-position: left top 2px;
+		background-size: 15px;
 	}
 
 	.method_section_content {
