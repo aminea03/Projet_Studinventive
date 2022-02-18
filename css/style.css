@@ -56,6 +56,43 @@
 		font-size: 16px;
 	}
 
+	p {
+		line-height: 120%;
+	}
+
+	h2 {
+		font-family: "MontserratExtraBold", sans-serif;
+		font-size: 3rem;
+	}
+
+	.orange_button {
+		background-color: #f5b848;
+		height: 50px;
+		width: 250px;
+		border-radius: 20px;
+		color: white;
+		font-family: "MontserratMedium";
+		font-size: 1.2rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+
+	.purple_button {
+		background-color: #39277d;
+		height: 50px;
+		width: 250px;
+		border-radius: 20px;
+		color: white;
+		font-family: "MontserratMedium";
+		font-size: 1.2rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+
 	/* Header */
 
 	header {
@@ -182,6 +219,7 @@
 	nav .dropdown-content a {
 		padding: 10px;
 		font-size: 14px;
+		text-transform: capitalize;
 	}
 
 	nav .dropdown-content a:hover {
@@ -196,7 +234,7 @@
 	/* Landing section */
 
 	.landing_section {
-		height: 900px;
+		height: 1000px;
 		width: 100%;
 		position: relative;
 		top: -120px;
@@ -221,8 +259,6 @@
 	}
 
 	.landing_section_left h2 {
-		font-family: "MontserratExtraBold", sans-serif;
-		font-size: 3rem;
 		margin: 0 0 40px 0;
 	}
 
@@ -254,46 +290,52 @@
 		margin-top: 40px;
 	}
 
-	.landing_section_buttons a {
-		height: 50px;
-		width: 250px;
-		border-radius: 20px;
-		color: white;
-		font-family: "MontserratMedium";
-		font-size: 1.2rem;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		cursor: pointer;
-	}
-
-	.campus_button {
-		background-color: #f5b848;
-	}
-
-	.register_button {
-		background-color: #39277d;
-	}
-
 	/* Method section */
 
 	.method_section {
-		height: 1000px;
+		height: 975px;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
 		background-color: #533ca8;
 		color: white;
+		background-image: url("../images/method_background.svg");
+		background-repeat: no-repeat;
+		background-size: 1920px;
+		background-color: transparent;
+		position: relative;
+		top: -225px;
 	}
 
-	.method_section h2 {
-		font-family: "MontserratBold", sans-serif;
-		font-size: 4rem;
+	.method_section_s_right_element {
+		content: "";
+		background-image: url("../images/method_background_s_right_element.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 120px;
+		height: 130px;
+		position: absolute;
+		top: 250px;
+		right: 3vw;
+	}
+
+	.method_section ul {
+		width: 40%;
+		padding-left: 3vw;
+	}
+
+	.method_section li {
+		list-style-image: url("../images/list_style_orange_square.svg");
+		padding: 20px 0;
 	}
 
 	.method_section_content {
 		display: flex;
 		flex-direction: row;
+		align-items: center;
+		justify-content: center;
 		height: 350px;
 	}
 	.method_section_content img {
@@ -301,7 +343,7 @@
 	}
 
 	.method_section a {
-		display: flexbox;
+		display: flex;
 		background-color: #f5b848;
 	}
 
