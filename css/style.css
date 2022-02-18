@@ -169,7 +169,8 @@
 	}
 
 	nav .dropdown-content {
-		min-height: 420px;
+		min-height: 290px;
+		min-width: max-content;
 		overflow-y: visible;
 		box-shadow: 0 2px 2px 0 #533ca8, 0 3px 1px -2px #533ca8, 0 1px 5px 0 #533ca8;
 	}
@@ -179,9 +180,8 @@
 	}
 
 	nav .dropdown-content a {
-		padding: 10px 0;
+		padding: 10px;
 		font-size: 14px;
-		text-align: center;
 	}
 
 	nav .dropdown-content a:hover {
