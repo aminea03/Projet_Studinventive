@@ -410,7 +410,7 @@
 		border-top-right-radius: 30px;
 		border-bottom-right-radius: 30px;
 		box-sizing: border-box;
-		border: 2px solid #533ca8;
+		border: thick solid #533ca8;
 	}
 
 	.model_section_img {
