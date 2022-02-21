@@ -18,8 +18,11 @@
                 hover: true,
                 coverTrigger: false,
                 autoTrigger: false,
+                onCloseEnd: function () { document.activeElement.blur(); }
             });
-        });</script>
+        });
+
+    </script>
     <title>Studinventive : la formation révinventée</title>
 </head>
 
@@ -44,6 +47,8 @@
         <div class="nav_container">
             <a href="/index.html"><img class="nav_logo_studinventive" src="images/logo_studinventive.svg"
                     alt="Logo Studinventive"></a>
+            <a href="/index.html"><img class="nav_logo_rocket" src="images/logo_rocket.svg"
+                    alt="Logo Studinventive rocket"></a>
             <!-- ul dropdown1 = liste qui sert au dropdown "Formation" du nav -->
             <ul id="dropdown1" class="dropdown-content">
                 <li><a href="#!">Nos challenges</a></li>
@@ -56,7 +61,7 @@
             </ul>
             <nav>
                 <ul>
-                    <li><a href="">Accueil</a></li>
+                    <li><a href="" class="current_page">Accueil</a></li>
                     <li><a href="">Notre méthode</a></li>
                     <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Nos formations</a></li>
                     <li><a href="">Partenariat</a></li>
