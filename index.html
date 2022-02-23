@@ -9,20 +9,8 @@
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/logo_rocket.svg" />
-    <script type="text/javascript" src="js/materialize.js"></script>
-    <script>
-        /* nav "Formation" dropdown initializer */
-        document.addEventListener("DOMContentLoaded", function () {
-            var elems = document.querySelectorAll(".dropdown-trigger");
-            var instances = M.Dropdown.init(elems, {
-                hover: true,
-                coverTrigger: false,
-                autoTrigger: false,
-                onCloseEnd: function () { document.activeElement.blur(); }
-            });
-        });
-
-    </script>
+    <script src="js/materialize.js"></script>
+    <script src="js/header.js"></script>
     <title>Studinventive : la formation révinventée</title>
 </head>
 
@@ -209,6 +197,7 @@
                         </div>
                     </div>
                     <div class="challenge_level">
+                        <!-- appliquer la classe "level_on" sur le niveau approprié -->
                         <p class="challenge_level_1">Débutant</p>
                         <p class="challenge_level_2 level_on">Intermédiaire</p>
                         <p class="challenge_level_3">Expert</p>
@@ -220,9 +209,43 @@
                 <div class="challenge"></div>
                 <div class="challenge"></div>
             </div>
-            <a class="orange_button" href="">Tous les challenges</a>
+            <a class="orange_button challenge_button" href="">Tous les challenges</a>
         </section>
-        <section class="trust-section"></section>
+        <section class="reviews_section">
+            <div class="section_title">
+                <h2>Ils nous ont fait confiance</h2>
+                <p>Ils ont suivi le programme Studinvetive pour acquérir de nouvelles compétences.</p>
+            </div>
+            <div class="reviews_container">
+                <div class="review">
+                    <p class="review_name">Hector</p>
+                    <div class="review_content">
+                        <!-- le ratio de l'image doit être de 21/24  -->
+                        <img src="/images/review_1.jpg" alt="Personne">
+                        <div class="review_content_right">
+                            <p class="review_title">Créateur de mode</p>
+                            <p class="review_text"><span>" </span>Suite à ma formation et grâce à mon sens inné de
+                                l'esthétique, j'ai ouvert mon atelier de modiste et embauché une couturière.<span>
+                                    "</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review">
+                    <p class="review_name">Victoria</p>
+                    <div class="review_content">
+                        <img src="/images/review_2.jpg" alt="Personne">
+                        <div class="review_content_right">
+                            <p class="review_title">Mécanicienne</p>
+                            <p class="review_text"><span>" </span>J'ai décidé de faire appel à Studinventive pour mettre
+                                à niveau mes connaissances en mécaniques, grâce à mon CPF.<span>
+                                    "</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="project_section"></section>
         <section class="more_section"></section>
     </main>
