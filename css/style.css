@@ -75,7 +75,7 @@
 		background-color: #fb9505;
 		height: 50px;
 		width: 250px;
-		border-radius: 20px;
+		border-radius: 15px;
 		color: white;
 		font-family: "MontserratMedium";
 		font-size: 1.2rem;
@@ -90,7 +90,7 @@
 		background-color: #401177;
 		height: 50px;
 		width: 250px;
-		border-radius: 20px;
+		border-radius: 15px;
 		color: white;
 		font-family: "MontserratMedium";
 		font-size: 1.2rem;
@@ -110,7 +110,6 @@
 		background-repeat: no-repeat;
 		background-size: 1920px;
 		background-position: right top;
-
 		position: sticky;
 		z-index: 1;
 		top: 0;
@@ -544,5 +543,106 @@
 
 	.video_section_content_right img {
 		max-width: min(15vw, 300px);
+	}
+
+	/* Traning section */
+
+	.training_section {
+		position: relative;
+		top: -310px;
+		height: 900px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		background-color: #533ca8;
+		color: white;
+		padding: 0 70px;
+	}
+
+	.training_section_title {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.training_section p {
+		width: 75%;
+		text-align: center;
+		font-size: 1.5rem;
+	}
+
+	.training_menu {
+		position: relative;
+		background-image: url("../images/training_menu.svg");
+		background-repeat: no-repeat;
+		background-size: 500px;
+		background-position: center;
+		height: 300px;
+		min-width: 1200px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.training_menu_center {
+		text-transform: uppercase;
+		text-align: center;
+		max-width: 150px;
+		height: 100px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-size: 1rem !important;
+		background-image: url("../images/logo_s_transparent.svg");
+		background-repeat: no-repeat;
+		background-position: left 30px center;
+		background-size: contain;
+	}
+
+	.training_menu li a {
+		position: absolute;
+		border-bottom: thick solid #fb9505;
+		display: flex;
+		padding-bottom: 5px;
+		color: white;
+	}
+
+	.training_menu li a span {
+		display: flex;
+		content: "";
+		width: 25px;
+	}
+
+	#training_menu_autres {
+		top: -40px;
+		left: 430px;
+	}
+
+	#training_menu_challenges {
+		top: 60px;
+		left: 147px;
+	}
+
+	#training_menu_magistere {
+		top: 255px;
+		left: 243px;
+	}
+
+	#training_menu_cpf {
+		top: 208px;
+		left: 870px;
+	}
+
+	#training_menu_bachelor {
+		top: 12px;
+		left: 785px;
+	}
+	#training_menu_titrepro {
+		top: 310px;
+		left: 600px;
 	}
 }
