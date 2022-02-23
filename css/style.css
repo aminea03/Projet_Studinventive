@@ -557,8 +557,13 @@
 		align-items: center;
 		justify-content: space-around;
 		background-color: #533ca8;
+		background-image: url("../images/training_background.svg");
+		background-repeat: no-repeat;
+
+		background-position: left bottom;
 		color: white;
 		padding: 0 70px;
+		overflow-x: hidden;
 	}
 
 	.training_section_title {
@@ -572,6 +577,18 @@
 		width: 75%;
 		text-align: center;
 		font-size: 1.5rem;
+	}
+
+	.training_section_magnifying_glass_right_element {
+		content: "";
+		background-image: url("../images/magnifying_glass.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 300px;
+		height: 500px;
+		position: absolute;
+		top: 170px;
+		right: -50px;
 	}
 
 	.training_menu {
