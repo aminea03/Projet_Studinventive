@@ -9,20 +9,8 @@
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/logo_rocket.svg" />
-    <script type="text/javascript" src="js/materialize.js"></script>
-    <script>
-        /* nav "Formation" dropdown initializer */
-        document.addEventListener("DOMContentLoaded", function () {
-            var elems = document.querySelectorAll(".dropdown-trigger");
-            var instances = M.Dropdown.init(elems, {
-                hover: true,
-                coverTrigger: false,
-                autoTrigger: false,
-                onCloseEnd: function () { document.activeElement.blur(); }
-            });
-        });
-
-    </script>
+    <script src="js/materialize.js"></script>
+    <script src="js/header.js"></script>
     <title>Studinventive : la formation révinventée</title>
 </head>
 
@@ -92,7 +80,7 @@
         <section class="method_section">
             <h2>Une méthode d'apprentissage innovante</h2>
             <div class="method_section_content">
-                <img src="images/method_image_01.svg" alt="illustration adolescent avec casque VR">
+                <img src="images/method_image.svg" alt="Homme qui lit assis sur un avion en papier">
                 <!--image qui doit être remplacée car fait trop adolescent-->
                 <div class="method_section_s_right_element"></div>
                 <ul>
@@ -209,6 +197,7 @@
                         </div>
                     </div>
                     <div class="challenge_level">
+                        <!-- appliquer la classe "level_on" sur le niveau approprié -->
                         <p class="challenge_level_1">Débutant</p>
                         <p class="challenge_level_2 level_on">Intermédiaire</p>
                         <p class="challenge_level_3">Expert</p>
@@ -220,7 +209,7 @@
                 <div class="challenge"></div>
                 <div class="challenge"></div>
             </div>
-            <a class="orange_button" href="">Tous les challenges</a>
+            <a class="orange_button challenge_button" href="">Tous les challenges</a>
         </section>
         <section class="reviews_section">
             <div class="section_title">
@@ -257,47 +246,7 @@
                 </div>
             </div>
         </section>
-        <section class="project_section">
-            <div class="section_title">
-                <h2>Construisons ensemble votre projet de formation</h2>
-                <p>Améliorez votre image et votre notoriété.</p>
-            </div>
-            <div class="project_card_container">
-                <div class="project_section_card">
-                    <div class="project_card_header">
-                         <h3 class="project_card_title">Conception pédagogique</h3>
-                        <div class="card_circle2"></div> <!--peut-être souhbaites-tu un autre circle?-->
-                    </div>    
-                    <img src="" class="project_section_img" alt="illustration d'un engrenage"><!--je te laisse placer l'image-->
-                    <p>Bénéficiez de conseils personnalisés qui tiennent compte de votre personnalité, votre type d'intelligence et de votre style d'apprentissage.</p>
-                </div>
-                <div class="project_section_card">
-                    <div class="project_card_header">
-                        <h3 class="project_card_title">Accompagnement pédagogique</h3>
-                        <div class="card_circle2"></div> <!--peut-être souhbaites-tu un autre circle?-->
-                    </div>    
-                    <img src="" class="project_section_img" alt="illustration d'un coeur"><!--je te laisse placer l'image-->
-                    <p>Partager votre expérience et votre savoir-faire en intervenant dans l'accompagnement des apprenants.</p>
-                </div>
-                <div class="project_section_card">
-                    <div class="project_card_header"> 
-                        <h3 class="project_card_title">Stage professionnel</h3>
-                        <div class="card_circle2"></div> <!--peut-être souhbaites-tu un autre circle?-->
-                    </div>
-                    <img src="" class="project_section_img" alt="illustration d'un fanion"><!--je te laisse placer l'image-->
-                    <p>Offrez l'opportunité d'exprimer des talents en accueillant des stagiaires dans vos entreprises.</p>
-                </div>
-                <div class="project_section_card">
-                    <div class="project_card_header">
-                        <h3 class="project_card_title">Insertion</h3>
-                        <div class="card_circle2"></div> <!--peut-être souhbaites-tu un autre circle?-->
-                    </div>
-                    <img src="" class="project_section_img" alt="illustration d'un fanion"><!--je te laisse placer l'image-->
-                    <p>Vous cherchez des profils de qualité ? Nos formations permettent aux apprenants de devenir opérationnels.</p>
-                </div>
-            </div>
-        </section>
-        <section class="more_section"></section>
+        <section class="project_section"></section>
         <section class="handicap_section"></section>
     </main>
     <footer></footer>

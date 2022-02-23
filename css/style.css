@@ -122,10 +122,11 @@
 		background-repeat: no-repeat;
 		background-size: 1920px;
 		background-position: right top;
-		position: sticky;
-		z-index: 1;
+		position: relative;
+		z-index: 2;
 		top: 0;
 		padding: 0 min(3vw, 70px);
+		transition: 0.4s;
 	}
 
 	.top_menu_bar {
@@ -593,7 +594,8 @@
 	.training_menu_center {
 		text-transform: uppercase;
 		text-align: center;
-		max-width: 150px;
+		width: 130px;
+		max-width: 130px;
 		height: 100px;
 		display: flex;
 		flex-direction: column;
@@ -602,7 +604,7 @@
 		font-size: 1rem !important;
 		background-image: url("../images/logo_s_transparent.svg");
 		background-repeat: no-repeat;
-		background-position: left 30px center;
+		background-position: left 18px center;
 		background-size: contain;
 	}
 
@@ -654,7 +656,7 @@
 	.challenge_section {
 		position: relative;
 		top: -310px;
-		min-height: 1100px;
+		min-height: 1170px;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -689,6 +691,7 @@
 	.challenge_header {
 		width: 100%;
 		background-color: #fb9505;
+		font-family: "MontserratBold", sans-serif;
 		font-size: 1.5rem;
 		text-transform: uppercase;
 		text-align: center;
@@ -769,5 +772,113 @@
 	.level_on {
 		color: white;
 		background-color: #fb9505;
+	}
+
+	.challenge_button {
+		margin: 30px;
+	}
+
+	/* Reviews section */
+
+	.reviews_section {
+		position: relative;
+		z-index: 1;
+		top: -380px;
+		min-height: 900px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		color: #401177;
+		background-image: url("../images/reviews_background.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 1920px;
+		background-color: transparent;
+		padding: 0 70px;
+	}
+
+	.reviews_container {
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.review {
+		position: relative;
+		width: 600px;
+		height: 300px;
+		max-height: 300px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		background-color: #401177;
+		border-radius: 30px;
+		margin: 15px;
+	}
+
+	.review_name {
+		width: 100%;
+		font-family: "MontserratBold", sans-serif;
+		background-color: #533ca8;
+		color: white;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		text-align: center;
+		height: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 30px 30px 0 0;
+	}
+
+	.review_content {
+		max-height: 240px;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.review_content img {
+		height: 240px;
+		width: 210px;
+		border-bottom-left-radius: 30px;
+	}
+
+	.review_content_right {
+		height: 100%;
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	.review_title {
+		color: white;
+		font-family: "MontserratMedium", sans-serif;
+		padding: 15px 0;
+	}
+
+	.review_text {
+		color: white;
+		padding: 15px;
+		text-align: center;
+	}
+
+	/* Project section */
+
+	.project_section {
+		position: relative;
+		top: -450px;
+		height: 900px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		background-color: #533ca8;
+		padding: 0 70px;
 	}
 }
