@@ -946,4 +946,71 @@
 		width: 130px;
 		margin: 20px 0 10px 0;
 	}
+
+	/* More section */
+
+	.more_section {
+		position: relative;
+		top: -450px;
+		height: 600px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		color: #401177;
+		padding: 0 70px;
+	}
+
+	.carousel-item img {
+		max-width: 200px;
+		max-height: 200px;
+	}
+
+	/* Handicap section */
+
+	.handicap_section {
+		position: relative;
+		top: -450px;
+		height: 600px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		color: white;
+		background-color: #401177;
+		padding: 0 70px;
+	}
+
+	.handicap_container {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.handicap_container_left {
+		width: 66%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+	}
+
+	.handicap_container_right {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.handicap_container_left p {
+		padding: 7.5px 15px;
+	}
+
+	.handicap_section_img {
+		max-height: 400px;
+	}
+
+	.contact_button {
+		align-self: center;
+		margin: 30px;
+	}
 }
