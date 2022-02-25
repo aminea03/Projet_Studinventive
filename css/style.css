@@ -55,11 +55,7 @@
 		max-width: 1920px;
 		width: 100%;
 		font-size: 16px;
-
 		position: relative;
-	}
-
-	main {
 	}
 
 	p {
@@ -138,8 +134,7 @@
 		position: sticky;
 		z-index: 2;
 		top: 0;
-		padding: 0 min(3vw, 70px);
-		transition: 0.4s;
+		padding: 0 min(6vw, 140px);
 	}
 
 	.top_menu_bar {
@@ -150,7 +145,7 @@
 		align-items: center;
 		justify-content: space-between;
 		color: white;
-		padding: 0 min(3vw, 70px);
+		padding: 0 min(6vw, 140px);
 	}
 	.top_menu_bar_social {
 		display: flex;
@@ -189,7 +184,7 @@
 		width: 100%;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: space-around;
 		position: sticky;
 	}
 
@@ -215,6 +210,7 @@
 		height: 58%;
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
 		box-shadow: none !important;
 		-webkit-box-shadow: none !important;
 	}
@@ -244,7 +240,7 @@
 
 	.nav_li_campus a {
 		color: white;
-		padding: 0 0 0 70px;
+		padding: 0 0 0 140px;
 	}
 
 	#dropdown1 a {
@@ -252,7 +248,7 @@
 	}
 
 	nav .dropdown-content {
-		min-height: 290px;
+		min-height: 340px;
 		min-width: max-content;
 		overflow-y: visible;
 		box-shadow: 0 2px 2px 0 #533ca8, 0 3px 1px -2px #533ca8, 0 1px 5px 0 #533ca8;
@@ -284,14 +280,14 @@
 		width: 100%;
 		position: relative;
 		top: -120px;
-		padding-top: 180px;
 		background-image: url("../images/landing_background.jpg");
 		background-repeat: no-repeat;
 		background-position: top -38px left;
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		align-items: flex-start;
 		color: #401177;
+		padding: 180px min(6vw, 140px) 0 min(6vw, 140px);
 	}
 
 	.landing_section_left {
@@ -352,7 +348,7 @@
 		background-color: transparent;
 		position: relative;
 		top: -310px;
-		padding: 0 min(3vw, 70px);
+		padding: 0 min(6vw, 140px);
 	}
 
 	.method_section_s_right_element {
@@ -372,7 +368,7 @@
 	}
 
 	.method_section ul {
-		width: 40%;
+		width: 50%;
 		padding-left: min(3vw, 150px);
 	}
 
@@ -388,7 +384,7 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-between;
 		height: 300px;
 	}
 	.method_section_content img {
@@ -408,7 +404,7 @@
 		justify-content: space-evenly;
 		background-color: #401177;
 		color: white;
-		padding: 0 min(3vw, 70px);
+		padding: 0 min(6vw, 140px);
 	}
 
 	.model_section h2 {
@@ -419,7 +415,7 @@
 		width: 100%;
 		display: flex;
 		align-items: center;
-		justify-content: space-around;
+		justify-content: space-between;
 		border-radius: 25px;
 	}
 
@@ -503,7 +499,7 @@
 		background-repeat: no-repeat;
 		background-position: bottom;
 		background-size: contain;
-		padding: 0 min(3vw, 70px);
+		padding: 0 min(6vw, 140px);
 	}
 
 	.video_section h2 {
@@ -514,7 +510,7 @@
 	.video_section_content {
 		display: flex;
 		align-items: flex-start;
-		justify-content: space-around;
+		justify-content: space-between;
 		width: 100%;
 		min-height: 320px;
 	}
@@ -576,7 +572,7 @@
 
 		background-position: left bottom;
 		color: white;
-		padding: 0 min(3vw, 70px);
+		padding: 0 min(6vw, 140px);
 		overflow-x: hidden;
 	}
 
@@ -680,13 +676,13 @@
 		justify-content: space-evenly;
 		background-color: #401177;
 		color: white;
-		padding: 0 min(3vw, 70px);
+		padding: 0 min(6vw, 140px);
 	}
 
 	.challenges_container {
 		display: flex;
 		flex-flow: row wrap;
-		justify-content: space-around;
+		justify-content: space-between;
 		width: 100%;
 	}
 
@@ -811,7 +807,7 @@
 		background-position: center;
 		background-size: 1920px;
 		background-color: transparent;
-		padding: 0 min(3vw, 70px);
+		padding: 0 min(6vw, 140px);
 	}
 
 	.reviews_container {
@@ -896,14 +892,14 @@
 		justify-content: space-evenly;
 		background-color: #533ca8;
 		color: white;
-		padding: 0 min(3vw, 70px);
+		padding: 0 min(6vw, 140px);
 	}
 
 	.project_card_container {
 		display: flex;
 		flex-flow: row wrap;
 		align-items: center;
-		justify-content: space-around;
+		justify-content: space-between;
 		width: 100%;
 	}
 
@@ -974,7 +970,7 @@
 		align-items: center;
 		justify-content: space-evenly;
 		color: #401177;
-		padding: 0 min(3vw, 70px);
+		padding: 0 min(6vw, 140px);
 	}
 
 	.carousel-item img {
@@ -987,28 +983,49 @@
 	.handicap_section {
 		position: relative;
 		top: -450px;
-		height: 700px;
+		height: 650px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: space-evenly;
+		justify-content: flex-start;
 		color: white;
 		background-color: #401177;
-		padding: 0 min(3vw, 70px);
+		padding: 15px min(6vw, 140px);
+	}
+
+	@media screen and (max-width: 1650px) {
+		.handicap_section {
+			position: relative;
+			top: -450px;
+			height: 750px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-start;
+			color: white;
+			background-color: #401177;
+			padding: 15px min(6vw, 140px);
+		}
 	}
 
 	.handicap_container {
 		display: flex;
 		align-items: center;
-		justify-content: space-around;
+		justify-content: space-between;
+		margin: 30px 0;
 	}
 
 	.handicap_container_left {
 		width: 66%;
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: center;
 		justify-content: center;
+		background-color: white;
+		color: #401177;
+		border-radius: 30px;
+		padding: 30px 15px;
+		text-align: center;
 	}
 
 	.handicap_container_right {
@@ -1025,9 +1042,9 @@
 		max-height: 400px;
 	}
 
-	.contact_button {
+	.handicap_button {
 		align-self: center;
-		margin: 30px;
+		margin-top: 30px;
 	}
 
 	/*footer*/
@@ -1051,9 +1068,9 @@
 	.footer_container {
 		display: flex;
 		align-items: center;
-		justify-content: space-around;
+		justify-content: space-between;
 		width: 100%;
-		padding: 100px 70px 0 70px;
+		padding: 100px min(6vw, 140px) 0 min(6vw, 140px);
 	}
 
 	.footer_container_left,
@@ -1105,14 +1122,14 @@
 
 	.footer_container_bottom {
 		text-align: center;
-		padding: 0 min(3vw, 70px);
+		padding: 0 min(6vw, 140px);
 	}
 
 	.copyright {
 		background-color: #1a072f;
 		width: 100%;
 		height: 70px;
-		padding: 0 min(3vw, 70px);
+		padding: 0 min(6vw, 140px);
 		display: flex;
 		align-items: center;
 		justify-content: center;
