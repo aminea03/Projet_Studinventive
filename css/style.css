@@ -971,7 +971,7 @@
 	.handicap_section {
 		position: relative;
 		top: -450px;
-		height: 600px;
+		height: 700px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -1013,24 +1013,93 @@
 		align-self: center;
 		margin: 30px;
 	}
-}
 
-/*footer*/
-.footer_container_left {
-	width: 100%;
-	background-color: black;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	color: white;
-}
-.footer_social {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 168px;
-}
+	/*footer*/
 
-.footer_social img {
-	height: 16px;
+	footer {
+		position: relative;
+		top: -550px;
+		height: 550px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		background-color: transparent;
+		background-image: url("../images/footer_background.svg");
+		background-repeat: no-repeat;
+		background-size: 1920px;
+		background-position: left top;
+		color: white;
+	}
+
+	.footer_container {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		width: 100%;
+
+		padding: 100px 70px 0 70px;
+	}
+
+	.footer_container_left,
+	.footer_container_middle,
+	.footer_container_right {
+		height: 200px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+
+	.footer_container li,
+	.footer_container_left div,
+	.footer_container_left div a,
+	.footer_container_left div p {
+		padding-bottom: 15px;
+	}
+
+	footer a {
+		color: white;
+	}
+
+	.footer_social {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 168px;
+	}
+
+	.footer_social img {
+		height: 16px;
+	}
+
+	.footer_logo_studinventive {
+		width: 230px;
+		padding-top: 3px;
+	}
+	.footer_logo_studinventive,
+	footer h3 {
+		margin-bottom: 30px;
+	}
+
+	.footer_white_line {
+		content: "";
+		height: 100%;
+		border: thin solid white;
+	}
+
+	.footer_container_bottom {
+		text-align: center;
+		padding: 0 70px;
+	}
+
+	.copyright {
+		background-color: #fb9505;
+		width: 100%;
+		height: 70px;
+		padding: 0 70px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 }
