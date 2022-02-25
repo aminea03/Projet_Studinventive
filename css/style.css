@@ -129,7 +129,7 @@
 		background-repeat: no-repeat;
 		background-size: 1920px;
 		background-position: right top;
-		position: relative;
+		position: sticky;
 		z-index: 2;
 		top: 0;
 		padding: 0 min(3vw, 70px);
@@ -281,11 +281,11 @@
 		padding-top: 180px;
 		background-image: url("../images/landing_background.jpg");
 		background-repeat: no-repeat;
-		background-position: top left;
-		background-attachment: fixed;
+		background-position: top -38px left;
 		display: flex;
 		justify-content: space-evenly;
 		align-items: flex-start;
+		color: #401177;
 	}
 
 	.landing_section_left {
@@ -298,6 +298,7 @@
 		font-family: "MontserratMedium", sans-serif;
 		font-size: 2rem;
 		margin: 0 0 20px 0;
+		letter-spacing: 9px;
 	}
 
 	.landing_section_left h2 {
@@ -345,7 +346,7 @@
 		background-color: transparent;
 		position: relative;
 		top: -310px;
-		padding: 0 70px;
+		padding: 0 min(3vw, 70px);
 	}
 
 	.method_section_s_right_element {
@@ -401,7 +402,7 @@
 		justify-content: space-evenly;
 		background-color: #401177;
 		color: white;
-		padding: 0 70px;
+		padding: 0 min(3vw, 70px);
 	}
 
 	.model_section h2 {
@@ -496,7 +497,7 @@
 		background-repeat: no-repeat;
 		background-position: bottom;
 		background-size: contain;
-		padding: 0 70px;
+		padding: 0 min(3vw, 70px);
 	}
 
 	.video_section h2 {
@@ -569,7 +570,7 @@
 
 		background-position: left bottom;
 		color: white;
-		padding: 0 70px;
+		padding: 0 min(3vw, 70px);
 		overflow-x: hidden;
 	}
 
@@ -621,6 +622,8 @@
 		display: flex;
 		padding-bottom: 5px;
 		color: white;
+		font-family: "MontserratBold", sans-serif;
+		font-size: 1.2rem;
 	}
 
 	.training_menu li a span {
@@ -631,17 +634,17 @@
 
 	#training_menu_autres {
 		top: -40px;
-		left: 430px;
+		left: 405px;
 	}
 
-	#training_menu_challenges {
+	#training_menu_bachelor {
 		top: 60px;
-		left: 147px;
+		left: 143px;
 	}
 
 	#training_menu_magistere {
 		top: 255px;
-		left: 243px;
+		left: 222px;
 	}
 
 	#training_menu_cpf {
@@ -649,7 +652,7 @@
 		left: 870px;
 	}
 
-	#training_menu_bachelor {
+	#training_menu_challenges {
 		top: 12px;
 		left: 785px;
 	}
@@ -671,7 +674,7 @@
 		justify-content: space-evenly;
 		background-color: #401177;
 		color: white;
-		padding: 0 70px;
+		padding: 0 min(3vw, 70px);
 	}
 
 	.challenges_container {
@@ -802,7 +805,7 @@
 		background-position: center;
 		background-size: 1920px;
 		background-color: transparent;
-		padding: 0 70px;
+		padding: 0 min(3vw, 70px);
 	}
 
 	.reviews_container {
@@ -887,7 +890,7 @@
 		justify-content: space-evenly;
 		background-color: #533ca8;
 		color: white;
-		padding: 0 70px;
+		padding: 0 min(3vw, 70px);
 	}
 
 	.project_card_container {
@@ -965,7 +968,7 @@
 		align-items: center;
 		justify-content: space-evenly;
 		color: #401177;
-		padding: 0 70px;
+		padding: 0 min(3vw, 70px);
 	}
 
 	.carousel-item img {
@@ -985,7 +988,7 @@
 		justify-content: space-evenly;
 		color: white;
 		background-color: #401177;
-		padding: 0 70px;
+		padding: 0 min(3vw, 70px);
 	}
 
 	.handicap_container {
@@ -1097,14 +1100,14 @@
 
 	.footer_container_bottom {
 		text-align: center;
-		padding: 0 70px;
+		padding: 0 min(3vw, 70px);
 	}
 
 	.copyright {
-		background-color: #fb9505;
+		background-color: #1a072f;
 		width: 100%;
 		height: 70px;
-		padding: 0 70px;
+		padding: 0 min(3vw, 70px);
 		display: flex;
 		align-items: center;
 		justify-content: center;
