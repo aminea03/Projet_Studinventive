@@ -10,21 +10,3 @@ document.addEventListener("DOMContentLoaded", function () {
 		},
 	});
 });
-
-/* makes header sticky on upscroll only */
-let lastscrollvalue;
-window.addEventListener("scroll", function () {
-	var a = document.querySelector("html");
-	if (lastscrollvalue == undefined) {
-		lastscrollvalue = a.scrollTop;
-		// sets lastscrollvalue
-	} else if (a.scrollTop > lastscrollvalue) {
-		// downscroll rule
-		lastscrollvalue = a.scrollTop;
-		document.querySelector("header").style.position = "";
-	} else if (a.scrollTop < lastscrollvalue) {
-		// upscroll rule
-		lastscrollvalue = a.scrollTop;
-		document.querySelector("header").style.position = "sticky";
-	}
-});
