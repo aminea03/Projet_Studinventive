@@ -1,3 +1,5 @@
+<?php ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -9,8 +11,10 @@
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/logo_rocket.svg" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="js/materialize.js" defer></script>
     <script src="js/header.js" defer></script>
+    <script src="js/catalog_form.js" defer></script>
     <script src="js/carousel.js" defer></script>
     <title>Studinventive : la formation révinventée</title>
 </head>
@@ -18,14 +22,10 @@
 <body>
     <div class="top_menu_bar">
         <div class="top_menu_bar_social">
-            <a href="https://www.facebook.com/studinventive" target="_blank"><img src="images/facebook_icon.svg"
-                    alt="Icone Facebook"></a>
-            <a href="https://twitter.com/studinventive" target="_blank"><img src="images/twitter_icon.svg"
-                    alt="Icone twitter"></a>
-            <a href="https://www.linkedin.com/company/studinventive" target="_blank"><img src="images/linkedin_icon.svg"
-                    alt="Icone LinkedIn"></a>
-            <a href="https://www.instagram.com/studinventive/" target="_blank"><img src="images/instagram_icon.svg"
-                    alt="Icone Instagram"></a>
+            <a href="https://www.facebook.com/studinventive" target="_blank"><img src="images/facebook_icon.svg" alt="Icone Facebook"></a>
+            <a href="https://twitter.com/studinventive" target="_blank"><img src="images/twitter_icon.svg" alt="Icone twitter"></a>
+            <a href="https://www.linkedin.com/company/studinventive" target="_blank"><img src="images/linkedin_icon.svg" alt="Icone LinkedIn"></a>
+            <a href="https://www.instagram.com/studinventive/" target="_blank"><img src="images/instagram_icon.svg" alt="Icone Instagram"></a>
         </div>
         <ul class="top_menu_bar_links">
             <li><a href=""><img src="images/account_icon.svg" alt="Icone compte">Inscription</a></li>
@@ -34,10 +34,8 @@
     </div>
     <header>
         <div class="nav_container">
-            <a href="/index.html"><img class="nav_logo_studinventive" src="images/logo_studinventive.svg"
-                    alt="Logo Studinventive"></a>
-            <a href="/index.html"><img class="nav_logo_rocket" src="images/logo_rocket.svg"
-                    alt="Logo Studinventive rocket"></a>
+            <a href="/index.html"><img class="nav_logo_studinventive" src="images/logo_studinventive.svg" alt="Logo Studinventive"></a>
+            <a href="/index.html"><img class="nav_logo_rocket" src="images/logo_rocket.svg" alt="Logo Studinventive rocket"></a>
             <!-- ul dropdown1 = liste qui sert au dropdown "Formation" du nav -->
             <ul id="dropdown1" class="dropdown-content">
                 <li><a href="#!">Nos challenges</a></li>
@@ -100,7 +98,6 @@
                 </ul>
             </div>
             <a href="" class="waves-effect waves-light btn">En savoir plus</a>
-
         </section>
         <section class="model_section">
             <div class="section_title">
@@ -142,10 +139,9 @@
             </div>
             <div class="video_section_content">
                 <div class="video_section_content_left">
-                    <img src="images/planning_image.svg"
-                        alt="illustration d'une femme démarrant une formation en ligne">
-                    <a href="" class="waves-effect waves-light btn catalog_btn">Recevoir le catalogue de
-                        formation</a>
+                    <img src="images/planning_image.svg" alt="illustration d'une femme démarrant une formation en ligne">
+                    <a href="#!" onclick="catalog_form_open()" class="waves-effect waves-light btn catalog_btn">Recevoir le catalogue de
+                        formations</a>
                 </div>
                 <div class="video_frame">
                     <video class="presentation_video" width="" controls poster="images/poster_presentation_video.png">
@@ -157,8 +153,44 @@
                 </div>
                 <div class="video_section_content_right">
                     <a href="" class="waves-effect waves-light btn-large">Je m'inscris</a>
-                    <img src="images/rounded_arrow_image.svg"
-                        alt="illustration d'une flèche jaune arrondie qui se dirige vers le bouton inscription">
+                    <img src="images/rounded_arrow_image.svg" alt="illustration d'une flèche jaune arrondie qui se dirige vers le bouton inscription">
+                </div>
+            </div>
+            <div class="catalog_form_container">
+                <div class="catalog_form_background" onclick="catalog_form_close()">>
+                </div>
+                <div class=" catalog_form">
+                    <h3>Recevez notre catalogue de formations</h3>
+                    <div class="row">
+                        <form class="col s12" id="catalog_form" method="POST">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="first_name" type="text" class="validate">
+                                    <label for="first_name">Prénom</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="last_name" type="text" class="validate">
+                                    <label for="last_name">Nom</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="email" type="email" class="validate">
+                                    <label for="email">E-mail</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="tel" type="tel" class="validate">
+                                    <label for="tel">Téléphone</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Reste à paramétrer l'action submit, et y ajouter une fonction qui fermera le formulaire après l'envoi (document.querySelector(".catalog_form_container").style.dysplay="none";) -->
+                    <button class="btn waves-effect waves-light catalog_submit_btn" type="submit" name="catalog_form">Envoyer
+                        <i class="material-icons right">send</i>
+                    </button>
                 </div>
             </div>
         </section>
@@ -362,8 +394,7 @@
                     <!--Ce bouton est un lien vers un numéro de téléphone sur le site initial qu'il faudra modifier-->
                 </div>
                 <div class="handicap_container_right">
-                    <img class="handicap_section_img" src="images/handicap.webp"
-                        alt="illustration d'un étudiant en situation de handicap">
+                    <img class="handicap_section_img" src="images/handicap.webp" alt="illustration d'un étudiant en situation de handicap">
                 </div>
             </div>
         </section>
@@ -371,21 +402,16 @@
     <footer>
         <div class="footer_container">
             <div class="footer_container_left">
-                <img class="footer_logo_studinventive" src="images/logo_studinventive_blanc.svg"
-                    alt="Logo Studinventive en noir et blanc">
+                <img class="footer_logo_studinventive" src="images/logo_studinventive_blanc.svg" alt="Logo Studinventive en noir et blanc">
                 <div class="footer_contact">
                     <p>Adresse : 15 rue des Halles 75001 Paris</p>
                     <p>Email : contact@studinventive.com</p>
                 </div>
                 <div class="footer_social">
-                    <a href="https://www.facebook.com/studinventive" target="_blank"><img src="images/facebook_icon.svg"
-                            alt="Icone Facebook"></a>
-                    <a href="https://twitter.com/studinventive" target="_blank"><img src="images/twitter_icon.svg"
-                            alt="Icone twitter"></a>
-                    <a href="https://www.linkedin.com/company/studinventive" target="_blank"><img
-                            src="images/linkedin_icon.svg" alt="Icone LinkedIn"></a>
-                    <a href="https://www.instagram.com/studinventive/" target="_blank"><img
-                            src="images/instagram_icon.svg" alt="Icone Instagram"></a>
+                    <a href="https://www.facebook.com/studinventive" target="_blank"><img src="images/facebook_icon.svg" alt="Icone Facebook"></a>
+                    <a href="https://twitter.com/studinventive" target="_blank"><img src="images/twitter_icon.svg" alt="Icone twitter"></a>
+                    <a href="https://www.linkedin.com/company/studinventive" target="_blank"><img src="images/linkedin_icon.svg" alt="Icone LinkedIn"></a>
+                    <a href="https://www.instagram.com/studinventive/" target="_blank"><img src="images/instagram_icon.svg" alt="Icone Instagram"></a>
                 </div>
             </div>
             <div class="footer_white_line"></div>

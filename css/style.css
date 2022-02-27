@@ -542,6 +542,67 @@
 		background-color: #533ca8;
 	}
 
+	/* Catalog form */
+	.catalog_form_container {
+		display: none;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		z-index: 1;
+	}
+
+	.catalog_form_background {
+		height: 100%;
+		width: 100%;
+		background-color: rgba(255, 255, 255, 0.8);
+	}
+
+	.catalog_form {
+		height: min(100vh, 100%);
+		width: max-content;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		padding: 70px;
+		background-color: white;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	.input-field label,
+	.input-field .prefix.active,
+	.input-field {
+		color: #401177 !important;
+	}
+
+	.input-field input:focus + label {
+		color: #fb9505 !important;
+	}
+
+	.input-field input:focus {
+		border-bottom: 1px solid #fb9505 !important;
+		box-shadow: 0 1px 0 0 #fb9505 !important;
+	}
+
+	.input-field input.valid {
+		border-bottom: 1px solid #533ca8 !important;
+		box-shadow: 0 1px 0 0 #533ca8 !important;
+	}
+
+	.catalog_submit_btn {
+		background-color: #fb9505 !important ;
+	}
+
 	/* Traning section */
 
 	.training_section {
