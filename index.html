@@ -145,8 +145,8 @@
                 <div class="video_section_content_left">
                     <img src="images/planning_image.svg"
                         alt="illustration d'une femme démarrant une formation en ligne">
-                    <a href="#!" onclick="catalog_form_open()"
-                        class="waves-effect waves-light btn-large catalog_btn">Recevoir
+                    <a href="#modal_catalog_form"
+                        class="waves-effect waves-light btn-large catalog_btn modal-trigger">Recevoir
                         le catalogue de
                         formations</a>
                 </div>
@@ -164,42 +164,45 @@
                         alt="illustration d'une flèche jaune arrondie qui se dirige vers le bouton inscription">
                 </div>
             </div>
-            <div class="catalog_form_container">
-                <div class="catalog_form_background" onclick="catalog_form_close()">>
-                </div>
-                <div class=" catalog_form">
-                    <h3>Recevez notre catalogue de formations</h3>
-                    <div class="row">
-                        <form class="col s12" id="catalog_form" method="POST">
-                            <div class="row">
-                                <div class="input-field col s6">
-                                    <input id="first_name" type="text" class="validate">
-                                    <label for="first_name">Prénom</label>
+
+
+            <!-- Modal Structure -->
+            <div id="modal_catalog_form" class="modal">
+                <div class="modal-content">
+                    <div class=" catalog_form">
+                        <h3>Recevez notre catalogue de formations</h3>
+                        <div class="row">
+                            <form class="col s12" id="catalog_form" method="POST">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input id="first_name" type="text" class="validate">
+                                        <label for="first_name">Prénom</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input id="last_name" type="text" class="validate">
+                                        <label for="last_name">Nom</label>
+                                    </div>
                                 </div>
-                                <div class="input-field col s6">
-                                    <input id="last_name" type="text" class="validate">
-                                    <label for="last_name">Nom</label>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="email" type="email" class="validate">
+                                        <label for="email">E-mail</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input id="email" type="email" class="validate">
-                                    <label for="email">E-mail</label>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="tel" type="tel" class="validate">
+                                        <label for="tel">Téléphone</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input id="tel" type="tel" class="validate">
-                                    <label for="tel">Téléphone</label>
-                                </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
+                        <!-- Reste à paramétrer l'action submit, et y ajouter une fonction qui fermera le formulaire après l'envoi (document.querySelector(".catalog_form_container").style.dysplay="none";) -->
+                        <button class="btn-large waves-effect waves-light catalog_submit_btn" type="submit"
+                            name="catalog_form">Envoyer
+                            <i class="material-icons right">send</i>
+                        </button>
                     </div>
-                    <!-- Reste à paramétrer l'action submit, et y ajouter une fonction qui fermera le formulaire après l'envoi (document.querySelector(".catalog_form_container").style.dysplay="none";) -->
-                    <button class="btn-large waves-effect waves-light catalog_submit_btn" type="submit"
-                        name="catalog_form">Envoyer
-                        <i class="material-icons right">send</i>
-                    </button>
                 </div>
             </div>
         </section>
