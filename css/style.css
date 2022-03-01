@@ -76,13 +76,13 @@
 	.btn,
 	.btn-large,
 	.btn-small {
-		background-color: #fb9505;
+		background-color: #fb9505 !important;
 	}
 
 	.btn:hover,
 	.btn-large:hover,
 	.btn-small:hover {
-		background-color: #f5b848;
+		background-color: #f5b848 !important;
 	}
 
 	.section_title {
@@ -95,6 +95,10 @@
 	.section_title p {
 		width: 75%;
 		font-size: 1.5rem;
+	}
+
+	.purple_btn {
+		background-color: #401177;
 	}
 
 	/* Header */
@@ -167,7 +171,7 @@
 		height: 25px;
 	}
 
-	@media screen and (max-width: 1239px) {
+	@media screen and (max-width: 1349px) {
 		.nav_logo_studinventive {
 			height: 0;
 		}
@@ -208,7 +212,7 @@
 	}
 
 	nav ul a {
-		padding: 0 5px 0;
+		padding: 0 15px 0;
 		color: black;
 		font-size: 14px;
 	}
@@ -226,7 +230,8 @@
 		min-height: 340px;
 		min-width: max-content;
 		overflow-y: visible;
-		box-shadow: 0 2px 2px 0 #533ca8, 0 3px 1px -2px #533ca8, 0 1px 5px 0 #533ca8;
+		box-shadow: 0 1px 1px 0 #533ca8, 0 1px 1px -2px #533ca8, 0 1px 5px 0 #533ca8;
+		border-radius: 10px;
 	}
 
 	nav .dropdown-content li {
@@ -396,8 +401,8 @@
 
 	.model_section_card {
 		position: relative;
-		width: 320px;
-		min-width: 320px;
+		width: 30%;
+		min-width: 290px;
 		height: 296px;
 		display: flex;
 		flex-direction: column;
@@ -435,7 +440,7 @@
 		content: "";
 		position: absolute;
 		top: 3px;
-		right: 61px;
+		left: 220px;
 	}
 
 	.card_circle1 {
@@ -736,7 +741,8 @@
 
 	.challenge {
 		position: relative;
-		width: 400px;
+		flex-basis: 30%;
+		min-width: 350px;
 		height: 300px;
 		max-height: 300px;
 		display: flex;
@@ -745,7 +751,7 @@
 		justify-content: space-between;
 		background-color: white;
 		border-radius: 30px;
-		margin: 30px 2%;
+		margin: 30px 0;
 	}
 
 	.challenge_header {
@@ -834,7 +840,7 @@
 		background-color: #fb9505;
 	}
 
-	.challenge_button {
+	.challenge_btn {
 		margin: 30px 0 50px 0;
 	}
 
