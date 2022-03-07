@@ -101,6 +101,10 @@
 		background-color: #401177 !important;
 	}
 
+	.purple_btn:hover {
+		background-color: #533ca8 !important;
+	}
+
 	/* Header */
 
 	header {
