@@ -412,7 +412,7 @@
 		border-top-right-radius: 30px;
 		border-bottom-right-radius: 30px;
 		box-sizing: border-box;
-		border: thick solid #533ca8;
+		outline: thick solid #533ca8;
 	}
 
 	.model_section_img {
@@ -429,6 +429,7 @@
 		background-color: #533ca8;
 		border-bottom-right-radius: 20px;
 		border: thin solid #533ca8;
+		box-sizing: border-box;
 	}
 
 	.model_section_card .card_circle1,
