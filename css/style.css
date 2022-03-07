@@ -929,7 +929,7 @@
 		top: -450px;
 		height: 900px;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		align-items: center;
 		justify-content: space-evenly;
 		background-color: #533ca8;
@@ -937,12 +937,19 @@
 		padding: 0 min(6vw, 140px);
 	}
 
-	.project_card_container {
+	.project_card_container1 {
 		display: flex;
-		flex-flow: row wrap;
+		flex-flow: column;
 		align-items: center;
 		justify-content: space-between;
-		width: 100%;
+	}
+
+	.project_card_container2 {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 100px;
 	}
 
 	.project_section_card {
@@ -959,7 +966,7 @@
 		border-bottom-right-radius: 30px;
 		box-sizing: border-box;
 		border: thick solid #533ca8;
-		margin: 30px;
+		margin: 20px;
 	}
 
 	.project_card_header {
