@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/materialize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/desktop_style.css">
+    <link rel="stylesheet" href="css/mobile_style.css">
     <link rel="icon" href="images/logo_rocket.svg" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="js/materialize.js" defer></script>
@@ -35,6 +36,48 @@
         </ul>
     </div>
     <header>
+        <!-- mobile sidenav -->
+        <div class="nav_container_mobile">
+            <img class="nav_container_mobile_logo" src="images/logo_studinventive.svg" alt="Logo studinventive">
+            <ul id="slide-out" class="sidenav">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#!"><i class="material-icons">mode_edit</i>Inscription</a></li>
+                <li><a href="#!"><i class="material-icons">forward</i>Connexion</a></li>
+                <li>
+                    <div class="divider"></div>
+                </li>
+                <li><a class="subheader">Menu</a></li>
+                <li><a href="" class="current_page">Accueil</a></li>
+                <li><a href="">Notre méthode</a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Nos formations</a></li>
+                <li><a href="">Partenariat</a></li>
+                <li><a href="">Studshop</a></li>
+                <li class="nav_li_campus"><a>Accès campus</a></li>
+                <li>
+                    <div class="divider"></div>
+                </li>
+                <li><a class="subheader">Suivez-nous</a></li>
+                <li><a href="https://www.facebook.com/studinventive" target="_blank"><img
+                            class="nav_container_mobile_social" src="images/facebook_icon.svg" alt="Icone Facebook"></a>
+                </li>
+                <li> <a href="https://twitter.com/studinventive" target="_blank"><img
+                            class="nav_container_mobile_social" src="images/twitter_icon.svg" alt="Icone twitter"></a>
+                </li>
+                <li><a href="https://www.linkedin.com/company/studinventive" target="_blank"><img
+                            class="nav_container_mobile_social" src="images/linkedin_icon.svg" alt="Icone LinkedIn"></a>
+                </li>
+                <li><a href="https://www.instagram.com/studinventive/" target="_blank"><img
+                            class="nav_container_mobile_social" src="images/instagram_icon.svg"
+                            alt="Icone Instagram"></a></li>
+            </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+        <!-- desktop nav -->
         <div class="nav_container">
             <a href="/index.html"><img class="nav_logo_studinventive" src="images/logo_studinventive.svg"
                     alt="Logo Studinventive"></a>

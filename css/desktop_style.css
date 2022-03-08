@@ -161,6 +161,9 @@
 	.top_menu_bar_links img {
 		height: 16px;
 	}
+	.nav_container_mobile {
+		display: none;
+	}
 
 	.nav_container {
 		height: 58%;
