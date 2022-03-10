@@ -488,7 +488,6 @@
 	.training_section {
 		position: relative;
 		top: -167px;
-		height: 900px;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -595,7 +594,7 @@
 
 	.challenge_section {
 		position: relative;
-		top: -310px;
+		top: -167px;
 		min-height: 1170px;
 		width: 100%;
 		display: flex;
@@ -724,8 +723,7 @@
 	.reviews_section {
 		position: relative;
 		z-index: 1;
-		top: -380px;
-		min-height: 900px;
+		top: -167px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -814,8 +812,7 @@
 
 	.project_section {
 		position: relative;
-		top: -450px;
-		height: 900px;
+		top: -167px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -900,8 +897,7 @@
 
 	.more_section {
 		position: relative;
-		top: -450px;
-		height: 600px;
+		top: -167px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -919,8 +915,7 @@
 
 	.handicap_section {
 		position: relative;
-		top: -450px;
-		height: 650px;
+		top: -167px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -979,16 +974,15 @@
 
 	footer {
 		position: absolute;
-		bottom: 0;
-		height: 550px;
+		bottom: -550px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
 		background-color: transparent;
-		background-image: url("../images/footer_background.svg");
+		background-image: url("../images/footer_background_mobile.svg");
 		background-repeat: no-repeat;
-		background-size: 1920px;
+		background-size: 1023px;
 		background-position: left top;
 		color: white;
 	}
