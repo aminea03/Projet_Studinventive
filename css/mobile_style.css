@@ -508,10 +508,9 @@
 		background-color: #533ca8;
 		background-image: url("../images/training_background.svg");
 		background-repeat: no-repeat;
-
 		background-position: left bottom;
 		color: white;
-		padding: 0 3vw;
+		padding: 3vw;
 		overflow-x: hidden;
 	}
 
@@ -520,8 +519,8 @@
 		background-image: url("../images/magnifying_glass.svg");
 		background-repeat: no-repeat;
 		background-size: contain;
-		width: 300px;
-		height: 500px;
+		width: 150px;
+		height: 250px;
 		position: absolute;
 		top: 170px;
 		right: -50px;
@@ -531,21 +530,22 @@
 		position: relative;
 		background-image: url("../images/training_menu.svg");
 		background-repeat: no-repeat;
-		background-size: 500px;
+		background-size: 400px;
 		background-position: center;
 		height: 300px;
 		min-width: 1200px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		margin: 80px 0 110px 0;
 	}
 
 	.training_menu_center {
 		text-transform: uppercase;
 		text-align: center;
-		width: 130px;
-		max-width: 130px;
-		height: 100px;
+		width: 100px;
+		max-width: 100px;
+		height: 70px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -571,35 +571,82 @@
 		display: flex;
 		content: "";
 		width: 25px;
+		order: 2;
 	}
 
 	#training_menu_autres {
-		top: -40px;
-		left: 405px;
+		top: 0px;
+		left: 438px;
 	}
 
 	#training_menu_bachelor {
-		top: 60px;
-		left: 143px;
+		top: 80px;
+		left: 240px;
 	}
 
 	#training_menu_magistere {
-		top: 255px;
-		left: 222px;
+		top: 237px;
+		left: 300px;
 	}
 
 	#training_menu_cpf {
-		top: 208px;
-		left: 870px;
+		top: 195px;
+		left: 805px;
 	}
 
 	#training_menu_challenges {
-		top: 12px;
-		left: 785px;
+		top: 35px;
+		left: 735px;
 	}
 	#training_menu_titrepro {
-		top: 310px;
+		top: 275px;
 		left: 600px;
+	}
+
+	@media screen and (max-width: 760px) {
+		.training_menu {
+			background-image: url("../images/training_menu_mobile.svg");
+			background-size: 300px;
+			background-position: top;
+			min-height: 650px;
+			margin: 15px 0;
+		}
+
+		.training_menu_center {
+			align-self: flex-start;
+			background-image: url("../images/logo_s_transparent.svg");
+			position: relative;
+			top: 110px;
+		}
+
+		#training_menu_autres {
+			top: 598px;
+			left: 495px;
+		}
+
+		#training_menu_bachelor {
+			top: 376px;
+			left: 495px;
+		}
+
+		#training_menu_magistere {
+			top: 431px;
+			left: 495px;
+		}
+
+		#training_menu_cpf {
+			top: 542px;
+			left: 495px;
+		}
+
+		#training_menu_challenges {
+			top: 318px;
+			left: 495px;
+		}
+		#training_menu_titrepro {
+			top: 485px;
+			left: 495px;
+		}
 	}
 
 	/* Challenge section */
