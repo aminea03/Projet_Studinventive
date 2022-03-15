@@ -355,7 +355,7 @@
 	}
 
 	.method_section ul {
-		width: 50%;
+		flex-basis: 70%;
 		padding-left: min(3vw, 150px);
 	}
 
