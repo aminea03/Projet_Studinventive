@@ -1007,7 +1007,7 @@
 		padding: 3vw;
 	}
 
-	.carousel-item img {
+	.more_section .carousel-item img {
 		max-width: 200px;
 		max-height: 200px;
 	}
