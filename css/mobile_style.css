@@ -117,10 +117,10 @@
 
 	.user-view {
 		height: 80px;
-		background-image: url("../images/logo_studinventive.svg");
+		background-image: url("../images/logo_rocket.svg");
 		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: 90%;
+		background-position: right 32px center;
+		background-size: 50px;
 	}
 
 	.sidenav-trigger .material-icons {
