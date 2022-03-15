@@ -903,6 +903,13 @@
 		text-align: center;
 	}
 
+	.reviews_section .carousel .indicators .indicator-item {
+		background-color: #bfb3e9;
+	}
+	.reviews_section .carousel .indicators .indicator-item.active {
+		background-color: #401177;
+	}
+
 	/* Project section */
 
 	.project_section {
@@ -1005,6 +1012,11 @@
 		justify-content: space-evenly;
 		color: #401177;
 		padding: 3vw;
+	}
+
+	.more_section .carousel-item {
+		width: 200px;
+		height: 200px;
 	}
 
 	.more_section .carousel-item img {
