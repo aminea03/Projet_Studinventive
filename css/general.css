@@ -176,6 +176,34 @@ li {
 		url("../fonts/MontserratExtraBold.svg#MontserratExtraBold") format("svg");
 }
 
+.btn,
+.btn-large,
+.btn-small {
+	background-color: #fb9505 !important;
+}
+
+.btn:hover,
+.btn-large:hover,
+.btn-small:hover {
+	background-color: #f5b848 !important;
+}
+
+.purple_btn {
+	background-color: #401177 !important;
+}
+
+.purple_btn:hover {
+	background-color: #533ca8 !important;
+}
+
+.color_orange {
+	color: #fb9505 !important ;
+}
+
+.color_purple {
+	color: #401177 !important;
+}
+
 /*Header desktop*/
 
 @media screen and (min-width: 1024px) {

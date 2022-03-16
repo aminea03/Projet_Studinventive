@@ -30,18 +30,6 @@
 		font-family: "MontserratBold", sans-serif;
 	}
 
-	.btn,
-	.btn-large,
-	.btn-small {
-		background-color: #fb9505 !important;
-	}
-
-	.btn:hover,
-	.btn-large:hover,
-	.btn-small:hover {
-		background-color: #f5b848 !important;
-	}
-
 	.section_title {
 		display: flex;
 		flex-direction: column;
@@ -56,19 +44,11 @@
 		padding-top: 15px;
 	}
 
-	.purple_btn {
-		background-color: #401177 !important;
-	}
-
-	.purple_btn:hover {
-		background-color: #533ca8 !important;
-	}
-
 	/* Landing section */
 
 	.landing_section {
 		width: 100%;
-		height: 600px;
+		height: 520px;
 		position: relative;
 		top: -120px;
 		background-color: #fdbf69;
@@ -76,17 +56,18 @@
 		flex-direction: column;
 		align-items: flex-start;
 		color: white;
-		padding: 180px min(6vw, 140px) 30px min(6vw, 140px);
+		padding: 140px min(6vw, 140px) 30px min(6vw, 140px);
 	}
 
 	.landing_section h1,
 	p,
 	button {
 		padding: 30px 0;
+		z-index: 1;
 	}
 
 	.landing_section img {
-		max-width: 300px;
+		max-width: 280px;
 		position: absolute;
 		bottom: 0;
 		right: min(6vw, 140px);
@@ -169,5 +150,237 @@
 		background-repeat: no-repeat;
 		background-position: left top 2px;
 		background-size: 15px;
+	}
+
+	/* Offers section */
+
+	.offers_section {
+		position: relative;
+		top: -120px;
+		color: #401177;
+		padding: 50px min(6vw, 140px);
+		background-image: url("../images/entreprises_more_background.svg");
+		background-repeat: no-repeat;
+		background-size: 1920px;
+		background-position: bottom;
+	}
+
+	.offers_section_content {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding-top: 30px;
+		padding-bottom: 160px;
+	}
+
+	.offer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border: thick solid #fb9505;
+		border-radius: 50px;
+		width: 30%;
+	}
+
+	.offer h3 {
+		text-transform: uppercase;
+		height: 100px;
+		width: 100%;
+		border-bottom: thick solid #fb9505;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.5rem;
+	}
+
+	.offer p {
+		font-size: 1.5rem;
+	}
+
+	.offer ul {
+		padding: 0 30px;
+	}
+
+	.offer li {
+		padding-bottom: 15px;
+		color: black;
+		font-size: 0.8rem;
+	}
+
+	.offer a {
+		margin: 30px 0;
+	}
+
+	.offer_yes {
+		padding: 0 0 20px 30px;
+		background-image: url("../images/offer_yes.png");
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: 15px;
+	}
+
+	.offer_no {
+		padding: 0 0 20px 30px;
+		background-image: url("../images/offer_no.png");
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: 15px;
+	}
+
+	/* More section */
+
+	.more_section {
+		position: relative;
+		top: -122px;
+		color: white;
+		background-color: #533ca8;
+		padding: 50px min(6vw, 140px);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.more_section a {
+		margin: 30px;
+		display: flex;
+		align-items: center;
+	}
+
+	.more_section a i {
+		padding-right: 10px;
+	}
+
+	/* Project section */
+
+	.project_section {
+		position: relative;
+		top: -122px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #efefef;
+		color: #401177;
+		padding: 50px min(6vw, 140px);
+	}
+
+	.project_card_container {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.project_card_container > div {
+		display: flex;
+		flex-flow: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.project_section_card {
+		position: relative;
+		width: 320px;
+		min-width: 320px;
+		height: 320px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		background-color: white;
+		border-top-right-radius: 30px;
+		border-bottom-right-radius: 30px;
+		box-shadow: #401177 15px 15px;
+		margin: 20px;
+	}
+
+	.orange_shadow {
+		box-shadow: #fb9505 15px 15px;
+	}
+
+	.project_card_header {
+		width: 270px;
+		min-height: 37px;
+		align-self: flex-start;
+		padding-top: 10px;
+		background-color: #efefef;
+		border-bottom-right-radius: 20px;
+	}
+
+	.project_card_header h3 {
+		font-size: 0.85rem;
+		color: #401177;
+	}
+
+	.project_section_card .card_circle1,
+	.project_section_card .card_circle2,
+	.project_section_card .card_circle3 {
+		min-width: 28px;
+		min-height: 28px;
+		border-radius: 50px;
+		content: "";
+		position: absolute;
+		top: 3px;
+		right: 55px;
+	}
+
+	.card_circle1 {
+		background-color: #401177;
+	}
+
+	.card_circle2 {
+		background-color: #f5b848;
+	}
+
+	.card_circle3 {
+		background-color: #fb9505;
+	}
+
+	.project_section_card p {
+		color: #401177;
+		font-size: 1rem;
+		text-align: center;
+		padding: 0 10px 20px 10px;
+	}
+
+	.project_section_img {
+		width: 130px;
+		margin: 20px 0 10px 0;
+	}
+
+	/* CTA section */
+
+	.cta_section {
+		position: relative;
+		top: -122px;
+		color: white;
+		background-color: #533ca8;
+		padding: 100px min(6vw, 140px);
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.cta_section_content {
+		display: flex;
+		align-items: center;
+		padding-left: 150px;
+	}
+
+	.cta_section_content img {
+		width: 150px;
+		transform: rotate(-90deg);
+		position: relative;
+		right: 0;
+		bottom: -30px;
+	}
+
+	/* Footer */
+
+	footer {
+		position: absolute;
+		bottom: -350px;
+		background-color: #533ca8;
 	}
 }
