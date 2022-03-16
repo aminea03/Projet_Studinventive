@@ -59,3 +59,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /* Categories accordions */
+
+document.addEventListener("DOMContentLoaded", function () {
+	var elems = document.querySelectorAll(".collapsible");
+	var instances = M.Collapsible.init(elems);
+});
