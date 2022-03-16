@@ -48,7 +48,7 @@
 
 	.landing_section {
 		width: 100%;
-		height: 600px;
+		height: 520px;
 		position: relative;
 		top: -120px;
 		background-color: #fdbf69;
@@ -56,17 +56,18 @@
 		flex-direction: column;
 		align-items: flex-start;
 		color: white;
-		padding: 180px min(6vw, 140px) 30px min(6vw, 140px);
+		padding: 140px min(6vw, 140px) 30px min(6vw, 140px);
 	}
 
 	.landing_section h1,
 	p,
 	button {
 		padding: 30px 0;
+		z-index: 1;
 	}
 
 	.landing_section img {
-		max-width: 300px;
+		max-width: 280px;
 		position: absolute;
 		bottom: 0;
 		right: min(6vw, 140px);
