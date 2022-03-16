@@ -33,18 +33,6 @@
 		font-family: "MontserratBold", sans-serif;
 	}
 
-	.btn,
-	.btn-large,
-	.btn-small {
-		background-color: #fb9505 !important;
-	}
-
-	.btn:hover,
-	.btn-large:hover,
-	.btn-small:hover {
-		background-color: #f5b848 !important;
-	}
-
 	.section_title {
 		display: flex;
 		flex-direction: column;
@@ -56,14 +44,6 @@
 		width: 75%;
 		font-size: 1.5rem;
 		padding-top: 15px;
-	}
-
-	.purple_btn {
-		background-color: #401177 !important;
-	}
-
-	.purple_btn:hover {
-		background-color: #533ca8 !important;
 	}
 
 	/* Landing section */
@@ -968,6 +948,12 @@
 	.handicap_button {
 		align-self: center;
 		margin-top: 30px;
+		display: flex;
+		align-items: center;
+	}
+
+	.handicap_button i {
+		padding-right: 10px;
 	}
 
 	/* Footer */
@@ -1012,18 +998,6 @@
 		font-family: "MontserratBold", sans-serif;
 	}
 
-	.btn,
-	.btn-large,
-	.btn-small {
-		background-color: #fb9505 !important;
-	}
-
-	.btn:hover,
-	.btn-large:hover,
-	.btn-small:hover {
-		background-color: #f5b848 !important;
-	}
-
 	.section_title {
 		display: flex;
 		flex-direction: column;
@@ -1034,22 +1008,6 @@
 	}
 	.section_title p {
 		font-size: 1.5rem;
-	}
-
-	.purple_btn {
-		background-color: #401177 !important;
-	}
-
-	.purple_btn:hover {
-		background-color: #533ca8 !important;
-	}
-
-	.color_orange {
-		color: #fb9505 !important ;
-	}
-
-	.color_purple {
-		color: #401177 !important;
 	}
 
 	/* Landing section */
@@ -2020,6 +1978,12 @@
 	.handicap_button {
 		align-self: center;
 		margin-top: 30px;
+		display: flex;
+		align-items: center;
+	}
+
+	.handicap_button i {
+		padding-right: 10px;
 	}
 
 	/* Footer */
