@@ -196,6 +196,16 @@ li {
 	background-color: #533ca8 !important;
 }
 
+.white_btn {
+	background-color: white !important;
+	color: #401177;
+}
+
+.white_btn:hover {
+	background-color: #533ca8 !important;
+	color: white;
+}
+
 .color_orange {
 	color: #fb9505 !important ;
 }
