@@ -439,6 +439,14 @@ li {
 		font-size: 36px !important;
 	}
 
+	.sidenav ul .collapsible-header {
+		padding-left: 32px;
+	}
+
+	.sidenav ul .collapsible-body ul {
+		padding-left: 32px;
+	}
+
 	.nav_container {
 		display: none;
 	}
