@@ -22,3 +22,9 @@ if (window.matchMedia("(max-width: 1023px)").matches) {
 		});
 	});
 }
+
+/* Collapsible accordions initializer */
+document.addEventListener("DOMContentLoaded", function () {
+	var elems = document.querySelectorAll(".collapsible");
+	var instances = M.Collapsible.init(elems);
+});

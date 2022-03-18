@@ -416,11 +416,14 @@ li {
 
 	.close_button_nav {
 		max-height: 20px;
-
 		color: #fb9505;
 		background-image: url("../images/close_x.svg");
 		background-repeat: no-repeat;
 		background-size: contain;
+	}
+
+	.close_button_nav:hover {
+		background-color: white !important;
 	}
 
 	.user-view {
@@ -445,6 +448,10 @@ li {
 
 	.sidenav ul .collapsible-body ul {
 		padding-left: 32px;
+	}
+
+	.sidenav ul .collapsible-body ul:hover {
+		background-color: white !important;
 	}
 
 	.nav_container {

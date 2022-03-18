@@ -57,10 +57,3 @@ document.addEventListener("DOMContentLoaded", function () {
 	var elems = document.querySelectorAll(".modal");
 	var instances = M.Modal.init(elems);
 });
-
-/* Categories accordions */
-
-document.addEventListener("DOMContentLoaded", function () {
-	var elems = document.querySelectorAll(".collapsible");
-	var instances = M.Collapsible.init(elems);
-});
