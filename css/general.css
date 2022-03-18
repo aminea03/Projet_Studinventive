@@ -642,3 +642,57 @@ li {
 		text-align: center;
 	}
 }
+
+/* CTA Desktop */
+@media screen and (min-width: 1024px) {
+	.cta_section {
+		color: white;
+		background-color: #533ca8;
+		padding: 100px min(6vw, 140px);
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.cta_section_content {
+		display: flex;
+		align-items: center;
+		padding-left: 150px;
+	}
+
+	.cta_section_content img {
+		width: 150px;
+		transform: rotate(-90deg);
+		position: relative;
+		right: 0;
+		bottom: -30px;
+	}
+}
+
+/* CTA Mobile */
+@media screen and (max-width: 1023px) {
+	.cta_section {
+		color: white;
+		background-color: #533ca8;
+		padding: 30px 3vw 100px 3vw;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.cta_section_content {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.cta_section_content img {
+		width: 150px;
+		position: relative;
+		right: 0;
+		bottom: -30px;
+	}
+}
