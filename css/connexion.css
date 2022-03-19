@@ -1,0 +1,222 @@
+.btn-large {
+	width: max-content;
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1024px) {
+	html {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-family: "MontserratRegular", sans-serif;
+		min-height: 100vh;
+	}
+
+	body {
+		max-width: 1920px;
+		width: 100%;
+		font-size: 16px;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+	}
+
+	p {
+		line-height: 120%;
+		padding: 30px 0;
+	}
+
+	h1 {
+		font-family: "MontserratExtraBold", sans-serif;
+		font-size: 3rem;
+		padding: 30px 0;
+	}
+
+	h2 {
+		font-family: "MontserratExtraBold", sans-serif;
+		font-size: 1.5rem;
+		padding: 15px 0 40px 0;
+	}
+
+	h3 {
+		margin: 0;
+		font-size: 2rem;
+		font-family: "MontserratBold", sans-serif;
+	}
+
+	.section_title {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		text-align: center;
+	}
+	.section_title p,
+	.landing_section p {
+		width: 75%;
+		font-size: 1.5rem;
+		padding-top: 15px 0;
+	}
+
+	.connection_section {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 30px min(6vw, 140px);
+		color: white;
+		width: 100%;
+		height: 600px;
+	}
+
+	.rocket {
+		width: 160px;
+		position: absolute;
+		right: -30px;
+		top: -30px;
+	}
+
+	.register {
+		flex-basis: 40%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		background-color: #533ca8;
+		padding: 60px;
+		border-top-left-radius: 50px;
+		border-bottom-left-radius: 50px;
+	}
+
+	.signin {
+		flex-basis: 60%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		background-color: #fb9505;
+		padding: 60px;
+		border-top-right-radius: 50px;
+		border-bottom-right-radius: 50px;
+	}
+
+	.signin form {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		z-index: 1;
+	}
+
+	label {
+		color: white;
+	}
+
+	.signin label:not(.options label) {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.options label {
+		margin-right: 10px;
+		display: flex;
+		align-items: center;
+	}
+
+	.signin .options {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		font-size: 0.9rem;
+		margin-bottom: 15px;
+	}
+
+	.signin input {
+		min-width: 80%;
+		background-color: white !important;
+		border-radius: 10px !important;
+		margin: 15px 0 !important;
+		color: #533ca8 !important;
+		border-bottom: none !important;
+	}
+
+	.signin input[type="checkbox"] {
+		position: static !important;
+		opacity: 1 !important;
+		margin-right: 10px !important;
+		min-width: max-content;
+	}
+
+	.signin img {
+		width: 280px;
+		padding: 30px 0;
+		z-index: 1;
+	}
+
+	.img1 {
+		position: absolute;
+		width: 380px;
+		bottom: -60px;
+		left: -5%;
+	}
+
+	.img2 {
+		position: absolute;
+		width: 380px;
+		bottom: -60px;
+		right: -5%;
+	}
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 1023px) {
+	html {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		font-family: "MontserratRegular", sans-serif;
+		font-size: 12px;
+	}
+
+	body {
+		max-width: 100vw;
+		width: 100%;
+		position: relative;
+		overflow-x: hidden;
+	}
+
+	p {
+		line-height: 120%;
+	}
+
+	h1,
+	h2 {
+		font-family: "MontserratExtraBold", sans-serif;
+		font-size: 2rem;
+	}
+
+	h3 {
+		margin: 0;
+		font-size: 2rem;
+		font-family: "MontserratBold", sans-serif;
+	}
+
+	.section_title {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.section_title p {
+		font-size: 1.5rem;
+	}
+}
