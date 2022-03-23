@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
 	var elems = document.querySelectorAll(".more_section .carousel");
 	var instances = M.Carousel.init(elems, {
-		duration: 1000,
+		duration: 300,
 		dist: 0,
 		padding: 100,
 		numVisible: 5,
