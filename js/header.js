@@ -6,9 +6,6 @@ if (window.matchMedia("(min-width: 1024px)").matches) {
 			hover: true,
 			coverTrigger: false,
 			autoTrigger: false,
-			onCloseEnd: function () {
-				document.activeElement.blur();
-			},
 		});
 	});
 }
