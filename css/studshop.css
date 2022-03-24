@@ -86,17 +86,34 @@
 	.landing_buttons a {
 		margin: 15px 15px 15px 0;
 	}
+    
+    .landing_section .white_arrow{
+        position: absolute;
+        width: 180px;
+        bottom: -90px;
+        right: 40%;
+        z-index: 1000;
+    }
 
     /* shopping_card_section */   
 
     .shopping_card_section{
+        width: 100%;
+		height: auto;
+		position: relative;
+        top: -80px;
         background-color: #F5B848;
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: relative;
-        top: -100px;
+        padding: 60px 0;
     }
+    .shopping_card_section .top_section{
+        position: absolute;
+        top: -100px;
+        width: auto;
+    }
+
     .shopping_card{
         background-color: #fff;
         margin: 45px 0;
@@ -162,17 +179,12 @@
         font-size: 32px;
     }
 
-
-
     .shopping_card_right{
         color: #401177;
         display: flex;
         flex-direction: column;
         align-self: center;
     }
-
-
-
 
 	.formation_time {
 		width: 50px;
