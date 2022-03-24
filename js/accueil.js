@@ -1,48 +1,3 @@
-/*Reviews section carousel Initialization*/
-document.addEventListener("DOMContentLoaded", function () {
-	var elems = document.querySelectorAll(".reviews_section .carousel");
-	var instances = M.Carousel.init(elems, {
-		duration: 300,
-		dist: 0,
-		padding: 100,
-		fullWidth: false,
-		indicators: true,
-	});
-});
-
-/*More section carousel Initialization*/
-document.addEventListener("DOMContentLoaded", function () {
-	var elems = document.querySelectorAll(".more_section .carousel");
-	var instances = M.Carousel.init(elems, {
-		duration: 300,
-		dist: 0,
-		padding: 100,
-		numVisible: 5,
-		fullWidth: false,
-		indicators: true,
-	});
-
-	/*More section carousel Autoplay*/
-	let indicatorItems = document.querySelectorAll(
-			".more_section .carousel .indicator-item"
-		),
-		slideTime = 3000,
-		activeClass = "active";
-
-	setInterval(() => {
-		indicatorItems.forEach((el) => {
-			if (el.classList.contains(activeClass)) {
-				sib = el.nextElementSibling;
-				if (sib == null) {
-					indicatorItems[0].click();
-				} else {
-					sib.click();
-				}
-			}
-		});
-	}, slideTime);
-});
-
 /* Catalog form */
 
 function catalog_form_open() {
@@ -57,3 +12,16 @@ document.addEventListener("DOMContentLoaded", function () {
 	var elems = document.querySelectorAll(".modal");
 	var instances = M.Modal.init(elems);
 });
+
+/* More section carousel */
+const root = document.documentElement;
+const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue(
+	"--marquee-elements-displayed"
+);
+const marqueeContent = document.querySelector("ul.marquee-content");
+
+root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+for (let i = 0; i < marqueeElementsDisplayed; i++) {
+	marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+}
