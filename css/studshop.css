@@ -15,9 +15,9 @@
 		font-size: 16px;
 		position: relative;
 	}
-    header{
-        z-index: 5000;
-    }
+	header {
+		z-index: 5000;
+	}
 
 	p {
 		line-height: 120%;
@@ -89,139 +89,136 @@
 	.landing_buttons a {
 		margin: 15px 15px 15px 0;
 	}
-    
-    .landing_section .white_arrow{
-        position: absolute;
-        width: 180px;
-        bottom: -90px;
-        right: 40%;
-        z-index: 1000;
-    }
 
-    /* shopping_card_section */   
+	.landing_section .white_arrow {
+		position: absolute;
+		width: 180px;
+		bottom: -90px;
+		right: 40%;
+		z-index: 1000;
+		cursor: pointer;
+	}
 
-    .shopping_card_section{
-        width: 100%;
+	/* shopping_card_section */
+
+	.shopping_card_section {
+		width: 100%;
 		height: auto;
 		position: relative;
-        top: -80px;
-        background-color: #F5B848;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 60px 0;
-    }
-    .shopping_card_section .top_section{
-        position: absolute;
-        top: -100px;
-        width: auto;
-    }
+		top: -80px;
+		background-color: #f5b848;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 60px 0;
+	}
+	.shopping_card_section .top_section {
+		position: absolute;
+		top: -100px;
+		width: auto;
+	}
 
-    .shopping_card{
-        background-color: #fff;
-        margin: 45px 0;
-        width: 90%;
-        height: 480px;
-        display:flex;
-        flex-direction: row;
-        align-items: center;
-        border-radius: 50px;
-        position: relative;
-    }
+	.shopping_card {
+		background-color: #fff;
+		margin: 45px 0;
+		width: 90%;
+		height: 480px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		border-radius: 50px;
+		position: relative;
+	}
 
-    .top_right_corner{
-        background-color: #F5B848;
-        min-width: 120px;
-        min-height: 120px;
-        border-bottom-left-radius: 50px;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        display: flex;
-        align-items: top;
-        justify-content: right;
-    }
-    .top_right_corner .shopping_card_circle01{
-        content: "";
-        background-color: #401177;        
-        width: 100px;
-        height: 100px;
-        border-radius: 100px;
-    }
-    .top_right_corner .shopping_card_circle02{
-        content: "";
-        background-color: #533ca8;        
-        width: 100px;
-        height: 100px;
-        border-radius: 100px;
-    }
+	.top_right_corner {
+		background-color: #f5b848;
+		min-width: 120px;
+		min-height: 120px;
+		border-bottom-left-radius: 50px;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		display: flex;
+		align-items: top;
+		justify-content: right;
+	}
+	.top_right_corner .shopping_card_circle01 {
+		content: "";
+		background-color: #401177;
+		width: 100px;
+		height: 100px;
+		border-radius: 100px;
+	}
+	.top_right_corner .shopping_card_circle02 {
+		content: "";
+		background-color: #533ca8;
+		width: 100px;
+		height: 100px;
+		border-radius: 100px;
+	}
 
-    .shopping_card img{
-        margin: 60px 30px 60px 60px;        
-        height: auto;
-        max-width: 33%;
-    }
-    .shopping_card_description{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 360px;
-        margin: 60px 30px;
-        color: #401177;
-        width: 67%;
-    }
-    .shopping_card_description h4, .shopping_card_description p{
+	.shopping_card img {
+		margin: 60px 30px 60px 60px;
+		height: auto;
+		max-width: 33%;
+	}
+	.shopping_card_description {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 360px;
+		margin: 60px 30px;
+		color: #401177;
+		width: 67%;
+	}
+	.shopping_card_description h4,
+	.shopping_card_description p {
 		font-family: "MontserratBold", sans-serif;
-    }
-    .shopping_card_description h4{
-        font-size: 32px;
-        margin-bottom: 88px;
-    }
-    .shopping_card_description p{
-        font-size: 24px;
-    }
-    .shopping_card_description span{
-        font-family: "MontserratRegular", sans-serif;
-    }
-    .shopping_card_content{
-        display: flex;
-        flex-direction: row;
-        justify-content: stretch;
-        height: 240px;
-    }
-    .shopping_card_content_left{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 50%;
-    }
-    .shopping_card_content_right{
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-    }
-    .shopping_card_type p{
-        padding: 0 0 20px 0;
-    }
+	}
+	.shopping_card_description h4 {
+		font-size: 32px;
+		margin-bottom: 88px;
+	}
+	.shopping_card_description p {
+		font-size: 24px;
+	}
+	.shopping_card_description span {
+		font-family: "MontserratRegular", sans-serif;
+	}
+	.shopping_card_content {
+		display: flex;
+		flex-direction: row;
+		justify-content: stretch;
+		height: 240px;
+	}
+	.shopping_card_content_left {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 50%;
+	}
+	.shopping_card_content_right {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+	}
+	.shopping_card_type p {
+		padding: 0 0 20px 0;
+	}
 
+	.shopping_card_price {
+		display: flex;
+		flex-direction: row;
+		font-size: 32px;
+	}
 
-
-
-
-    .shopping_card_price{
-        display: flex;
-        flex-direction: row;
-        font-size: 32px;
-    }
-
-    .shopping_card_right{
-        color: #401177;
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        width: 25%;
-
-    }
+	.shopping_card_right {
+		color: #401177;
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+		width: 25%;
+	}
 
 	.formation_time {
 		width: 50px;
@@ -234,29 +231,15 @@
 		background-size: contain;
 		font-size: 1rem;
 	}
-    .shopping_card_button span{
-        font-size: 45px;
-        padding: 0 5px;
-        font-family: "MontserratBold", sans-serif;
-        vertical-align: middle;
-    }
-    .shopping_card a{
-        vertical-align: text-bottom;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	.shopping_card_button span {
+		font-size: 45px;
+		padding: 0 5px;
+		font-family: "MontserratBold", sans-serif;
+		vertical-align: middle;
+	}
+	.shopping_card a {
+		vertical-align: text-bottom;
+	}
 
 	/* CTA section */
 
@@ -273,7 +256,6 @@
 		background-color: #533ca8;
 	}
 }
-
 
 /* MOBILE */
 
@@ -322,11 +304,6 @@
 		font-size: 1.5rem;
 	}
 
-
-
-
-
-    
 	/* CTA section */
 
 	.cta_section {

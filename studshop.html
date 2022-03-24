@@ -12,6 +12,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="js/materialize.js" defer></script>
     <script src="js/header.js" defer></script>
+    <script>
+        function scrollToAnchor(id) {
+            destinationOffset = document.getElementById("anchor_" + id).offsetTop - 160;
+            window.scrollTo(0, destinationOffset);
+        }
+    </script>
     <title>Studinventive : Studshop</title>
 </head>
 
@@ -126,15 +132,17 @@
     <main>
         <section class="landing_section">
             <h1>STUDSHOP</h1>
-            <p>Découvrez la boutique de Studinventive avec nos produits et services de coaching en développement personnel et professionnel.</p>
+            <p>Découvrez la boutique de Studinventive avec nos produits et services de coaching en développement
+                personnel et professionnel.</p>
             <h3>Une question ?</h3>
             <div class="landing_buttons">
                 <a href="" class="waves-effect waves-light btn-large">Contactez-nous</a>
             </div>
             <img src="images/Illustration_ecommerce.svg" alt="Illustration site e-commerce" class="shop">
-            <img src="images/white_arrow.svg" alt="flèche blanche" class="white_arrow">
+            <img id="goto1" onclick="scrollToAnchor(id)" src="images/white_arrow.svg" alt="flèche blanche"
+                class="white_arrow">
         </section>
-        <section class="shopping_card_section">
+        <section id="anchor_goto1" class="shopping_card_section">
             <img src="images/top_shopping_section.svg" alt="en-tête de section" class="top_section">
             <div class="shopping_card">
                 <div class="top_right_corner">
@@ -142,7 +150,7 @@
                 </div>
 
                 <img src="images/shopping_card_img01.svg" alt="illustration de formation">
-                
+
                 <div class="shopping_card_description">
                     <h4 class="shopping_card_title">Coaching éducatif</h4>
                     <div class="shopping_card_content">
@@ -162,10 +170,11 @@
                                 <p>h</p>
                             </div>
                             <div class="shopping_card_button">
-                                <a href="" class="waves-effect waves-light btn-large"><span>+</span> Voir les détails</a>
+                                <a href="" class="waves-effect waves-light btn-large"><span>+</span> Voir les
+                                    détails</a>
                             </div>
                         </div>
-                </div>
+                    </div>
                 </div>
             </div>
         </section>
