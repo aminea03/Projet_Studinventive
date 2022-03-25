@@ -247,8 +247,7 @@
 
 	:root {
 		--marquee-width: 80vw;
-		--marquee-height: 20vh;
-		/* --marquee-elements: 12; */ /* defined with JavaScript */
+		--marquee-height: 250px;
 		--marquee-elements-displayed: 5;
 		--marquee-element-width: calc(
 			var(--marquee-width) / var(--marquee-elements-displayed)
@@ -595,8 +594,7 @@
 
 	:root {
 		--marquee-width: 100vw;
-		--marquee-height: 16vh;
-		--marquee-height: 20vh;
+		--marquee-height: 250px;
 		--marquee-elements-displayed: 3;
 		--marquee-element-width: calc(
 			var(--marquee-width) / var(--marquee-elements-displayed)
