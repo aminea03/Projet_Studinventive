@@ -97,7 +97,7 @@
 		width: 100%;
 		display: flex;
 		flex-flow: row wrap;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		align-items: center;
 	}
 
@@ -107,6 +107,7 @@
 		display: flex;
 		flex-direction: column;
 		border-radius: 50px;
+		border-top-left-radius: 20px;
 		background-color: white;
 		margin: 30px 2.5px;
 	}
@@ -132,13 +133,13 @@
 	}
 
 	.training_img {
-		border-top-right-radius: 50px;
-		border-top-left-radius: 25px;
-		width: 100%;
+		max-height: 200px;
+		max-width: 80%;
+		align-self: center;
 	}
 
 	.training_title {
-		height: 80px;
+		height: 100px;
 		width: 95%;
 		display: flex;
 		align-items: center;
@@ -146,26 +147,27 @@
 		background-color: #401177;
 		color: white;
 		font-size: 1rem;
+		line-height: 140%;
 		border-top-right-radius: 20px;
 		border-bottom-right-radius: 20px;
 	}
 
 	.training_card ul {
-		padding: 30px max(6%, 30px);
+		padding: 10px max(6%, 30px);
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 	.training_card li {
-		padding-bottom: 15px;
+		padding: 10px 0;
 		color: black;
 		font-size: 0.8rem;
 	}
 
-	.offer_yes {
-		padding: 0 0 20px 30px;
-		background-image: url("../images/offer_yes.png");
-		background-repeat: no-repeat;
-		background-position: left top;
-		background-size: 15px;
+	.training_card ul li:nth-child(2) {
+		padding: 10px;
 	}
 
 	.training_last {
@@ -437,19 +439,21 @@
 	}
 
 	.training_card {
-		flex-basis: 48%;
+		flex-basis: 40%;
 		position: relative;
 		display: flex;
 		justify-self: center;
 		flex-direction: column;
 		border-radius: 50px;
+		border-top-left-radius: 20px;
 		background-color: white;
 		margin: 30px 2.5px;
 	}
 
-	@media screen and (max-width: 600px) {
+	@media screen and (max-width: 700px) {
 		.training_card {
-			flex-basis: 100%;
+			flex-basis: 80%;
+			max-width: 350px;
 		}
 	}
 
@@ -474,9 +478,9 @@
 	}
 
 	.training_img {
-		border-top-right-radius: 50px;
-		border-top-left-radius: 25px;
-		width: 100%;
+		max-width: 80%;
+		max-height: 200px;
+		align-self: center;
 	}
 
 	.training_title {
@@ -493,21 +497,21 @@
 	}
 
 	.training_card ul {
-		padding: 30px max(6%, 30px);
+		padding: 10px max(6%, 30px);
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 	.training_card li {
-		padding-bottom: 15px;
+		padding: 10px 0;
 		color: black;
 		font-size: 0.8rem;
 	}
 
-	.offer_yes {
-		padding: 0 0 20px 30px;
-		background-image: url("../images/offer_yes.png");
-		background-repeat: no-repeat;
-		background-position: left top;
-		background-size: 15px;
+	.training_card ul li:nth-child(2) {
+		padding: 10px;
 	}
 
 	.training_last {
