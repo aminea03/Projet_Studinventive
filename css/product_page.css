@@ -32,24 +32,25 @@
 		font-family: "MontserratBold", sans-serif;
 	}
 
-	.section_title {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-around;
-		text-align: center;
-	}
-	.section_title p,
-	.landing_section p {
-		width: 75%;
-		font-size: 1.5rem;
-		padding-top: 15px;
-	}
+
+
+
+		/* product_description section */
 
 
 
 
 
+		/* card section */
+
+		.card_container{
+			width: 90%;
+			background-color: #F5B848;
+			border-radius: 50px;
+			
+		}
+	
+	
 
 
 
