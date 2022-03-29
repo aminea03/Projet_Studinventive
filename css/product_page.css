@@ -1,4 +1,6 @@
-/* DESKTOP */
+/**************/
+/*   DESKTOP  */
+/**************/
 
 @media screen and (min-width: 1024px) {
 	html {
@@ -31,29 +33,253 @@
 		font-size: 2rem;
 		font-family: "MontserratBold", sans-serif;
 	}
+	main{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+	.section_title {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		text-align: center;
+	}
+	.section_title p,
+	.landing_section p {
+		width: 75%;
+		font-size: 1.5rem;
+		padding-top: 15px;
+	}
+
 
 
 
 
 		/* product_description section */
 
+	.product_description{
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 30px 70px;
+
+	}
 
 
 
 
-		/* card section */
+	.product_description_left{
+		display: flex;
+		flex-direction: column;
+		max-width: 64%;
+		color: #fff;
+		background-color: #533CA8;
+		border-radius: 50px;
+		padding: 40px 45px;
+	}
+	.product_description_left h3{
+		font-size: 32px;
+		font-family: "MontserratBold", sans-serif;
+		padding: 10px 0;
+	}
+	#product_mode {
+		font-size: 28px;
+		font-family: "MontserratMedium", sans-serif;
+		padding: 10px 0;
 
-		.card_container{
-			width: 90%;
-			background-color: #F5B848;
-			border-radius: 50px;
-			
-		}
+	}
+	 .product_description_left p{
+		font-size: 18px;
+		font-family: "MontserratThin", sans-serif;
+		line-height: 29px;
+		padding: 10px 0;
+	}
+	ul.product_description_list{
+		font-size: 18px;
+		font-family: "MontserratThin", sans-serif;
+		line-height: 29px;
+	}
+	 span.dot_list{
+		padding-left: 40 px;
+		font-size: 40px;
+	}
+
+
+
+
+
+	.product_description_right{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 32%;
+		align-content: stretch;
+		justify-content: flex-start;
+	}
+	.product_description_right img {
+		width: 100%;
+		height: auto;
+		border: 5px solid #401177;
+		border-radius: 32px;
+	}
+	.product_illustration{
+		display: flex;
+		flex-direction: row;
+		position: relative;
+	}
 	
+	.bottom_right{
+		background-color: #fff;
+		width: 70px;
+		height: 60px;
+		border-radius: 30px 0 30px 0;
+		position: absolute;
+		right: 5px;
+		bottom: 5px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.product_time{
+		width: 50px;
+		height: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-image: url("../images/challenge_time.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		font-size: 1rem;
+
+	}
+	.product_data{
+		display: flex;
+		flex-direction: column;
+		padding: 25px 0;
+		margin-bottom: 5px;
+	}
+	.product_data p{
+		text-align: center;
+		padding: 8px;
+	}
+	.product_price{
+		font-size: 40px;
+		color: #401177;
+		font-family: "MontserratBold", sans-serif;
+	}
+	.product_taxe{
+		font-size: 28px;
+		color: #401177;
+		font-family: "MontserratRegular", sans-serif;
+	}
+	.old_price{
+		font-size: 32px;
+		color: #401177;
+		font-family: "MontserratRegular", sans-serif;
+		text-decoration-line: line-through;
+	}
+	.product_type{
+		line-height: 30px;
+		font-size: 22px;
+		color: #401177;
+		font-family: "MontserratRegular", sans-serif;
+
+	}
+	.product_type span{
+		font-size: 22px;
+		color: #401177;
+		font-family: "MontserratBold", sans-serif;
+	}
+
+	.product_description_button {
+		position: absolute;
+		bottom: 0;
+	}
+	.product_description_button a{
+		width: 100%;
+		border-radius: 10px;
+		text-align: center;
+
+	}
+		
+
+
+
+
+
+	/* card section */
+
 	
+	.card_container{
+		height: 400px;
+		width: 90%;
+		margin: 0 auto;
+		background-color: #F5B848;
+		border-radius: 50px;
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}	
+	.product_card{
+		height: 80%;
+		width: 30%;
+		background-color: #fff;
+		border-radius: 50px 50px 50px 0;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+	}
+	.top_right_corner{
+		position: absolute;
+		background-color: #F5B848;
+		min-width: 50px;
+		min-height: 40px;
+		border-radius: 0 0 30px 30px;
+		top: 0px;
+		right: 50px;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-evenly;
+	}
+	.product_card_circle01{
+		content: "";
+		background-color: #401177;
+		width: 30px;
+		height: 30px;
+		border-radius: 15px;
+	}
+	.product_card_content{
+		color: #401177;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		padding: 0 20px;
 
-
-
+	}
+	.product_card h3{
+		font-family: "MontserratBold", sans-serif;
+		align-self: flex-start;
+		font-size: 24px;
+		margin-top: 20px;
+	}
+	.product_card img{
+		width: 100px;
+		height: 100px;
+	}
+	.product_card p{
+		font-family: "MontserratRegular", sans-serif;
+		font-size: 18px;
+		text-align: center;
+	}
 
 
 
@@ -61,14 +287,17 @@
 
 	.cta_section {
 		position: relative;
-		top: -125px;
+		bottom: -50px;
 	}
+
+
+
+
 
 	/* Footer */
 
 	footer {
 		position: absolute;
-		bottom: -350px;
 		background-color: #533ca8;
 	}
 
@@ -77,7 +306,19 @@
 
 
 
-/* MOBILE */
+
+
+
+
+
+
+
+/**************/
+/*   MOBILE   */
+/**************/
+
+
+
 
 @media screen and (max-width: 1023px) {
 	html {
@@ -126,12 +367,6 @@
 
 
 
-    	/* CTA section */
-
-	.cta_section {
-		position: relative;
-		top: -125px;
-	}
 
 	/* Footer */
 
