@@ -1,4 +1,8 @@
-/* DESKTOP */
+/***************/
+/*   DESKTOP   */
+/***************/
+
+
 
 @media screen and (min-width: 1024px) {
 	html {
@@ -49,55 +53,62 @@
 		padding-top: 15px;
 	}
 
+
+
+
+
+
 	/* Landing section */
 
 	.landing_section {
 		width: 100%;
-		height: 630px;
+		height: 550px;
 		position: relative;
 		top: -100px;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 		color: white;
-		padding: 140px min(6vw, 140px) 30px min(6vw, 140px);
+		padding: 80px min(6vw, 140px) 30px min(6vw, 140px);
 		background-image: url(../images/background_studshop_landing.svg);
 		background-repeat: no-repeat;
 		background-size: 110%;
-		background-position: bottom left;
+		background-position: bottom 50% left 50%;
 	}
-
 	.landing_section h1,
 	p,
 	button {
 		padding: 30px 0;
 		z-index: 1;
 	}
-
 	.landing_section img {
 		max-width: 300px;
 		position: absolute;
 		bottom: 22px;
-		right: min(6vw, 180px);
+		right: min(6vw, 150px);
 	}
-
 	.landing_buttons {
 		display: flex;
 		flex-flow: row wrap;
 	}
-
 	.landing_buttons a {
 		margin: 15px 15px 15px 0;
 	}
-
 	.landing_section .white_arrow {
+		width: 80px;
+		height: 80px;
 		position: absolute;
-		width: 180px;
-		bottom: -90px;
-		right: 40%;
+		bottom: 0px;
+		right: 50%;
 		z-index: 1000;
 		cursor: pointer;
 	}
+
+
+
+
+
+
 
 	/* shopping_card_section */
 
@@ -117,23 +128,22 @@
 		top: -100px;
 		width: auto;
 	}
-
 	.shopping_card {
 		background-color: #fff;
-		margin: 45px 0;
-		width: 90%;
-		height: 480px;
+		margin-bottom: 30px;
+		width: 85%;
+		height: 400px;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		justify-content: space-evenly;
 		border-radius: 50px;
 		position: relative;
 	}
-
 	.top_right_corner {
 		background-color: #f5b848;
-		min-width: 120px;
-		min-height: 120px;
+		min-width: 100px;
+		min-height: 100px;
 		border-bottom-left-radius: 50px;
 		position: absolute;
 		top: 0px;
@@ -145,79 +155,90 @@
 	.top_right_corner .shopping_card_circle01 {
 		content: "";
 		background-color: #401177;
-		width: 100px;
-		height: 100px;
+		width: 80px;
+		height: 80px;
 		border-radius: 100px;
 	}
 	.top_right_corner .shopping_card_circle02 {
 		content: "";
 		background-color: #533ca8;
-		width: 100px;
-		height: 100px;
+		width: 80px;
+		height: 80px;
 		border-radius: 100px;
 	}
-
-	.shopping_card img {
-		margin: 60px 30px 60px 60px;
-		height: auto;
-		max-width: 33%;
+	.image_container{
+		height: 100%;
+		width: auto;
+		padding: 30px 0 30px 30px;
+		border-radius: 30px;
+		flex-grow: 0;
 	}
+	.shopping_card img {
+		height: 100%;
+		width: auto;
+		border-radius: 50px;
+
+	}
+
 	.shopping_card_description {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
-		height: 360px;
-		margin: 60px 30px;
+		justify-content: flex-start;
+		flex-grow: 1;
+		height: 100%;
+		width: auto;
+		padding: 30px 30px 30px 15px;
 		color: #401177;
-		width: 67%;
 	}
-	.shopping_card_description h4,
-	.shopping_card_description p {
-		font-family: "MontserratBold", sans-serif;
-	}
+
 	.shopping_card_description h4 {
-		font-size: 32px;
-		margin-bottom: 88px;
-	}
-	.shopping_card_description p {
-		font-size: 24px;
-	}
-	.shopping_card_description span {
-		font-family: "MontserratRegular", sans-serif;
+		width: 100%;
+		line-height: 36px;
+		padding-bottom: 30px;
+		padding-right: 80px;
+		text-align: center;
+		font-family: "MontserratBold", sans-serif;
+		font-size: 26px;
 	}
 	.shopping_card_content {
-		display: flex;
-		flex-direction: row;
-		justify-content: stretch;
-		height: 240px;
-	}
-	.shopping_card_content_left {
+		width: 100%;
+		text-align: center;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		width: 50%;
+		align-items: stretch;
+		flex-grow: 1;
 	}
-	.shopping_card_content_right {
-		display: flex;
-		flex-direction: column;
-		width: 50%;
+	.shopping_card_content p{
+		font-size: 18px;
+		padding: 0;
+		font-family: "MontserratBold", sans-serif;
 	}
-	.shopping_card_type p {
-		padding: 0 0 20px 0;
+	.product_type span{
+		font-size: 18px;
+		color: #401177;
+		font-family: "MontserratRegular", sans-serif;
 	}
-
-	.shopping_card_price {
+	#product_price {
+		font-size: 26px;
+	}
+	.product_taxe{
+		font-size: 18px;
+		font-family: "MontserratRegular", sans-serif;
+	}
+	.old_price{
+		font-size: 18px;
+		font-family: "MontserratRegular", sans-serif;
+		text-decoration-line: line-through;
+	}
+	.duration{
 		display: flex;
 		flex-direction: row;
-		font-size: 32px;
+		align-items: center;
+		justify-content: center;
 	}
-
-	.shopping_card_right {
-		color: #401177;
-		display: flex;
-		flex-direction: column;
-		align-self: center;
-		width: 25%;
+	p.time {
+		padding-right: 18px;
 	}
 
 	.formation_time {
@@ -231,15 +252,25 @@
 		background-size: contain;
 		font-size: 1rem;
 	}
+	.shopping_card_button{
+		width: 100%;
+	}
 	.shopping_card_button span {
-		font-size: 45px;
+		font-size: 35px;
 		padding: 0 5px;
 		font-family: "MontserratBold", sans-serif;
 		vertical-align: middle;
 	}
 	.shopping_card a {
+		padding: 0 5px;
+		font-size: 18px;
 		vertical-align: text-bottom;
+		width: 95%;
 	}
+
+
+
+
 
 	/* CTA section */
 
@@ -247,6 +278,9 @@
 		position: relative;
 		top: -125px;
 	}
+
+
+
 
 	/* Footer */
 
@@ -257,7 +291,22 @@
 	}
 }
 
-/* MOBILE */
+
+
+
+
+
+
+
+
+
+
+
+
+/**************/
+/*   MOBILE   */
+/**************/
+
 
 @media screen and (max-width: 1023px) {
 	html {
