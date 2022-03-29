@@ -153,7 +153,7 @@
 	}
 
 	.training_card ul {
-		padding: 10px max(6%, 30px);
+		padding: 10px calc(max(6%, 30px) - 5px);
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
@@ -161,9 +161,12 @@
 	}
 
 	.training_card li {
-		padding: 10px 0;
-		color: black;
+		margin: 5px;
+		padding: 10px;
+		color: white;
 		font-size: 0.8rem;
+		background-color: #fb9505;
+		border-radius: 5px;
 	}
 
 	.training_card ul li:nth-child(2) {
@@ -497,7 +500,7 @@
 	}
 
 	.training_card ul {
-		padding: 10px max(6%, 30px);
+		padding: 10px calc(max(6%, 30px) - 5px);
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
@@ -505,9 +508,12 @@
 	}
 
 	.training_card li {
-		padding: 10px 0;
-		color: black;
+		padding: 10px;
+		margin: 5px;
+		color: white;
 		font-size: 0.8rem;
+		background-color: #fb9505;
+		border-radius: 5px;
 	}
 
 	.training_card ul li:nth-child(2) {

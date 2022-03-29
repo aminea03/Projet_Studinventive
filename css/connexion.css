@@ -8,6 +8,10 @@
 		justify-content: center;
 		font-family: "MontserratRegular", sans-serif;
 		min-height: 100vh;
+		background-image: url("../images/connection_background.jpg");
+		background-size: 1920px;
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 
 	body {
@@ -17,7 +21,7 @@
 		position: relative;
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: center right;
 		height: 100%;
 	}
 
@@ -74,7 +78,7 @@
 	}
 
 	.rocket {
-		width: 160px;
+		width: 140px;
 		position: absolute;
 		right: -30px;
 		top: -30px;
@@ -86,7 +90,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		background-color: #533ca8;
+		background-color: #533ca8d2;
 		padding: 60px;
 		border-top-left-radius: 50px;
 		border-bottom-left-radius: 50px;
@@ -98,7 +102,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		background-color: #fb9505;
+		background-color: #fb9405d2;
 		padding: 60px;
 		border-top-right-radius: 50px;
 		border-bottom-right-radius: 50px;
@@ -143,6 +147,7 @@
 		margin: 15px 0 !important;
 		color: #533ca8 !important;
 		border-bottom: none !important;
+		padding: 0 15px !important;
 	}
 
 	.signin input[type="checkbox"] {
@@ -160,15 +165,15 @@
 
 	.img1 {
 		position: absolute;
-		width: 380px;
-		bottom: -60px;
+		width: clamp(250px, 20vw, 360px);
+		bottom: -5%;
 		left: -5%;
 	}
 
 	.img2 {
 		position: absolute;
-		width: 380px;
-		bottom: -60px;
+		width: clamp(250px, 20vw, 340px);
+		bottom: -5%;
 		right: -5%;
 	}
 }
@@ -184,6 +189,10 @@
 		font-family: "MontserratRegular", sans-serif;
 		font-size: 12px;
 		min-height: 100vh;
+		background-image: url("../images/connection_background.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: right;
 	}
 
 	body {
@@ -237,9 +246,8 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		margin: 3vw;
 		color: white;
-		max-width: 94vw;
+		max-width: 96vw;
 		min-height: 100vh;
 		overflow-x: hidden;
 	}
@@ -258,7 +266,7 @@
 		align-items: center;
 		justify-content: center;
 		text-align: center;
-		background-color: #533ca8;
+		background-color: #533ca8d2;
 		padding: 3vw;
 		padding-bottom: 30px;
 		border-bottom-right-radius: 30px;
@@ -276,7 +284,7 @@
 		align-items: center;
 		justify-content: center;
 		text-align: center;
-		background-color: #fb9505;
+		background-color: #fb9405d2;
 		padding: 3vw;
 		border-top-right-radius: 30px;
 		border-top-left-radius: 30px;
@@ -302,6 +310,7 @@
 	}
 
 	.options label {
+		max-width: 85%;
 		margin-right: 10px;
 		display: flex;
 		align-items: center;
@@ -319,12 +328,12 @@
 	}
 
 	.signin input {
-		max-width: 85%;
 		background-color: white !important;
 		border-radius: 10px !important;
 		margin: 15px 0 !important;
 		color: #533ca8 !important;
 		border-bottom: none !important;
+		padding: 0 15px !important;
 	}
 
 	.signin input[type="checkbox"] {
@@ -345,9 +354,6 @@
 	}
 
 	.img2 {
-		position: absolute;
-		width: max(150px, 20vw);
-		top: 365px;
-		right: -30px;
+		display: none;
 	}
 }
