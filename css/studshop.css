@@ -120,7 +120,7 @@
 		width: 100%;
 		height: auto;
 		position: relative;
-		top: -80px;
+		top: -90px;
 		background-color: #f5b848;
 		display: flex;
 		flex-direction: column;
@@ -273,6 +273,7 @@
 		padding: 0 5px;
 		font-size: 18px;
 		vertical-align: text-bottom;
+		max-width: 450px;
 		width: 95%;
 	}
 
