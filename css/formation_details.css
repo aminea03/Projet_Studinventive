@@ -40,13 +40,270 @@
 		text-align: center;
 	}
 	.section_title p,
-	.landing_section p {
+	.landing_section p,
+	.landing_container p {
 		width: 75%;
 		font-size: 1.5rem;
 		padding-top: 15px;
 	}
 
- 
+	
+	/* Landing section */
+
+	.landing_section {
+		width: 100%;
+		color: #fff;
+		height: auto;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		top: -120px;
+		padding: 140px min(6vw, 140px) 30px min(6vw, 140px);
+		background-image: url(../images/formation_details_landing_image.svg);
+		background-repeat: no-repeat;
+		background-size: 1920px;
+		background-position: top -180px center;
+	}
+
+	.landing_section h1,
+	p,
+	button {
+		padding: 30px 0;
+		z-index: 1;
+	}
+
+	.formation_title,
+	.formation_intro,
+	.data_container,
+	.buttons_container {
+		width: 65%;
+	}
+
+	.data_container{
+		display: flex;
+		flex-direction: row;
+		position: relative;
+	}
+	.module_data, 
+	.duration_data {
+		display: flex;
+		flex-direction: row;
+		width: 50%;
+		height: 34px;
+	}
+	.module_data img,
+	.duration_data img {
+		width: 34px;
+		height: 34px;
+	}
+
+	.buttons_container{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		position: relative;
+
+	}
+
+
+	
+
+
+	
+
+
+
+
+	/* details section */
+
+
+	.details_section{
+		width: 100%;
+		height: 600px;
+		position: relative;
+		
+	}
+
+
+
+
+
+
+
+
+	/* Mecenat section*/
+
+	.mecenat_section{
+		background-color: #401177;
+		position: relative;
+		top: -120px;
+	}
+	.mecenat_container{
+		color: #fff;
+		width: 90%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+
+	}
+	.mecenat_section_left{
+		width: 35%;
+		min-height: 350px;
+		display: flex;
+		position: relative;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.background_rectangle{
+		width: 70%;
+		height: 83%;
+		border:  2px solid #fb9505;
+		background-color: none;
+		z-index: 0;
+		border-radius: 50px;
+		content: "";
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+	.mecenat_image{
+		width: 70%;
+		z-index: 5;
+		border-radius: 50px;
+		position: absolute;
+		top: 45px;
+		right: 45px;
+	}
+	.front_rectangle{
+		width: 70%;
+		height: 83%;
+		border:  2px solid #fb9505;
+		background-color: none;
+		z-index: 10;
+		border-radius: 50px;
+		content: "";
+		position: absolute;
+		top: 70px;
+		right: 70px;
+	}
+
+
+
+
+	.mecenat_section_right{
+		display: flex;
+		flex-direction: column;
+		width: 65%;
+
+	}
+	.subtitle{
+		color: #fb9505;
+		font-family: "MontserratRegular", sans-serif;
+		font-size: 18px;
+		padding-bottom: 15px;
+	}
+	
+
+ 	/* Project section */
+
+	 .project_section {
+		position: relative;
+		top: -120px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #efefef;
+		color: #401177;
+		padding: 50px min(6vw, 140px);
+	}
+
+	.project_card_container {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.project_card_container > div {
+		display: flex;
+		flex-flow: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.project_section_card {
+		position: relative;
+		width: 320px;
+		min-width: 320px;
+		height: 320px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		background-color: white;
+		border-top-right-radius: 30px;
+		border-bottom-right-radius: 30px;
+		box-shadow: #401177 15px 15px;
+		margin: 20px;
+	}
+
+	.orange_shadow {
+		box-shadow: #fb9505 15px 15px;
+	}
+
+	.project_card_header {
+		width: 270px;
+		min-height: 37px;
+		align-self: flex-start;
+		padding-top: 10px;
+		background-color: #efefef;
+		border-bottom-right-radius: 20px;
+	}
+
+	.project_card_header h3 {
+		font-size: 0.85rem;
+		color: #401177;
+	}
+
+	.project_section_card .card_circle1,
+	.project_section_card .card_circle2,
+	.project_section_card .card_circle3 {
+		min-width: 28px;
+		min-height: 28px;
+		border-radius: 50px;
+		content: "";
+		position: absolute;
+		top: 3px;
+		right: 55px;
+	}
+
+	.card_circle1 {
+		background-color: #401177;
+	}
+
+	.card_circle2 {
+		background-color: #f5b848;
+	}
+
+	.card_circle3 {
+		background-color: #fb9505;
+	}
+
+	.project_section_card p {
+		color: #401177;
+		font-size: 1rem;
+		text-align: center;
+		padding: 0 10px 20px 10px;
+	}
+
+	.project_section_img {
+		width: 130px;
+		margin: 20px 0 10px 0;
+	}
+
+
+
 
 	/* CTA section */
 
@@ -54,6 +311,8 @@
 		position: relative;
 		top: -125px;
 	}
+
+
 
 	/* Footer */
 
@@ -65,6 +324,12 @@
 
 
 }
+
+
+
+
+
+
 
 
 
