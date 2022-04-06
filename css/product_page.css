@@ -101,9 +101,12 @@
 		font-family: "MontserratThin", sans-serif;
 		line-height: 29px;
 	}
-	 span.dot_list{
-		padding-left: 40 px;
-		font-size: 40px;
+	.list_item{
+		padding: 0 0 20px 30px;
+		background-image: url("../images/list_style_white_disc.svg");
+		background-repeat: no-repeat;
+		background-position: left 7px top 10px;
+		background-size: 8px;		
 	}
 
 

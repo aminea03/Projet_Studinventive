@@ -32,6 +32,14 @@
 		font-family: "MontserratBold", sans-serif;
 	}
 
+	.top_menu_bar{
+		z-index: 1000;
+	}
+	header{
+		z-index: 1000;
+	}
+
+
 	.section_title {
 		display: flex;
 		flex-direction: column;
@@ -42,11 +50,6 @@
 	.section_title p,
 	.landing_container p {
 		width: 75%;
-		font-size: 1.5rem;
-		padding-top: 15px;
-	}
-	.landing_section p{
-		width: 65%;
 		font-size: 1.5rem;
 		padding-top: 15px;
 	}
@@ -69,13 +72,16 @@
 		background-repeat: no-repeat;
 		background-size: 2200px;
 	}
-
+	.landing_section p{
+		width: 65%;
+		font-size: 1.5rem;
+		padding-top: 15px;
+	}
 	.landing_section h1,
 	p {
 		padding: 30px 0;
 		z-index: 1;
 	}
-
 	.formation_title,
 	.data_container,
 	.buttons_container {
@@ -106,15 +112,12 @@
 		border-bottom:2px solid #fb9505;
 		padding: 15px 0 10px 0;
 	}
-
-
 	.buttons_container{
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
 		position: relative;
 		padding-bottom: 10px;
-
 	}
 	.buttons_container>.landing_buttons{
 		margin-right: 50px ;
@@ -133,20 +136,241 @@
 
 	.details_section{
 		width: 100%;
+		background-color: transparent;
 		position: relative;
 		top: -150px;
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		z-index: 5;
 		
 	}
-
 	.detail_section .top_section {
 		width: 100%;
 		position: absolute;
-		width: auto;
+	}
+	.details_section_background{
+		background-color: #efefef;
+		width: 100%;
+		height: 1450px;
+		content: "";
+		position: absolute;
+		top: 100px;
+
+	}
+
+	.details_section_container{
+		background-color: transparent;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: flex-end;
+		position: relative;
+		padding-bottom: 100px;
+		top: -350px;
+	}
+
+	.details_section_left{
+		width: 60%;
+	}
+
+	.tab_container{
+		height: 1400px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-top: 20px;
+		border-radius: 50px;
+		background-color: transparent;
+	}
+	
+	.tabs{
+		background-color: transparent;
+		height: 80px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		border-radius: 50px 50px 0 0;
+	}
+	.tabs .indicator {
+		display: none;
+	}	
+
+	li.tab.col.s2 {
+		height: 80px;	
+	}
+	.tab.col.s2 a{
+		background-color: #fb9505;
+		color: #fff;
+		font-family: "MontserratRegular", sans-serif;
+		font-size: 14px;
+		padding: 20px 22px;
+		border-radius: 20px 20px 0 0;
+
+	}
+	.tab.col.s2 a.active{
+		background-color: #fff;
+		color: #401177;
+	}
+	.tab_content{
+		height: 1320px;
+		padding: 40px;
+		background-color: #fff;
+		border-radius: 0 0 50px 50px;
+
+	}
+	.tab_content h3{
+		color: #401177;
+		font-family: "MontserratBold", sans-serif;
+		font-size: 24px;
+	}
+	.tab_content p{
+		color: #401177;
+		font-family: "MontserratRegular", sans-serif;
+		font-size: 18px;
+	}
+	.tab_content_ul{
+		color: #401177;
+		font-family: "MontserratRegular", sans-serif;
+		font-size: 18px;
+		padding-bottom: 30px;
+		line-height: 120%;
+
+	}
+	.tab_content_li{
+		padding: 0 0 20px 30px;
+		background-image: url("../images/list_style_purple_disc.svg");
+		background-repeat: no-repeat;
+		background-position: left 5px top 7px;
+		background-size: 10px;
 	}
 
 
+
+
+
+
+
+
+
+	.details_section_right{
+		min-height: 1700px;
+		width: 30%;
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+		position: relative;
+	}
+	.details_background_rectangle{
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		border:  2px solid #fb9505;
+		z-index: 1;
+		border-radius: 50px;
+		content: "";
+		position: absolute;
+		top: -20px;
+		right:20px;
+	}
+	.details_section_right_content{
+		background-color: #fff;
+		border-radius: 50px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 1700px;
+		z-index: 10;
+	}
+	.details_section_right_top{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		padding-bottom: 30px;
+	}
+	.details_section_right_top img{
+		height: 100%;
+ 		width: 100%;
+ 		object-fit: contain;
+		border-radius: 50px 50px 0 0;
+	}
+	.details_section_right_top h2{
+		text-align: center;
+		padding: 30px 0;
+		color: #401177;
+		font-size: 28px;
+		font-family: "MontserratBold", sans-serif;
+	}
+	.details_section_right_top div.buttons_container{ 
+		width: 100%;
+		justify-content: space-evenly;
+		padding: 20px 0;
+	}	
+	.formation_price{
+		text-align: center;
+		color: #fb9505;
+		font-size: 24px;
+		font-family: "MontserratRegular", sans-serif;
+	}
+	.formation_price span{
+		font-size: 48px;
+		font-family: "MontserratBold", sans-serif;
+	}
+	.inscription_delay{
+		text-align: center;
+		padding: 30px;
+	}
+	.details_buttons{
+		text-align: center;}
+	.details_buttons a{
+		color: #fb9505;
+		border: 2px solid #fb9505;
+	}
+
+
+
+
+	.details_section_right_middle h3{
+		width: 90%;
+		background-color: #401177;
+		color: #fff;
+		border-radius: 0 16px 16px 0;
+		font-family: "MontserratBold", sans-serif;
+		font-size: 20px;
+		padding: 20px;
+	}
+	.ressource_li{
+		padding: 0 0 20px 30px;
+		background-image: url("../images/list_style_orange_plus.svg");
+		background-repeat: no-repeat;
+		background-position: left 5px top 7px;
+		background-size: 10px;
+	}
+	.details_section_right_middle > p{
+		padding: 20px;
+	}
+	.details_section_right_middle>ul{
+		padding: 20px;
+	}
+	.evaluation_li{
+		padding: 0 0 20px 30px;
+		background-image: url("../images/offer_yes.png");
+		background-repeat: no-repeat;
+		background-position: left 5px top 7px;
+		background-size: 10px;
+	}
+
+
+
+	.details_section_right_bottom {
+		text-align: center;
+		padding: 30px;
+	}
+	.details_section_right_bottom img{
+		width: 65px;
+	}
 
 
 
@@ -163,7 +387,7 @@
 		justify-content: space-around;
 		text-align: center;
 		position: relative;
-		top: -150px;
+		top: -540px;
 		padding: 50px 0;
 	}
 
@@ -218,19 +442,13 @@
 
 
 
-
-
-
-
-
-
 	/* Mecenat section*/
 
 	.mecenat_section{
 		background-color: #401177;
 		height: 500px;
 		position: relative;
-		top: -150px;
+		top: -540px;
 		padding: 50px 0;
 	}
 	.mecenat_container{
@@ -310,7 +528,7 @@
 
 	 .project_section {
 		position: relative;
-		top: -150px;
+		top: -540px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -410,7 +628,7 @@
 
 	.cta_section {
 		position: relative;
-		top: -140px;
+		top: -540px;
 	}
 
 
@@ -419,7 +637,7 @@
 
 	footer {
 		position: absolute;
-		bottom: -350px;
+		bottom: 0px;
 		background-color: #533ca8;
 	}
 
