@@ -7,11 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/methode.css">
+    <link rel="stylesheet" href="css/notremethode.css">
     <link rel="icon" href="images/logo_rocket.svg" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="js/materialize.js" defer></script>
     <script src="js/header.js" defer></script>
+    <script>
+        function scrollToAnchor(id) {
+            destinationOffset = document.getElementById("anchor_" + id).offsetTop - 160;
+            window.scrollTo(0, destinationOffset);
+        }
+    </script>
     <title>La méthode studinventive</title>
 </head>
 
@@ -128,7 +134,158 @@
             <p>Une méthode d'apprentissage innovante, proposant une personnalisation hautement flexible, avec un service
                 de qualité à vos côtés.</p>
             <a href="" class="waves-effect waves-light btn-large purple_btn">Contactez-nous</a>
-            <img src="images/entreprises_landing.svg" alt="Réunion de bureau">
+            <img src="images/method_landing.svg" alt="Etudiants">
+            <img id="goto1" onclick="scrollToAnchor(id)" src="images/white_arrow01.svg" alt="flèche blanche"
+                class="white_arrow">
+        </section>
+        <section id="anchor_goto1" class="learning_section">
+            <div class="curve_top"></div>
+            <div class="section_title">
+                <h2>Construisons ensemble votre projet de formation</h2>
+                <p>Améliorez votre image et votre notoriété.</p>
+            </div>
+            <div class="card_container">
+                <div class="card">
+                    <div class="circle_wrapper">
+                        <div class="circle"></div>
+                    </div>
+                    <h3>Personnalisation de l'apprentissage</h3>
+                    <p>Personnalisez votre apprentissage, avec nos formations adaptés et un accompagnement sur
+                        mesure.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="circle_wrapper">
+                        <div class="circle"></div>
+                    </div>
+                    <h3>Predictive matching</h3>
+                    <p>Personnalisez votre apprentissage, avec nos formations adaptés et un accompagnement sur
+                        mesure.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="circle_wrapper">
+                        <div class="circle"></div>
+                    </div>
+                    <h3>Prévention au décrochage accadémique</h3>
+                    <p>Suivez différents conseils pour luter contre le décrochage académique et garder le cap.
+                    </p>
+                </div>
+            </div>
+            <div class="curve_bottom"></div>
+        </section>
+        <section class="pedagogy_section">
+            <div class="section_title">
+                <h2>Pédagogie inversée par projet</h2>
+            </div>
+            <div class="pedagogy_content">
+                <div class="img_container">
+                    <img src="images/method_pedagogy.svg" alt="Elève">
+                </div>
+                <p>Optez pour une pédagogie inversée, visant à inverser le processus habituel. Les apprenants sont
+                    invités à préparer le
+                    cours chez eux à l'aide de vidéos et cours transmis par l'enseignant. Ensuite, participez, en
+                    classe, à des activités de
+                    groupe, réalisées à partir des travaux déjà préparé en amont.</p>
+            </div>
+        </section>
+        <section class="ia_section">
+            <div class="curve_top"></div>
+            <div class="section_title">
+                <h2>L'IA dans l'apprentissage</h2>
+            </div>
+            <div class="ia_content">
+
+                <p>Optez pour une pédagogie inversée, visant à inverser le processus habituel. Les apprenants sont
+                    invités à préparer le
+                    cours chez eux à l'aide de vidéos et cours transmis par l'enseignant. Ensuite, participez, en
+                    classe, à des activités de
+                    groupe, réalisées à partir des travaux déjà préparé en amont.</p>
+                <div class="img_container">
+                    <img src="images/method_ia.svg" alt="Cerveau">
+                </div>
+            </div>
+            <div class="curve_bottom"></div>
+        </section>
+        <section class="rv_section">
+            <div class="section_title">
+                <h2>La réalité virtuelle</h2>
+                <p>Bla bla bla.</p>
+            </div>
+            <div class="card_container">
+                <div class="card">
+                    <div class="circle_wrapper">
+                        <div class="circle"></div>
+                    </div>
+                    <h3>Motivation</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="circle_wrapper">
+                        <div class="circle"></div>
+                    </div>
+                    <h3>Engagement</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="circle_wrapper">
+                        <div class="circle"></div>
+                    </div>
+                    <h3>Socialisation</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+            </div>
+            <img src="images/method_dashed_curve.svg" alt="courbe">
+        </section>
+        <section class="publications_section">
+            <div class="section_title">
+                <h2>Nos publications scientifiques sur notre méthode</h2>
+                <p>Bla bla bla.</p>
+            </div>
+            <div class="publications_container">
+                <div class="publication">
+                    <img src="" alt="">
+                    <h3>Nom publication</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard
+                        dummy text.</p>
+                </div>
+                <div class="publication">
+                    <img src="" alt="">
+                    <h3>Nom publication</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard
+                        dummy text.</p>
+                </div>
+                <div class="publication">
+                    <img src="" alt="">
+                    <h3>Nom publication</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard
+                        dummy text.</p>
+                </div>
+                <div class="publication">
+                    <img src="" alt="">
+                    <h3>Nom publication</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard
+                        dummy text.</p>
+                </div>
+            </div>
+            <a href="" class="waves-effect waves-light btn-large">Plus de publications</a>
+        </section>
+        <section class="cta_section">
+            <div class="section_title">
+                <h2>Vous souhaitez une formation de qualité ?</h2>
+                <p>Démarrez gratuitement votre projet de formation avec Studinventive.</p>
+            </div>
+            <div class="cta_section_content">
+                <a href="" class="waves-effect waves-light btn-large">Inscription gratuite</a>
+                <img src="images/rounded_arrow_image.svg" alt="Flèche">
+            </div>
         </section>
     </main>
     <footer>
