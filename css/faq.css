@@ -459,6 +459,18 @@
 		color: #fb9505 !important;
 	}
 
+	.nohover span {
+		font-size: 1.2rem !important;
+	}
+
+	.faq_form input {
+		font-size: 1.2rem !important;
+	}
+
+	.nohover ul {
+		height: max-content !important;
+	}
+
 	.contact_section form * {
 		color: #401177;
 	}
