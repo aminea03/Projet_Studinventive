@@ -15,10 +15,13 @@
 
     <script>
 
+        /* Initialize materialize select element */
         document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('select');
             var instances = M.FormSelect.init(elems, { hover: false, });
         });
+
+        /* Design for faq on open/close */
 
         function faq_open() {
             if (event.target.parentElement.querySelector(".collapsible-body").style.display != "block") {
@@ -171,15 +174,16 @@
                                 offres Premium.</span></div>
                     </li>
                     <li>
-                        <div class="collapsible-header">Puis-je utiliser mon CPF pour financer ma formation ?<i
-                                class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-header" onclick="faq_open()">Puis-je utiliser mon CPF pour financer ma
+                            formation ?<i class="material-icons">keyboard_arrow_down</i></div>
                         <div class="collapsible-body"><span>Oui, certaines formations sont éligibles au CPF. Nous vous
                                 invitons à utiliser le formulaire de contact pour obtenir des
                                 conseils à ce sujet.
                             </span></div>
                     </li>
                     <li>
-                        <div class="collapsible-header">Puis-je suivre une formation Studinventive tout en restant
+                        <div class="collapsible-header" onclick="faq_open()">Puis-je suivre une formation Studinventive
+                            tout en restant
                             salarié.e ?<i class="material-icons">keyboard_arrow_down</i></div>
                         <div class="collapsible-body">
                             <span>Oui, toutes nos formations sont à distance. Vous pouvez les suivre
@@ -188,7 +192,8 @@
                         </div>
                     </li>
                     <li>
-                        <div class="collapsible-header">Je suis une entreprise et je souhaite devenir partenaire de
+                        <div class="collapsible-header" onclick="faq_open()">Je suis une entreprise et je souhaite
+                            devenir partenaire de
                             Studinventive.<i class="material-icons">keyboard_arrow_down</i></div>
                         <div class="collapsible-body">
                             <span>Vous devez remplir le formulaire de demande de partenariat
@@ -197,7 +202,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="collapsible-header">Quel est le rôle du coach Studinventive ?<i
+                        <div class="collapsible-header" onclick="faq_open()">Quel est le rôle du coach Studinventive ?<i
                                 class="material-icons">keyboard_arrow_down</i></div>
                         <div class="collapsible-body"><span>Le coach est la personne qui se charge de vous accompagner
                                 dans la découverte de votre personnalité, de votre type
@@ -215,8 +220,8 @@
                             </span></div>
                     </li>
                     <li>
-                        <div class="collapsible-header">Quel est le rôle du mentor Studinventive ?<i
-                                class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-header" onclick="faq_open()">Quel est le rôle du mentor Studinventive
+                            ?<i class="material-icons">keyboard_arrow_down</i></div>
                         <div class="collapsible-body"><span>
                             </span>Le mentor est un professionnel ou un expert de métier qui vous accompagne dans la
                             réalisation de vos challenges. Son but
@@ -234,7 +239,8 @@
                         </div>
                     </li>
                     <li>
-                        <div class="collapsible-header">Quelle est la différence entre un coach et un mentor
+                        <div class="collapsible-header" onclick="faq_open()">Quelle est la différence entre un coach et
+                            un mentor
                             Studinventive ?<i class="material-icons">keyboard_arrow_down</i></div>
                         <div class="collapsible-body"><span>Le coach est un praticien certifié, habilité à utiliser des
                                 outils psychométriques et à conduire des entretiens
@@ -250,8 +256,8 @@
                             </span></div>
                     </li>
                     <li>
-                        <div class="collapsible-header">Comment faire pour bénéficier de l'accompagnement d'un coach ?<i
-                                class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-header" onclick="faq_open()">Comment faire pour bénéficier de
+                            l'accompagnement d'un coach ?<i class="material-icons">keyboard_arrow_down</i></div>
                         <div class="collapsible-body"><span>Vous devez souscrire à l'offre Premium ou Premium VIP. Dans
                                 la majorité, vous pouvez financer votre formation avec votre
                                 compte CPF. N'hésitez pas à utiliser le formulaire de contact pour avoir plus de
@@ -259,7 +265,8 @@
                             </span></div>
                     </li>
                     <li>
-                        <div class="collapsible-header">Comment faire pour bénéficier de l'accompagnement d'un mentor
+                        <div class="collapsible-header" onclick="faq_open()">Comment faire pour bénéficier de
+                            l'accompagnement d'un mentor
                             ?<i class="material-icons">keyboard_arrow_down</i></div>
                         <div class="collapsible-body"><span>Un mentor vous sera attribué automatiquement si vous êtes
                                 inscrit.e dans un parcours de formation certifiante ou
@@ -274,7 +281,8 @@
                             </span></div>
                     </li>
                     <li>
-                        <div class="collapsible-header">Puis-je solliciter l'aide d'un mentor si je suis membre Premium
+                        <div class="collapsible-header" onclick="faq_open()">Puis-je solliciter l'aide d'un mentor si je
+                            suis membre Premium
                             ?<i class="material-icons">keyboard_arrow_down</i></div>
                         <div class="collapsible-body"><span>Si vous êtes membre Premium, le mentorat n'est pas
                                 obligatoire. Néanmoins, vous pouvez acheter des crédits d'heures de
@@ -282,7 +290,8 @@
                             </span></div>
                     </li>
                     <li>
-                        <div class="collapsible-header">Puis-je solliciter l'aide d'un coach si je suis membre Premium
+                        <div class="collapsible-header" onclick="faq_open()">Puis-je solliciter l'aide d'un coach si je
+                            suis membre Premium
                             ?<i class="material-icons">keyboard_arrow_down</i></div>
                         <div class="collapsible-body">
                             <span>Si vous êtes membre Premium, le coaching n'est pas obligatoire. Néanmoins, vous pouvez
@@ -294,8 +303,8 @@
                         </div>
                     </li>
                     <li>
-                        <div class="collapsible-header">Le coaching et le mentorat sont-ils obligatoires ?<i
-                                class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-header" onclick="faq_open()">Le coaching et le mentorat sont-ils
+                            obligatoires ?<i class="material-icons">keyboard_arrow_down</i></div>
                         <div class="collapsible-body"><span>Tout dépend de l'offre à laquelle vous souscrivez. Si vous
                                 avez une offre Premium, le coaching et le mentorat sont
                                 accessoires. Vous pouvez bénéficier de l'accompagnement de l'un ou de l'autre en
@@ -311,7 +320,8 @@
                             </span></div>
                     </li>
                     <li>
-                        <div class="collapsible-header">Puis-je solliciter l'aide d'un coach ou d'un mentor si je suis
+                        <div class="collapsible-header" onclick="faq_open()">Puis-je solliciter l'aide d'un coach ou
+                            d'un mentor si je suis
                             membre Standard ?<i class="material-icons">keyboard_arrow_down</i></div>
                         <div class="collapsible-body"><span>Non, si vous êtes membre Standard, vous n'avez pas accès aux
                                 services de coaching et de mentorat. Pour bénéficier de ces
@@ -319,8 +329,8 @@
                             </span></div>
                     </li>
                     <li>
-                        <div class="collapsible-header">Que propose l'offre Standard Studinventive ?<i
-                                class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-header" onclick="faq_open()">Que propose l'offre Standard Studinventive
+                            ?<i class="material-icons">keyboard_arrow_down</i></div>
                         <div class="collapsible-body"><span>L'offre Standard est accessible à tous et à toutes
                                 gratuitement à condition de s'inscrire sur notre site. Vous avez
                                 droit à un test de personnalité gratuit. Vous pouvez relever certains challenges
@@ -333,8 +343,8 @@
                             </span></div>
                     </li>
                     <li>
-                        <div class="collapsible-header">Que propose l'offre Premium Studinventive ?<i
-                                class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-header" onclick="faq_open()">Que propose l'offre Premium Studinventive
+                            ?<i class="material-icons">keyboard_arrow_down</i></div>
                         <div class="collapsible-body"><span>Avec l'offre Premium, vous disposez des mêmes services que
                                 dans l'offre Standard. En plus, vous avez droit à une
                                 évaluation par les pairs de vos challenges et un certificat de Studinventive que vous
@@ -345,8 +355,8 @@
                             </span></div>
                     </li>
                     <li>
-                        <div class="collapsible-header">Que propose l'offre Premium VIP Studinventive ?<i
-                                class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-header" onclick="faq_open()">Que propose l'offre Premium VIP
+                            Studinventive ?<i class="material-icons">keyboard_arrow_down</i></div>
                         <div class="collapsible-body"><span>Vous devenez membre Premium VIP de Studinventive en vous
                                 inscrivant dans un parcours sanctionné par une certification
                                 professionnelle, un titre professionnel ou un diplôme. Dans ce cas de figure, vous
@@ -361,7 +371,8 @@
                     </li>
 
                     <li>
-                        <div class="collapsible-header">Le test de personnalité gratuit que j'ai réalisé lors de mon
+                        <div class="collapsible-header" onclick="faq_open()">Le test de personnalité gratuit que j'ai
+                            réalisé lors de mon
                             inscription ne suffit-il pas pour valider mon profil de
                             personnalité ?<i class="material-icons">keyboard_arrow_down</i></div>
                         <div class="collapsible-body"><span>Les tests de personnalité gratuits en ligne ne suffisent pas
@@ -380,7 +391,8 @@
                             </span></div>
                     </li>
                     <li>
-                        <div class="collapsible-header">Les tests de personnalité mettent des gens dans des cases, je ne
+                        <div class="collapsible-header" onclick="faq_open()">Les tests de personnalité mettent des gens
+                            dans des cases, je ne
                             vois pas leur utilité dans l'éducation et la formation.<i
                                 class="material-icons">keyboard_arrow_down</i></div>
                         <div class="collapsible-body"><span>C'est tout à fait le contraire ! Les outils psychométriques
@@ -395,7 +407,8 @@
                             </span></div>
                     </li>
                     <li>
-                        <div class="collapsible-header">Vos outils psychométriques sont-ils fiables (test de
+                        <div class="collapsible-header" onclick="faq_open()">Vos outils psychométriques sont-ils fiables
+                            (test de
                             personnalité, tests d'aptitudes, tests psychologiques, etc...) ?<i
                                 class="material-icons">keyboard_arrow_down</i></div>
                         <div class="collapsible-body">
@@ -407,8 +420,8 @@
                         </div>
                     </li>
                     <li>
-                        <div class="collapsible-header">Qu'est ce qu'un challenge chez Studinventive ?<i
-                                class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-header" onclick="faq_open()">Qu'est ce qu'un challenge chez
+                            Studinventive ?<i class="material-icons">keyboard_arrow_down</i></div>
                         <div class="collapsible-body"><span>Un challenge est un projet, une mission et une mise en
                                 situation professionnelle proposés par une entreprise partenaire
                                 de Studinventive. Le challenge est scénarisé par notre équipe pédagogique pour être
@@ -421,7 +434,6 @@
                             </span></div>
                     </li>
                 </ul>
-
             </div>
         </section>
         <section class="contact_section">
