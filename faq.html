@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="icon" href="images/logo_rocket.svg" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/materialize.js" defer></script>
+    <script src="js/header.js" defer></script>
+
+    <script>
+
+        /* Initialize materialize select element */
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems, { hover: false, });
+        });
+
+        /* Design for faq on open/close */
+
+        function faq_open() {
+            if (event.target.parentElement.querySelector(".collapsible-body").style.display != "block") {
+                event.target.style.borderBottomRightRadius = "0";
+                event.target.style.borderBottomLeftRadius = "0";
+                event.target.querySelector(".material-icons").style.transform = "rotate(90deg)";
+            } else {
+                event.target.style.borderBottomRightRadius = "10px";
+                event.target.style.borderBottomLeftRadius = "10px";
+                event.target.querySelector(".material-icons").style.transform = "";
+            }
+        };
+    </script>
+    <title>Studinventive : FAQ</title>
+</head>
+
+<body>
+    <div class="top_menu_bar">
+        <div class="top_menu_bar_social">
+            <a href="https://www.facebook.com/studinventive" target="_blank"><img src="images/facebook_icon.svg"
+                    alt="Icone Facebook"></a>
+            <a href="https://twitter.com/studinventive" target="_blank"><img src="images/twitter_icon.svg"
+                    alt="Icone twitter"></a>
+            <a href="https://www.linkedin.com/company/studinventive" target="_blank"><img src="images/linkedin_icon.svg"
+                    alt="Icone LinkedIn"></a>
+            <a href="https://www.instagram.com/studinventive/" target="_blank"><img src="images/instagram_icon.svg"
+                    alt="Icone Instagram"></a>
+        </div>
+        <ul class="top_menu_bar_links">
+            <li><a href=""><img src="images/account_icon.svg" alt="Icone compte">Inscription</a></li>
+            <li><a href="connexion.html"><img src="images/connection_icon.svg" alt="Icone connexion">Connexion</a></li>
+        </ul>
+    </div>
+    <header>
+        <!-- mobile sidenav -->
+        <div class="nav_container_mobile">
+            <img class="nav_container_mobile_logo" src="images/logo_studinventive.svg" alt="Logo studinventive">
+            <ul id="slide-out" class="sidenav">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#!"><i class="material-icons color_purple">mode_edit</i>Inscription</a></li>
+                <li><a href="connexion.html"><i class="material-icons color_orange">forward</i>Connexion</a></li>
+                <li>
+                    <div class="divider"></div>
+                </li>
+                <li class="subheader_row"><a class="subheader">Menu</a><a href="#!"
+                        class="close_button_nav sidenav-close"></a>
+                </li>
+                <li><a href="index.html" class="current_page">Accueil</a></li>
+                <li><a href="notremethode.html">Notre méthode</a></li>
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header">Nos formations</a>
+                        <div class="collapsible-body">
+                            <ul id="" class="">
+                                <li><a href="#!">Nos challenges</a></li>
+                                <li><a href="#!">Bachelors (niveau Bac +3/4)</a></li>
+                                <li><a href="#!">Magistère (niveau Bac +5)</a></li>
+                                <li><a href="#!">Titres professionnels</a></li>
+                                <li><a href="#!">Certifications Studinventive</a></li>
+                                <li><a href="#!">Certifications langues (TOEIC)</a></li>
+                                <li><a href="#!">Autres formations</a></li>
+                                <li class="divider"></li>
+                                <li><a href="entreprises.html">Offres entreprises</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <li><a href="partenariat.html">Partenariat</a></li>
+                <li><a href="studshop.html">Studshop</a></li>
+                <li class="nav_li_campus"><a href="connexion.html">Accès campus</a></li>
+                <li>
+                    <div class="divider"></div>
+                </li>
+                <li><a class="subheader">Suivez-nous</a></li>
+                <li><a href="https://www.facebook.com/studinventive" target="_blank"><img
+                            class="nav_container_mobile_social" src="images/facebook_icon.svg" alt="Icone Facebook"></a>
+                </li>
+                <li> <a href="https://twitter.com/studinventive" target="_blank"><img
+                            class="nav_container_mobile_social" src="images/twitter_icon.svg" alt="Icone twitter"></a>
+                </li>
+                <li><a href="https://www.linkedin.com/company/studinventive" target="_blank"><img
+                            class="nav_container_mobile_social" src="images/linkedin_icon.svg" alt="Icone LinkedIn"></a>
+                </li>
+                <li><a href="https://www.instagram.com/studinventive/" target="_blank"><img
+                            class="nav_container_mobile_social" src="images/instagram_icon.svg"
+                            alt="Icone Instagram"></a></li>
+            </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+        <!-- desktop nav -->
+        <div class="nav_container">
+            <a href="/index.html"><img class="nav_logo_studinventive" src="images/logo_studinventive.svg"
+                    alt="Logo Studinventive"></a>
+            <a href="/index.html"><img class="nav_logo_rocket" src="images/logo_rocket.svg"
+                    alt="Logo Studinventive rocket"></a>
+            <!-- ul dropdown1 = liste qui sert au dropdown "Formation" du nav -->
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#!">Nos challenges</a></li>
+                <li><a href="#!">Bachelors (niveau Bac +3/4)</a></li>
+                <li><a href="#!">Magistère (niveau Bac +5)</a></li>
+                <li><a href="#!">Titres professionnels</a></li>
+                <li><a href="#!">Certifications Studinventive</a></li>
+                <li><a href="#!">Certifications langues (TOEIC)</a></li>
+                <li><a href="#!">Autres formations</a></li>
+                <li><a href="entreprises.html">Offres entreprises</a></li>
+            </ul>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="notremethode.html">Notre méthode</a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Nos formations</a>
+                    </li>
+                    <li><a href="partenariat.html">Partenariat</a></li>
+                    <li><a href="studshop.html">Studshop</a></li>
+                    <li class="nav_li_campus"><a href="connexion.html">Accès campus</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="landing_section">
+            <h1>Vous avez une question ?</h1>
+            <p>Nous vous invitons à consulter premièrement notre FAQ ; si vous ne trouvez pas de réponseà
+                votrequestion, vous pouvez
+                utiliser le formulaire de contact.</p>
+            <div class="landing_buttons">
+                <a href="" class="waves-effect waves-light btn-large purple_btn">Voir notre FAQ</a>
+                <a href="" class="waves-effect waves-light btn-large">Fomulaire de contact</a>
+            </div>
+            <img src="images/faq_landing.svg" alt="FAQ">
+        </section>
+        <section class="faq_section">
+            <div class="section_title">
+                <h2>Foire aux questions</h2>
+                <p>Questions fréquentes</p>
+            </div>
+            <div class="faq_container">
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header" onclick="faq_open()">Comment obtenir un certificat à la fin du
+                            challenge ?<i class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-body"><span>Pour obtenir un certificat de réussite, votre challenge doit
+                                être évalué avec succès par 3 autres apprenants. Cette
+                                fonctionnalité est disponible uniquement en version premium. Vous pouvez consulter nos
+                                offres Premium.</span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" onclick="faq_open()">Puis-je utiliser mon CPF pour financer ma
+                            formation ?<i class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-body"><span>Oui, certaines formations sont éligibles au CPF. Nous vous
+                                invitons à utiliser le formulaire de contact pour obtenir des
+                                conseils à ce sujet.
+                            </span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" onclick="faq_open()">Puis-je suivre une formation Studinventive
+                            tout en restant
+                            salarié.e ?<i class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-body">
+                            <span>Oui, toutes nos formations sont à distance. Vous pouvez les suivre
+                                à votre rythme et à votre convenance.
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" onclick="faq_open()">Je suis une entreprise et je souhaite
+                            devenir partenaire de
+                            Studinventive.<i class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-body">
+                            <span>Vous devez remplir le formulaire de demande de partenariat
+                                disponible sur notre site.
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" onclick="faq_open()">Quel est le rôle du coach Studinventive ?<i
+                                class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-body"><span>Le coach est la personne qui se charge de vous accompagner
+                                dans la découverte de votre personnalité, de votre type
+                                d'intelligence, de vos forces, de votre potentiel et de votre style d'apprentissage. Il
+                                intervient au début de votre
+                                parcours de formation pour faire le point avec vous, vous conseiller et vous guider. Son
+                                rôle consiste à vous
+                                accompagner dans une démarche de développement personnel (confiance en soi, estime de
+                                soi, gestion des relations
+                                interpersonnelles, orientation professionnelle et choix de carrière, etc.). Il s'occupe
+                                essentiellement de l'aspect
+                                psychologique de votre apprentissage. C'est un praticien certifié, habilité à réaliser
+                                des tests psychométriques et à
+                                conduire des entretiens professionnels.
+                            </span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" onclick="faq_open()">Quel est le rôle du mentor Studinventive
+                            ?<i class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-body"><span>
+                            </span>Le mentor est un professionnel ou un expert de métier qui vous accompagne dans la
+                            réalisation de vos challenges. Son but
+                            est de vous aider à réussir votre parcours afin d'obtenir votre certification ou votre
+                            diplôme. Son rôle consiste à vous
+                            conseiller et à vous accompagner sur l'aspect pédagogique de votre formation. Pour mieux
+                            vous guider, votre mentor
+                            tiendra compte de votre situation professionnelle, de votre profil de personnalité, de vos
+                            forces et de votre style
+                            d'apprentissage. Attention, le mentor n'est pas un coach ! Son travail est axé
+                            essentiellement sur l'accompagnement
+                            pédagogique et didactique. Son expérience et ses connaissances de terrain rendront votre
+                            apprentissage plus concret,
+                            pratique et adapté aux réalités professionnelles.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" onclick="faq_open()">Quelle est la différence entre un coach et
+                            un mentor
+                            Studinventive ?<i class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-body"><span>Le coach est un praticien certifié, habilité à utiliser des
+                                outils psychométriques et à conduire des entretiens
+                                professionnels. Son intervention s'inscrit dans une démarche de développement personnel
+                                (confiance en soi, estime de
+                                soi, forces, potentiel, orientation professionnelle, etc.). En revanche, le mentor est
+                                un professionnel de métier
+                                toujours en exercice, qui a pour mission de vous accompagner sur le plan pédagogique et
+                                didactique. C'est votre
+                                formateur personnel attitré en quelques sortes ! Son but est de partager avec vous ses
+                                expériences, ses pratiques
+                                professionnelles et de vous former à votre futur métier.
+                            </span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" onclick="faq_open()">Comment faire pour bénéficier de
+                            l'accompagnement d'un coach ?<i class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-body"><span>Vous devez souscrire à l'offre Premium ou Premium VIP. Dans
+                                la majorité, vous pouvez financer votre formation avec votre
+                                compte CPF. N'hésitez pas à utiliser le formulaire de contact pour avoir plus de
+                                précisions.
+                            </span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" onclick="faq_open()">Comment faire pour bénéficier de
+                            l'accompagnement d'un mentor
+                            ?<i class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-body"><span>Un mentor vous sera attribué automatiquement si vous êtes
+                                inscrit.e dans un parcours de formation certifiante ou
+                                diplômante (offre Premium VIP). Vous disposerez d'une session hebdomadaire de mentorat.
+                                Votre mentor fera le point avec
+                                vous sur votre progression, vos blocages et vous orientera vers des ressources et des
+                                outils pédagogiques adaptés. Vous
+                                avez même droit à un cours particulier de votre mentor en cas de besoin. Il est le
+                                garant de votre réussite éducative.
+                                Son rôle consiste à vous motiver, vous aider à garder le rythme pour que vous ne
+                                décrochiez pas.
+                            </span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" onclick="faq_open()">Puis-je solliciter l'aide d'un mentor si je
+                            suis membre Premium
+                            ?<i class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-body"><span>Si vous êtes membre Premium, le mentorat n'est pas
+                                obligatoire. Néanmoins, vous pouvez acheter des crédits d'heures de
+                                mentorat pour vous aider à réussir certains challenges.
+                            </span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" onclick="faq_open()">Puis-je solliciter l'aide d'un coach si je
+                            suis membre Premium
+                            ?<i class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-body">
+                            <span>Si vous êtes membre Premium, le coaching n'est pas obligatoire. Néanmoins, vous pouvez
+                                acheter des heures de crédit pour
+                                bénéficier de l'accompagnement d'un coach praticien certifié pour votre développement
+                                personnel (type de personnalité,
+                                gestion de conflits, style d'apprentissage, type d'intelligence, etc.).
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" onclick="faq_open()">Le coaching et le mentorat sont-ils
+                            obligatoires ?<i class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-body"><span>Tout dépend de l'offre à laquelle vous souscrivez. Si vous
+                                avez une offre Premium, le coaching et le mentorat sont
+                                accessoires. Vous pouvez bénéficier de l'accompagnement de l'un ou de l'autre en
+                                fonction de vos besoins. Cependant, si
+                                vous êtes inscrit.e à un parcours certifiant ou diplômant (offre Premium VIP), un coach
+                                et un mentor vous seront
+                                attribués automatiquement. À noter que le coach interviendra seulement au début de votre
+                                formation. Vous pourrez le
+                                solliciter par la suite en cas de besoin, à condition d'acheter des crédits d'heures
+                                supplémentaires. Par ailleurs, le
+                                mentor vous accompagnera régulièrement tout au long de votre parcours à raison d'une
+                                session par semaine.
+                            </span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" onclick="faq_open()">Puis-je solliciter l'aide d'un coach ou
+                            d'un mentor si je suis
+                            membre Standard ?<i class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-body"><span>Non, si vous êtes membre Standard, vous n'avez pas accès aux
+                                services de coaching et de mentorat. Pour bénéficier de ces
+                                prestations, vous devrez souscrire à une offre Premium ou Premium VIP.
+                            </span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" onclick="faq_open()">Que propose l'offre Standard Studinventive
+                            ?<i class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-body"><span>L'offre Standard est accessible à tous et à toutes
+                                gratuitement à condition de s'inscrire sur notre site. Vous avez
+                                droit à un test de personnalité gratuit. Vous pouvez relever certains challenges
+                                non-payants et utiliser les ressources
+                                et les outils mis à votre disposition sur notre plateforme. Cependant, vous ne pouvez
+                                pas prétendre à une évaluation de
+                                votre travail, à une certification ou à un diplôme. En outre, vous ne pourrez pas
+                                bénéficier de l'accompagnement d'un
+                                coach ou d'un mentor.
+                            </span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" onclick="faq_open()">Que propose l'offre Premium Studinventive
+                            ?<i class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-body"><span>Avec l'offre Premium, vous disposez des mêmes services que
+                                dans l'offre Standard. En plus, vous avez droit à une
+                                évaluation par les pairs de vos challenges et un certificat de Studinventive que vous
+                                pouvez ajouter sur votre profil
+                                LinkedIn ou partager sur d'autres réseaux professionnels. Selon vos besoins, vous pouvez
+                                acheter des crédits d'heures de
+                                coaching ou de mentorat (ce n'est pas une obligation).
+                            </span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" onclick="faq_open()">Que propose l'offre Premium VIP
+                            Studinventive ?<i class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-body"><span>Vous devenez membre Premium VIP de Studinventive en vous
+                                inscrivant dans un parcours sanctionné par une certification
+                                professionnelle, un titre professionnel ou un diplôme. Dans ce cas de figure, vous
+                                bénéficiez d'une séance de coaching
+                                de deux heures au début de votre formation et de l'accompagnement d'un mentor à raison
+                                d'un séance hebdomadaire. Les
+                                coûts de ces prestations sont compris dans votre offre Premium VIP. Cependant, si vous
+                                souhaitez disposer de plus
+                                d'heures de coaching ou de mentorat, vous devrez acheter des crédits d'heures
+                                supplémentaires.
+                            </span></div>
+                    </li>
+
+                    <li>
+                        <div class="collapsible-header" onclick="faq_open()">Le test de personnalité gratuit que j'ai
+                            réalisé lors de mon
+                            inscription ne suffit-il pas pour valider mon profil de
+                            personnalité ?<i class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-body"><span>Les tests de personnalité gratuits en ligne ne suffisent pas
+                                pour valider votre type de personnalité. Néamnoins, ils
+                                vous permettront d'avoir une idée globale de votre profil psychologique. D'autant plus,
+                                ces tests en ligne peuvent vous
+                                induire en erreur, faute d'être suivi par un professionnel. Vous ne serez jamais sûr.e
+                                que les résultats du test
+                                correspondent bien à votre personnalité. À cet effet, nous vous recommandons fortement
+                                l'accompagnement d'un spécialiste
+                                certifié, habilité à effectuer ce type d'intervention dans un cadre éthique et
+                                déontologique. Cela vous permettra
+                                également de valider une fois pour toute votre profil de personnalité sur notre
+                                plateforme. Vous n'aurez plus aucun
+                                doute.
+                            </span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" onclick="faq_open()">Les tests de personnalité mettent des gens
+                            dans des cases, je ne
+                            vois pas leur utilité dans l'éducation et la formation.<i
+                                class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-body"><span>C'est tout à fait le contraire ! Les outils psychométriques
+                                permettent de mieux accompagner les personnes et de tenir
+                                compte de leurs spécificités. Chaque personne est unique. D'où la nécessité de mettre
+                                l'accent sur l'apprentissage
+                                personnalisé en ayant recours à ces outils qui deviennent de plus en plus performants.
+                                Aujourd'hui, grâce à l'IA, il
+                                devient possible de proposer un accompagnement plus ciblé et adapté au profil d'un.e
+                                apprenant.e. C'est le principe même
+                                de l'apprentissage micro-adaptatif mis en exergue par Studinventive.
+                            </span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" onclick="faq_open()">Vos outils psychométriques sont-ils fiables
+                            (test de
+                            personnalité, tests d'aptitudes, tests psychologiques, etc...) ?<i
+                                class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-body">
+                            <span>Oui, nous utilisons des outils fiables, fidèles et homologués par la recherche
+                                scientifique. Nos fournisseurs de tests
+                                sont réputés pour leur sérieux et mettent à jour régulièrement leurs outils par souci
+                                d'efficacité.
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" onclick="faq_open()">Qu'est ce qu'un challenge chez
+                            Studinventive ?<i class="material-icons">keyboard_arrow_down</i></div>
+                        <div class="collapsible-body"><span>Un challenge est un projet, une mission et une mise en
+                                situation professionnelle proposés par une entreprise partenaire
+                                de Studinventive. Le challenge est scénarisé par notre équipe pédagogique pour être
+                                adapté à la formation. Il reflète
+                                une réalité professionnelle. Il correspond à une séquence pédagogique ou à un bloc de
+                                compétences. En relevant un
+                                challenge, l'apprenant.e développe rapidement des compétences nécessaires pour être
+                                opérationnel.le sur le terrain ou
+                                employable sur le marché du travail.
+                            </span></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="contact_section">
+            <div class="section_title">
+                <h2>Formulaire de contact</h2>
+                <p>Promis on vous répond</p>
+            </div>
+            <div class="faq_form_wrapper">
+                <div class="faq_form">
+                    <div class="row">
+                        <form class="col s12" id="faq_form" method="POST">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="prenom" type="text" class="validate">
+                                    <label for="prenom">Votre prénom</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="organisme" type="text" class="validate">
+                                    <label for="organisme">Votre organisme</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="email" type="email" class="validate">
+                                    <label for="email">Votre E-mail</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="tel" type="tel" class="validate">
+                                    <label for="tel">Votre téléphone</label>
+                                </div>
+                            </div>
+                            <div class="input-field col s12 nohover">
+                                <select class="nohover">
+                                    <option value="-" disabled selected>-</option>
+
+                                    <optgroup label="Particulier">
+                                        <option value="Comment puis-je utiliser mon CPF pour financer ma formation">
+                                            Comment puis-je utiliser mon CPF pour financer ma formation</option>
+                                        <option value="En savoir plus sur les autres moyens de financement de la
+                                        formation">En savoir plus sur les autres moyens de financement de la formation
+                                        </option>
+                                    </optgroup>
+                                    <optgroup label="Entreprise">
+                                        <option value="En savoir plus sur la formation des salariés de mon entreprise">
+                                            En savoir plus sur la formation des salariés de mon entreprise</option>
+                                    </optgroup>
+                                    <optgroup label="Association">
+                                        <option
+                                            value="En savoir plus la prise en charge partiel ou total du coût de formation">
+                                            En savoir plus la prise en charge partiel ou total du coût de formation
+                                        </option>
+                                    </optgroup>
+                                </select>
+                                <label class="select_label">Votre question</label>
+                            </div>
+                            <div class="input-field col s12 nohover">
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Votre question</label>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Reste à paramétrer l'action submit -->
+                    <button class="btn-large waves-effect waves-light purple_btn" type="submit" name="faq_form">Envoyer
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+                <img class="logo_s_transparent" src="images/logo_s_transparent.svg" alt="logo Studinventive"><img
+                    class="logo_s" src="images/logo_s.svg" alt="logo studinventive">
+            </div>
+        </section>
+        <section class="cta_section">
+            <div class="section_title">
+                <h2>Vous souhaitez une formation de qualité ?</h2>
+                <p>Démarrez gratuitement votre projet de formation avec Studinventive.</p>
+            </div>
+            <div class="cta_section_content">
+                <a href="" class="waves-effect waves-light btn-large">Inscription gratuite</a>
+                <img src="images/rounded_arrow_image.svg" alt="Flèche">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_container">
+            <div class="footer_container_left">
+                <img class="footer_logo_studinventive" src="images/logo_studinventive_blanc.svg"
+                    alt="Logo Studinventive en noir et blanc">
+                <div class="footer_contact">
+                    <p>Adresse : 15 rue des Halles 75001 Paris</p>
+                    <p>Email : contact@studinventive.com</p>
+                </div>
+                <div class="footer_social">
+                    <a href="https://www.facebook.com/studinventive" target="_blank"><img src="images/facebook_icon.svg"
+                            alt="Icone Facebook"></a>
+                    <a href="https://twitter.com/studinventive" target="_blank"><img src="images/twitter_icon.svg"
+                            alt="Icone twitter"></a>
+                    <a href="https://www.linkedin.com/company/studinventive" target="_blank"><img
+                            src="images/linkedin_icon.svg" alt="Icone LinkedIn"></a>
+                    <a href="https://www.instagram.com/studinventive/" target="_blank"><img
+                            src="images/instagram_icon.svg" alt="Icone Instagram"></a>
+                </div>
+            </div>
+            <div class="footer_white_line"></div>
+            <div class="footer_container_middle">
+                <h3>Nos formations</h3>
+                <ul>
+                    <li><a href="">Nos challenges</a></li>
+                    <li><a href="">Nos parcours</a></li>
+                    <li><a href="">Financements</a></li>
+                </ul>
+            </div>
+            <div class="footer_white_line"></div>
+            <div class="footer_container_right">
+                <h3>Informations légales</h3>
+                <ul>
+                    <li><a href="">Mentions légales</a></li>
+                    <li><a href="">Politique de confidentialité</a></li>
+                    <li><a href="">Conditions générales d'utilisation</a></li>
+                    <li><a href="">Conditions générales de vente</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_container_bottom">
+            <p>Studinventive, SAS immatriculée au RCS de Paris B 901 687 152 &#40;SIRET 90168715200016&#41; ; marque
+                déposée
+                auprès de l'INPI sous le numéro 4789871 du 31-07-2021 ; organisme de formation et CFA certifié
+                Qualiopi dont la déclaration d'activité est enregistrée sous le numéro 11756297475 à la Préfecture
+                de Paris, Ile de France &#40;cet enregistrement ne vaut pas agrément de l'Etat&#41;.</p>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2021 Studinventive Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
