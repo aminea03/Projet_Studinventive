@@ -88,7 +88,7 @@
 	.landing_section img {
 		max-width: 300px;
 		position: absolute;
-		bottom: 0px;
+		bottom: 7px;
 		right: min(6vw, 150px);
 	}
 	.landing_buttons {
@@ -102,8 +102,8 @@
 		width: 80px;
 		height: 80px;
 		position: absolute;
-		bottom: -40px;
-		right: 50%;
+		bottom: -10px;
+		right: 45%;
 		z-index: 1000;
 		cursor: pointer;
 	}
@@ -360,6 +360,241 @@
 	.section_title p {
 		font-size: 1.5rem;
 	}
+
+
+/* Landing section */
+
+	.landing_section {
+		width: 100%;
+		height: 630px;
+		position: relative;
+		top: -110px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: white;
+		padding: 140px 3vw 30px 3vw;
+		background-image: url(../images/background_studshop_landing.svg);
+		background-repeat: no-repeat;
+		background-size: 1200px;
+		background-position: bottom 55% left 50%;
+	}
+	.landing_section h1{
+		padding: 15px 0 30px 0;
+		z-index: 1;
+
+	}
+	.landing_section p,
+	button {
+		padding: 30px 0;
+		z-index: 1;
+	}
+	.landing_section p{
+		font-size: 1.5rem;
+		text-align: center;
+	}
+	.landing_section img {
+		max-width: 150px;
+		position: absolute;
+		bottom: 40px;
+		right: min(6vw, 150px);
+	}
+	.landing_buttons {
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.landing_buttons a {
+		margin: 15px 15px 15px 0;
+	}
+	.landing_section .white_arrow {
+		width: 80px;
+		height: 80px;
+		position: absolute;
+		bottom: -10px;
+		right: 45%;
+		z-index: 1000;
+		cursor: pointer;
+	}
+
+
+
+
+
+
+/* shopping_card_section */
+
+.shopping_card_section {
+	width: 100%;
+	height: auto;
+	position: relative;
+	top: -90px;
+	background-color: #f5b848;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 60px 0;
+}
+.shopping_card_section .top_section {
+	position: absolute;
+	top: -100px;
+	width: auto;
+}
+.shopping_card {
+	background-color: #fff;
+	margin-bottom: 30px;
+	width: 80%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	border-radius: 50px;
+	position: relative;
+}
+.top_right_corner {
+	background-color: #f5b848;
+	min-width: 100px;
+	min-height: 100px;
+	border-bottom-left-radius: 50px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	display: flex;
+	align-items: top;
+	justify-content: right;
+}
+.top_right_corner .shopping_card_circle01 {
+	content: "";
+	background-color: #401177;
+	width: 80px;
+	height: 80px;
+	border-radius: 100px;
+}
+.top_right_corner .shopping_card_circle02 {
+	content: "";
+	background-color: #533ca8;
+	width: 80px;
+	height: 80px;
+	border-radius: 100px;
+}
+.image_container{
+	height: auto;
+	width: 100%;
+	padding: 30px 0 30px 30px;
+	border-radius: 30px;
+	flex-grow: 0;
+}
+.shopping_card img {
+	height: 100%;
+	width: auto;
+	border-radius: 50px;
+
+}
+
+.shopping_card_description {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	flex-grow: 1;
+	height: 100%;
+	width: auto;
+	padding: 30px 30px 30px 15px;
+	color: #401177;
+}
+
+.shopping_card_description h4 {
+	width: 100%;
+	height: 110px;
+	line-height: 36px;
+	padding-bottom: 5px;
+	padding-right: 85px;
+	text-align: center;
+	font-family: "MontserratBold", sans-serif;
+	font-size: 24px;
+}
+.shopping_card_content {
+	width: 100%;
+	min-width: 430px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+	flex-grow: 1;
+}
+.shopping_card_content p{
+	font-size: 18px;
+	padding: 0;
+	font-family: "MontserratBold", sans-serif;
+}
+.product_type span{
+	font-size: 18px;
+	color: #401177;
+	font-family: "MontserratRegular", sans-serif;
+}
+#product_price {
+	font-size: 26px;
+}
+.product_taxe{
+	font-size: 18px;
+	font-family: "MontserratRegular", sans-serif;
+}
+.old_price{
+	font-size: 18px;
+	font-family: "MontserratRegular", sans-serif;
+	text-decoration-line: line-through;
+}
+.duration{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+p.time {
+	padding-right: 18px;
+}
+
+.formation_time {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("../images/challenge_time.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	font-size: 1rem;
+}
+.shopping_card_button{
+	width: 100%;
+}
+.shopping_card_button span {
+	font-size: 35px;
+	padding: 0 5px;
+	font-family: "MontserratBold", sans-serif;
+	vertical-align: middle;
+}
+.shopping_card a {
+	padding: 0 5px;
+	font-size: 18px;
+	vertical-align: text-bottom;
+	max-width: 450px;
+	width: 95%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	/* CTA section */
 
