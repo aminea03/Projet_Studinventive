@@ -258,6 +258,7 @@
 		justify-content: flex-start;
 		font-family: "MontserratRegular", sans-serif;
 		font-size: 12px;
+		overflow-x: hidden;
 	}
 
 	body {
