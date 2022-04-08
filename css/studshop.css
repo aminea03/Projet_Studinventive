@@ -173,16 +173,16 @@
 	}
 	.image_container{
 		height: 100%;
-		width: auto;
+		width:auto;
 		padding: 30px 0 30px 30px;
-		border-radius: 30px;
-		flex-grow: 0;
+		
 	}
 	.shopping_card img {
 		height: 100%;
-		width: auto;
+		width: 100%;
+		object-fit: cover;
 		border-radius: 50px;
-
+	
 	}
 
 	.shopping_card_description {
@@ -385,6 +385,7 @@
 
 	}
 	.landing_section p,
+	h3,
 	button {
 		padding: 30px 0;
 		z-index: 1;
@@ -396,7 +397,7 @@
 	.landing_section img {
 		max-width: 150px;
 		position: absolute;
-		bottom: 40px;
+		bottom: 20px;
 		right: min(6vw, 150px);
 	}
 	.landing_buttons {
@@ -421,13 +422,16 @@
 
 
 
+
+
+
 /* shopping_card_section */
 
 .shopping_card_section {
 	width: 100%;
 	height: auto;
 	position: relative;
-	top: -90px;
+	top: -120px;
 	background-color: #f5b848;
 	display: flex;
 	flex-direction: column;
@@ -436,7 +440,7 @@
 }
 .shopping_card_section .top_section {
 	position: absolute;
-	top: -100px;
+	top: -50px;
 	width: auto;
 }
 .shopping_card {
@@ -453,9 +457,9 @@
 }
 .top_right_corner {
 	background-color: #f5b848;
-	min-width: 100px;
-	min-height: 100px;
-	border-bottom-left-radius: 50px;
+	min-width: 80px;
+	min-height: 80px;
+	border-bottom-left-radius: 40px;
 	position: absolute;
 	top: 0px;
 	right: 0px;
@@ -466,27 +470,28 @@
 .top_right_corner .shopping_card_circle01 {
 	content: "";
 	background-color: #401177;
-	width: 80px;
-	height: 80px;
+	width: 60px;
+	height: 60px;
 	border-radius: 100px;
 }
 .top_right_corner .shopping_card_circle02 {
 	content: "";
 	background-color: #533ca8;
-	width: 80px;
-	height: 80px;
+	width: 60px;
+	height: 60px;
 	border-radius: 100px;
 }
+
 .image_container{
 	height: auto;
-	width: 100%;
-	padding: 30px 0 30px 30px;
-	border-radius: 30px;
+	width: 70%;
+	padding: 50px 30px 30px 30px;
 	flex-grow: 0;
 }
 .shopping_card img {
 	height: 100%;
-	width: auto;
+ 	width: 100%;
+ 	object-fit: contain;
 	border-radius: 50px;
 
 }
@@ -494,27 +499,25 @@
 .shopping_card_description {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: space-between;
+	align-items: center;
 	flex-grow: 1;
-	height: 100%;
-	width: auto;
-	padding: 30px 30px 30px 15px;
+	height: 400px;
+	width: 70%;
+	padding-bottom: 50px ;
 	color: #401177;
 }
 
 .shopping_card_description h4 {
 	width: 100%;
-	height: 110px;
 	line-height: 36px;
-	padding-bottom: 5px;
-	padding-right: 85px;
+	padding-bottom: 30px;
 	text-align: center;
 	font-family: "MontserratBold", sans-serif;
 	font-size: 24px;
 }
 .shopping_card_content {
 	width: 100%;
-	min-width: 430px;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
