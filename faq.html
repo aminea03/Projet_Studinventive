@@ -15,6 +15,11 @@
 
     <script>
 
+        function scrollToAnchor(id) {
+            destinationOffset = document.getElementById("anchor_" + id).offsetTop - 160;
+            window.scrollTo(0, destinationOffset);
+        }
+
         /* Initialize materialize select element */
         document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('select');
@@ -153,12 +158,14 @@
                 votrequestion, vous pouvez
                 utiliser le formulaire de contact.</p>
             <div class="landing_buttons">
-                <a href="" class="waves-effect waves-light btn-large purple_btn">Voir notre FAQ</a>
-                <a href="" class="waves-effect waves-light btn-large">Fomulaire de contact</a>
+                <a onclick="scrollToAnchor(1)" class=" waves-effect waves-light btn-large purple_btn">Voir
+                    notre FAQ</a>
+                <a onclick="scrollToAnchor(2)" class="waves-effect waves-light btn-large">Fomulaire de
+                    contact</a>
             </div>
             <img src="images/faq_landing.svg" alt="FAQ">
         </section>
-        <section class="faq_section">
+        <section class="faq_section" id="anchor_1">
             <div class="section_title">
                 <h2>Foire aux questions</h2>
                 <p>Questions fréquentes</p>
@@ -436,7 +443,7 @@
                 </ul>
             </div>
         </section>
-        <section class="contact_section">
+        <section class="contact_section" id="anchor_2">
             <div class="section_title">
                 <h2>Formulaire de contact</h2>
                 <p>Promis on vous répond</p>
