@@ -139,52 +139,30 @@ li {
 @font-face {
 	font-family: "MontserratRegular";
 	src: url("../fonts/MontserratRegular.eot");
-	src: url("../fonts/MontserratRegular.eot") format("embedded-opentype"),
-		url("../fonts/MontserratRegular.woff2") format("woff2"),
-		url("../fonts/MontserratRegular.woff") format("woff"),
-		url("../fonts/MontserratRegular.ttf") format("truetype"),
-		url("../fonts/MontserratRegular.svg#MontserratRegular") format("svg");
+	src: url("../fonts/MontserratRegular.eot") format("embedded-opentype"), url("../fonts/MontserratRegular.woff2") format("woff2"), url("../fonts/MontserratRegular.woff") format("woff"), url("../fonts/MontserratRegular.ttf") format("truetype"), url("../fonts/MontserratRegular.svg#MontserratRegular") format("svg");
 }
 
 @font-face {
 	font-family: "MontserratMedium";
 	src: url("../fonts/MontserratMedium.eot");
-	src: url("../fonts/MontserratMedium.eot") format("embedded-opentype"),
-		url("../fonts/MontserratMedium.woff2") format("woff2"),
-		url("../fonts/MontserratMedium.woff") format("woff"),
-		url("../fonts/MontserratMedium.ttf") format("truetype"),
-		url("../fonts/MontserratMedium.svg#MontserratMedium") format("svg");
+	src: url("../fonts/MontserratMedium.eot") format("embedded-opentype"), url("../fonts/MontserratMedium.woff2") format("woff2"), url("../fonts/MontserratMedium.woff") format("woff"), url("../fonts/MontserratMedium.ttf") format("truetype"), url("../fonts/MontserratMedium.svg#MontserratMedium") format("svg");
 }
 
 @font-face {
 	font-family: "MontserratBold";
 	src: url("../fonts/MontserratBold.eot");
-	src: url("../fonts/MontserratBold.eot") format("embedded-opentype"),
-		url("../fonts/MontserratBold.woff2") format("woff2"),
-		url("../fonts/MontserratBold.woff") format("woff"),
-		url("../fonts/MontserratBold.ttf") format("truetype"),
-		url("../fonts/MontserratBold.svg#MontserratBold") format("svg");
+	src: url("../fonts/MontserratBold.eot") format("embedded-opentype"), url("../fonts/MontserratBold.woff2") format("woff2"), url("../fonts/MontserratBold.woff") format("woff"), url("../fonts/MontserratBold.ttf") format("truetype"), url("../fonts/MontserratBold.svg#MontserratBold") format("svg");
 }
 
 @font-face {
 	font-family: "MontserratExtraBold";
 	src: url("../fonts/MontserratExtraBold.eot");
-	src: url("../fonts/MontserratExtraBold.eot") format("embedded-opentype"),
-		url("../fonts/MontserratExtraBold.woff2") format("woff2"),
-		url("../fonts/MontserratExtraBold.woff") format("woff"),
-		url("../fonts/MontserratExtraBold.ttf") format("truetype"),
-		url("../fonts/MontserratExtraBold.svg#MontserratExtraBold") format("svg");
+	src: url("../fonts/MontserratExtraBold.eot") format("embedded-opentype"), url("../fonts/MontserratExtraBold.woff2") format("woff2"), url("../fonts/MontserratExtraBold.woff") format("woff"), url("../fonts/MontserratExtraBold.ttf") format("truetype"), url("../fonts/MontserratExtraBold.svg#MontserratExtraBold") format("svg");
 }
 @font-face {
 	font-family: "MontserratThin";
 	src: url("../fonts/MontserratThin.eot");
-	src: url("../fonts/MontserratThin.eot") format("embedded-opentype"),
-		url("../fonts/MontserratThin.woff2") format("woff2"),
-		url("../fonts/MontserratThin.woff") format("woff"),
-		url("../fonts/MontserratThin.ttf") format("truetype"),
-		url("../fonts/MontserratThin.svg") format("svg");
-
-	
+	src: url("../fonts/MontserratThin.eot") format("embedded-opentype"), url("../fonts/MontserratThin.woff2") format("woff2"), url("../fonts/MontserratThin.woff") format("woff"), url("../fonts/MontserratThin.ttf") format("truetype"), url("../fonts/MontserratThin.svg") format("svg");
 }
 
 .btn,
@@ -274,7 +252,7 @@ html {
 	}
 
 	.top_menu_bar_links a {
-		width: 184px;
+		width: max-content;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -285,6 +263,7 @@ html {
 
 	.top_menu_bar_links img {
 		height: 16px;
+		padding-right: 10px;
 	}
 	.nav_container_mobile {
 		display: none;
@@ -569,6 +548,10 @@ html {
 		align-items: center;
 		justify-content: center;
 	}
+
+	.copyright p {
+		padding: 0;
+	}
 }
 
 /*Footer mobile*/
@@ -659,6 +642,10 @@ html {
 		align-items: center;
 		justify-content: center;
 		text-align: center;
+	}
+
+	.copyright p {
+		padding: 0;
 	}
 }
 

@@ -50,7 +50,7 @@
 
 	.landing_section {
 		width: 100%;
-		height: 630px;
+		height: 530px;
 		position: relative;
 		top: -120px;
 		display: flex;
@@ -270,6 +270,7 @@
 
 	p {
 		line-height: 120%;
+		font-size: 1.5rem;
 	}
 
 	h1,
@@ -404,7 +405,7 @@
 		background-color: #533ca8;
 		color: white;
 		padding: 30px 3vw;
-		padding-bottom: 100px;
+		padding-bottom: 150px;
 	}
 
 	.faq_form_wrapper {
@@ -449,6 +450,7 @@
 
 	textarea {
 		min-height: 200px !important;
+		padding: 15px !important;
 	}
 	.nohover {
 		padding-left: 0 !important;
@@ -456,7 +458,7 @@
 	}
 
 	.nohover .optgroup-option span {
-		color: #fb9505 !important;
+		color: #401177 !important;
 	}
 
 	.nohover span {
@@ -465,6 +467,10 @@
 
 	.faq_form input {
 		font-size: 1.2rem !important;
+	}
+
+	.faq_form .input-field input {
+		padding-left: 15px;
 	}
 
 	.nohover ul {
@@ -505,7 +511,7 @@
 
 	footer {
 		position: absolute;
-		bottom: -750px;
+		bottom: -830px;
 		background-color: #401177;
 	}
 }

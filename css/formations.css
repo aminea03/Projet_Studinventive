@@ -63,6 +63,7 @@
 		background-repeat: no-repeat;
 		background-size: 1920px;
 		background-position: top -180px center;
+		box-shadow: inset 0 0 0 2000px #533ca877;
 	}
 
 	.landing_section h1,
@@ -400,6 +401,7 @@
 		background-repeat: no-repeat;
 		background-size: 1500px;
 		background-position: top -180px center;
+		box-shadow: inset 0 0 0 2000px #533ca877;
 	}
 
 	.landing_section h1,
