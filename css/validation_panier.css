@@ -1,0 +1,58 @@
+.informations-form {
+    background-color: #FB9505;
+    width: 60%;
+    border-radius: 30px !important;
+
+
+}
+html{
+    font-family: "MontserratBold", sans-serif;
+
+}
+.informations-form input {
+    background-color: white !important;
+    border-radius: 10px !important;
+    margin: 10px 0px !important;
+    color: #533ca8 !important;
+    border-bottom: none !important;
+    padding: 0 12px !important;
+    width: 20% !important;
+
+}
+
+.informations-form .input-large{
+    width: 90% !important;
+
+}
+.input-medium {
+    width: 49% !important;
+}
+.informations-form label{
+    color: white;
+
+}
+
+.card-paiement {
+    background-color: #401177;
+    color: white;
+    width: 30%;
+    border-radius: 30px !important;
+
+}
+
+.card-paiement ul li{
+    padding: 1rem;
+    width: 100%;
+}
+
+.card-paiement ul{
+    padding: 1rem;
+    width: 100%;
+}
+.card-paiement ul li:nth-child(even){
+    background-color: #533CA8;
+}
+
+.card-paiement ul:nth-child(even){
+    align-items: flex-end;
+}
