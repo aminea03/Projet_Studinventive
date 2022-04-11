@@ -1,6 +1,7 @@
 /* DESKTOP */
 
 @media screen and (min-width: 1024px) {
+
 	html {
 		display: flex;
 		flex-direction: column;
@@ -47,13 +48,9 @@
 		justify-content: space-around;
 		text-align: center;
 	}
-	.section_title p,
-	.landing_container p {
-		width: 75%;
-		font-size: 1.5rem;
-		padding-top: 15px;
-	}
-	
+
+
+
 	/* Landing section */
 
 	.landing_section {
@@ -62,7 +59,8 @@
 		height: auto;
 		position: relative;
 		display: flex;
-		flex-direction: column;
+		justify-content: space-between;
+		flex-direction: row;
 		top: -120px;
 		padding-top: 140px;
 		padding-bottom: 50px;
@@ -72,21 +70,23 @@
 		background-repeat: no-repeat;
 		background-size: 2200px;
 	}
-	.landing_section p{
-		width: 65%;
+
+
+	.landing_section_left{
+		width: 62%;
+		height: fit-content;
+	}
+
+	.landing_section_left p{
 		font-size: 1.5rem;
 		padding-top: 15px;
 	}
-	.landing_section h1,
+	.landing_section_left h1,
 	p {
 		padding: 30px 0;
 		z-index: 1;
 	}
-	.formation_title,
-	.data_container,
-	.buttons_container {
-		width: 65%;
-	}
+	
 
 	.data_container{
 		display: flex;
@@ -99,15 +99,17 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		width: 40%;
+		width: fit-content;
+		padding-right: 30px;
 		height: 50px;
 	}
 	.module_data img {
-		width: 34px;
-		height: 34px;
-		margin: 0 20px 0 10px;
+		width: 30px;
+		height: 30px;
+		margin-right: 10px;
 	}
 	.module_data p.data {
+		font-size: 1vw;
 		width: fit-content;
 		border-bottom:2px solid #fb9505;
 		padding: 15px 0 10px 0;
@@ -123,10 +125,150 @@
 		margin-right: 50px ;
 	}
 
+
+	
+	.landing_section_right{
+		min-height: 1700px;
+		width: 32%;
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+		position: absolute;
+		top: 130px;
+		right: 70px;
+		color: #401177;
+	}
+	.landing_background_rectangle{
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		border:  2px solid #fb9505;
+		border-radius: 50px;
+		content: "";
+		position: absolute;
+		top: -20px;
+		right:20px;
+	}
+	.landing_section_right_content{
+		background-color: #fff;
+		border-radius: 50px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: fit-content;
+		z-index: 10;
+	}
+	.landing_section_right_top{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		padding-bottom: 30px;
+	}
+	.landing_section_right_top img{
+		height: 100%;
+ 		width: 100%;
+ 		object-fit: contain;
+		border-radius: 50px 50px 0 0;
+	}
+	.landing_section_right_top h2{
+		text-align: center;
+		padding: 20px 0;
+		color: #401177;
+		font-size: 28px;
+		font-family: "MontserratBold", sans-serif;
+	}
+	.landing_section_right_top div.buttons_container{ 
+		width: 100%;
+		justify-content: space-evenly;
+		padding: 10px 0;
+	}	
+	.formation_price{
+		padding: 30px 30px 15px 30px;
+		text-align: center;
+		color: #fb9505;
+		font-size: 24px;
+		font-family: "MontserratRegular", sans-serif;
+	}
+	.formation_price span{
+		font-size: 48px;
+		font-family: "MontserratBold", sans-serif;
+	}
+	.inscription_delay{
+		text-align: center;
+		padding: 15px 30px 30px 30px;
+	}
+	.details_buttons{
+		text-align: center;}
+	.details_buttons a{
+		color: #fb9505;
+		border: 2px solid #fb9505;
+	}
+
+
+
+
+	.landing_section_right_middle h3{
+		width: 90%;
+		background-color: #401177;
+		color: #fff;
+		border-radius: 0 16px 16px 0;
+		font-family: "MontserratBold", sans-serif;
+		font-size: 20px;
+		padding: 20px;
+	}
+	.ressource_li{
+		padding: 0 0 20px 30px;
+		background-image: url("../images/list_style_orange_plus.svg");
+		background-repeat: no-repeat;
+		background-position: left 5px top 7px;
+		background-size: 10px;
+	}
+	.landing_section_right_middle > p{
+		padding: 20px;
+	}
+	.landing_section_right_middle>ul{
+		padding: 20px;
+	}
+	.evaluation_li{
+		padding: 0 0 20px 30px;
+		background-image: url("../images/offer_yes.png");
+		background-repeat: no-repeat;
+		background-position: left 5px top 7px;
+		background-size: 10px;
+	}
+
+
+
+	.landing_section_right_bottom {
+		text-align: center;
+		padding: 30px;
+	}
+	.landing_section_right_bottom img{
+		width: 65px;
+	}
+
+
+
 	
 
 
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -136,51 +278,42 @@
 
 	.details_section{
 		width: 100%;
-		background-color: transparent;
+		background-color:#efefef;
 		position: relative;
-		top: -150px;
-		display: flex;
+		top: -125px;
+		/*display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
+		align-items: center;*/
 		z-index: 5;
 		
 	}
-	.detail_section .top_section {
+	.details_section .top_section {
 		width: 100%;
 		position: absolute;
+		top: -40px;
 	}
-	.details_section_background{
-		background-color: #efefef;
-		width: 100%;
-		height: 1450px;
-		content: "";
-		position: absolute;
-		top: 100px;
-
-	}
+	
 
 	.details_section_container{
-		background-color: transparent;
+		width: 63%;
+		background-color:transparent;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
 		align-items: flex-end;
 		position: relative;
 		padding-bottom: 100px;
-		top: -350px;
+		top: 50px;
 	}
 
-	.details_section_left{
-		width: 60%;
-	}
 
 	.tab_container{
+		width: 90%;
 		height: 1400px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		margin-top: 20px;
 		border-radius: 50px;
 		background-color: transparent;
 	}
@@ -205,8 +338,8 @@
 		background-color: #fb9505;
 		color: #fff;
 		font-family: "MontserratRegular", sans-serif;
-		font-size: 14px;
-		padding: 20px 22px;
+		font-size: 1vw;
+		padding: 20px 1.8vw;
 		border-radius: 20px 20px 0 0;
 
 	}
@@ -240,136 +373,11 @@
 
 	}
 	.tab_content_li{
-		padding: 0 0 20px 30px;
+		padding: 0 0 0px 30px;
 		background-image: url("../images/list_style_purple_disc.svg");
 		background-repeat: no-repeat;
 		background-position: left 5px top 7px;
 		background-size: 10px;
-	}
-
-
-
-
-
-
-
-
-
-	.details_section_right{
-		min-height: 1700px;
-		width: 30%;
-		display: flex;
-		flex-direction: row;
-		align-items: stretch;
-		position: relative;
-	}
-	.details_background_rectangle{
-		width: 100%;
-		height: 100%;
-		object-fit: contain;
-		border:  2px solid #fb9505;
-		z-index: 1;
-		border-radius: 50px;
-		content: "";
-		position: absolute;
-		top: -20px;
-		right:20px;
-	}
-	.details_section_right_content{
-		background-color: #fff;
-		border-radius: 50px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		height: 1700px;
-		z-index: 10;
-	}
-	.details_section_right_top{
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		padding-bottom: 30px;
-	}
-	.details_section_right_top img{
-		height: 100%;
- 		width: 100%;
- 		object-fit: contain;
-		border-radius: 50px 50px 0 0;
-	}
-	.details_section_right_top h2{
-		text-align: center;
-		padding: 30px 0;
-		color: #401177;
-		font-size: 28px;
-		font-family: "MontserratBold", sans-serif;
-	}
-	.details_section_right_top div.buttons_container{ 
-		width: 100%;
-		justify-content: space-evenly;
-		padding: 20px 0;
-	}	
-	.formation_price{
-		text-align: center;
-		color: #fb9505;
-		font-size: 24px;
-		font-family: "MontserratRegular", sans-serif;
-	}
-	.formation_price span{
-		font-size: 48px;
-		font-family: "MontserratBold", sans-serif;
-	}
-	.inscription_delay{
-		text-align: center;
-		padding: 30px;
-	}
-	.details_buttons{
-		text-align: center;}
-	.details_buttons a{
-		color: #fb9505;
-		border: 2px solid #fb9505;
-	}
-
-
-
-
-	.details_section_right_middle h3{
-		width: 90%;
-		background-color: #401177;
-		color: #fff;
-		border-radius: 0 16px 16px 0;
-		font-family: "MontserratBold", sans-serif;
-		font-size: 20px;
-		padding: 20px;
-	}
-	.ressource_li{
-		padding: 0 0 20px 30px;
-		background-image: url("../images/list_style_orange_plus.svg");
-		background-repeat: no-repeat;
-		background-position: left 5px top 7px;
-		background-size: 10px;
-	}
-	.details_section_right_middle > p{
-		padding: 20px;
-	}
-	.details_section_right_middle>ul{
-		padding: 20px;
-	}
-	.evaluation_li{
-		padding: 0 0 20px 30px;
-		background-image: url("../images/offer_yes.png");
-		background-repeat: no-repeat;
-		background-position: left 5px top 7px;
-		background-size: 10px;
-	}
-
-
-
-	.details_section_right_bottom {
-		text-align: center;
-		padding: 30px;
-	}
-	.details_section_right_bottom img{
-		width: 65px;
 	}
 
 
@@ -387,8 +395,11 @@
 		justify-content: space-around;
 		text-align: center;
 		position: relative;
-		top: -540px;
+		top: -130px;
 		padding: 50px 0;
+	}
+	.financing_section p{
+		width: 90%;
 	}
 
 	.financing_card_container{
@@ -448,7 +459,7 @@
 		background-color: #401177;
 		height: 500px;
 		position: relative;
-		top: -540px;
+		top: -130px;
 		padding: 50px 0;
 	}
 	.mecenat_container{
@@ -528,7 +539,7 @@
 
 	 .project_section {
 		position: relative;
-		top: -540px;
+		top: -130px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -628,7 +639,7 @@
 
 	.cta_section {
 		position: relative;
-		top: -540px;
+		top: -130px;
 	}
 
 
@@ -643,6 +654,8 @@
 
 
 }
+
+
 
 
 

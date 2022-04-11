@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 28 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-2,0)">
+        <g>
+            <g id="spin">
+                <g>
+                    <path d="M25.883,6.086L23.063,8.918C24.953,10.809 26,13.324 26,16C26,21.516 21.516,26 16,26L16,24L12,28L16,32L16,30C23.719,30 30,23.719 30,16C30,12.254 28.539,8.734 25.883,6.086Z" style="fill:white;fill-rule:nonzero;"/>
+                    <path d="M20,4L16,0L16,2C8.281,2 2,8.281 2,16C2,19.746 3.461,23.266 6.117,25.914L8.937,23.082C7.047,21.191 6,18.676 6,16C6,10.484 10.484,6 16,6L16,8L20,4Z" style="fill:white;fill-rule:nonzero;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
