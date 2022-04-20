@@ -102,10 +102,12 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		background-color: #fb9405d2;
+		background-color: #efefefd2;
 		padding: 60px;
 		border-top-right-radius: 50px;
 		border-bottom-right-radius: 50px;
+		color: #401177;
+
 	}
 
 	.signin form {
@@ -116,7 +118,7 @@
 	}
 
 	label {
-		color: white;
+		color: #401177;
 	}
 
 	.signin label:not(.options label) {

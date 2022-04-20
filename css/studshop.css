@@ -209,7 +209,8 @@
 	.shopping_card_content {
 		width: 100%;
 		min-width: 430px;
-		text-align: center;
+		text-align: left;
+		padding-left: 10px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -242,7 +243,7 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		justify-content: center;
+		justify-content: flex-start;
 	}
 	p.time {
 		padding-right: 18px;
