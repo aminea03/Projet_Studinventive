@@ -169,6 +169,7 @@ li {
 .btn-large,
 .btn-small {
 	background-color: #fb9505 !important;
+	border-radius: 15px;
 }
 
 .btn:hover,
