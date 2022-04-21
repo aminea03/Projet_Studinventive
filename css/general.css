@@ -139,30 +139,35 @@ li {
 @font-face {
 	font-family: "MontserratRegular";
 	src: url("../fonts/MontserratRegular.eot");
-	src: url("../fonts/MontserratRegular.eot") format("embedded-opentype"), url("../fonts/MontserratRegular.woff2") format("woff2"), url("../fonts/MontserratRegular.woff") format("woff"), url("../fonts/MontserratRegular.ttf") format("truetype"), url("../fonts/MontserratRegular.svg#MontserratRegular") format("svg");
+	src: url("../fonts/MontserratRegular.eot") format("embedded-opentype"), url("../fonts/MontserratRegular.woff2") format("woff2"), url("../fonts/MontserratRegular.woff") format("woff"),
+		url("../fonts/MontserratRegular.ttf") format("truetype"), url("../fonts/MontserratRegular.svg#MontserratRegular") format("svg");
 }
 
 @font-face {
 	font-family: "MontserratMedium";
 	src: url("../fonts/MontserratMedium.eot");
-	src: url("../fonts/MontserratMedium.eot") format("embedded-opentype"), url("../fonts/MontserratMedium.woff2") format("woff2"), url("../fonts/MontserratMedium.woff") format("woff"), url("../fonts/MontserratMedium.ttf") format("truetype"), url("../fonts/MontserratMedium.svg#MontserratMedium") format("svg");
+	src: url("../fonts/MontserratMedium.eot") format("embedded-opentype"), url("../fonts/MontserratMedium.woff2") format("woff2"), url("../fonts/MontserratMedium.woff") format("woff"),
+		url("../fonts/MontserratMedium.ttf") format("truetype"), url("../fonts/MontserratMedium.svg#MontserratMedium") format("svg");
 }
 
 @font-face {
 	font-family: "MontserratBold";
 	src: url("../fonts/MontserratBold.eot");
-	src: url("../fonts/MontserratBold.eot") format("embedded-opentype"), url("../fonts/MontserratBold.woff2") format("woff2"), url("../fonts/MontserratBold.woff") format("woff"), url("../fonts/MontserratBold.ttf") format("truetype"), url("../fonts/MontserratBold.svg#MontserratBold") format("svg");
+	src: url("../fonts/MontserratBold.eot") format("embedded-opentype"), url("../fonts/MontserratBold.woff2") format("woff2"), url("../fonts/MontserratBold.woff") format("woff"),
+		url("../fonts/MontserratBold.ttf") format("truetype"), url("../fonts/MontserratBold.svg#MontserratBold") format("svg");
 }
 
 @font-face {
 	font-family: "MontserratExtraBold";
 	src: url("../fonts/MontserratExtraBold.eot");
-	src: url("../fonts/MontserratExtraBold.eot") format("embedded-opentype"), url("../fonts/MontserratExtraBold.woff2") format("woff2"), url("../fonts/MontserratExtraBold.woff") format("woff"), url("../fonts/MontserratExtraBold.ttf") format("truetype"), url("../fonts/MontserratExtraBold.svg#MontserratExtraBold") format("svg");
+	src: url("../fonts/MontserratExtraBold.eot") format("embedded-opentype"), url("../fonts/MontserratExtraBold.woff2") format("woff2"), url("../fonts/MontserratExtraBold.woff") format("woff"),
+		url("../fonts/MontserratExtraBold.ttf") format("truetype"), url("../fonts/MontserratExtraBold.svg#MontserratExtraBold") format("svg");
 }
 @font-face {
 	font-family: "MontserratThin";
 	src: url("../fonts/MontserratThin.eot");
-	src: url("../fonts/MontserratThin.eot") format("embedded-opentype"), url("../fonts/MontserratThin.woff2") format("woff2"), url("../fonts/MontserratThin.woff") format("woff"), url("../fonts/MontserratThin.ttf") format("truetype"), url("../fonts/MontserratThin.svg") format("svg");
+	src: url("../fonts/MontserratThin.eot") format("embedded-opentype"), url("../fonts/MontserratThin.woff2") format("woff2"), url("../fonts/MontserratThin.woff") format("woff"),
+		url("../fonts/MontserratThin.ttf") format("truetype"), url("../fonts/MontserratThin.svg") format("svg");
 }
 
 .btn,
@@ -206,6 +211,277 @@ li {
 
 html {
 	scroll-behavior: smooth;
+}
+
+/* Card model 1 */
+
+.card_model_1 {
+	position: relative;
+	width: 30%;
+	min-width: 290px;
+	height: 320px;
+	margin: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: white;
+	border-radius: 30px;
+	box-sizing: border-box;
+	outline: thick solid #533ca8;
+}
+
+.card_model_1 img {
+	width: 130px;
+	margin: 20px 0;
+}
+
+.card_model_1 h3 {
+	width: 85%;
+	min-height: 40px;
+	display: flex;
+	align-items: center;
+	align-self: flex-start;
+	padding-left: 20px !important;
+	font-size: 1rem;
+	background-color: #533ca8;
+	border-top-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	border: thin solid #533ca8;
+	box-sizing: border-box;
+	text-transform: uppercase;
+}
+
+.card_model_1 p {
+	color: #401177;
+	font-size: 0.9rem !important;
+	text-align: center;
+	padding: 0 20px;
+}
+
+@media screen and (max-width: 1023px) {
+	.card_model_1 {
+		width: 60%;
+		min-width: 290px;
+	}
+
+	.card_model_1 p {
+		font-size: 1.2rem !important;
+	}
+}
+
+/* Card model 2 (challenge) */
+
+@media screen and (min-width: 1024px) {
+	.card_model_2 {
+		position: relative;
+		flex-basis: 30%;
+		min-width: 350px;
+		height: 300px;
+		max-height: 300px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		background-color: white;
+		border-radius: 30px;
+		margin: 30px 5px;
+	}
+
+	.card_model_2_header {
+		width: 100%;
+		background-color: #fb9505;
+		font-family: "MontserratBold", sans-serif;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 10px 0;
+		border-radius: 30px 30px 0 0;
+	}
+
+	.card_model_2_content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		color: #401177;
+		flex-grow: 2;
+	}
+
+	.card_model_2_content h3 {
+		font-size: 1.2rem;
+		text-align: center !important;
+		padding: 0 20px 0 20px !important;
+		line-height: normal;
+	}
+
+	.card_model_2_content img {
+		max-height: 100px;
+	}
+
+	.card_model_2_provider {
+		font-size: 1.2rem;
+	}
+
+	.card_model_2_time {
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		width: 50px;
+		height: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-image: url("../images/challenge_time.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		font-size: 1rem;
+	}
+
+	.card_model_2_level {
+		width: 80%;
+		height: 40px;
+		display: flex;
+		justify-content: space-around;
+		align-self: flex-end;
+		color: #401177;
+		border-radius: 30px 0;
+	}
+
+	.card_model_2_level p {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+	}
+
+	.card_model_2_level_1 {
+		border-top-left-radius: 30px;
+		background-color: #533ca8;
+		flex-grow: 1;
+	}
+
+	.card_model_2_level_2 {
+		background-color: #533ca8;
+		flex-grow: 1;
+	}
+
+	.card_model_2_level_3 {
+		border-bottom-right-radius: 30px;
+		background-color: #533ca8;
+		flex-grow: 1;
+	}
+
+	.level_on {
+		color: white;
+		background-color: #fb9505;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.card_model_2 {
+		position: relative;
+		flex-basis: 30%;
+		min-width: min(350px, 90vw);
+		height: 300px;
+		max-height: 300px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		background-color: white;
+		border-radius: 30px;
+		margin: 30px 15px;
+	}
+
+	.card_model_2_header {
+		width: 100%;
+		background-color: #fb9505;
+		font-family: "MontserratBold", sans-serif;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 10px 0;
+		border-radius: 30px 30px 0 0;
+	}
+
+	.card_model_2_content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		color: #401177;
+		flex-grow: 2;
+	}
+
+	.card_model_2_content h3 {
+		font-size: 1.2rem;
+		text-align: center !important;
+		padding: 0 20px 0 20px !important;
+		line-height: normal;
+	}
+
+	.card_model_2_content img {
+		max-height: 100px;
+	}
+
+	.card_model_2_provider {
+		font-size: 1.2rem;
+	}
+
+	.card_model_2_time {
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		width: 50px;
+		height: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-image: url("../images/challenge_time.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		font-size: 1rem;
+	}
+
+	.card_model_2_level {
+		width: 80%;
+		height: 40px;
+		display: flex;
+		justify-content: space-around;
+		align-self: flex-end;
+		color: #401177;
+		border-radius: 30px 0;
+	}
+
+	.card_model_3_level p {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+	}
+
+	.card_model_2_level_1 {
+		border-top-left-radius: 30px;
+		background-color: #533ca8;
+		flex-grow: 1;
+	}
+
+	.card_model_2_level_2 {
+		background-color: #533ca8;
+		flex-grow: 1;
+	}
+
+	.card_model_2_level_3 {
+		border-bottom-right-radius: 30px;
+		background-color: #533ca8;
+		flex-grow: 1;
+	}
+
+	.level_on {
+		color: white;
+		background-color: #fb9505;
+	}
 }
 
 /*Header desktop*/
