@@ -1003,6 +1003,18 @@ html {
 	}
 }
 
+/* SECTION PADDING */
+@media screen and (min-width: 1024px) {
+	.section_padding {
+		padding: 50px min(6vw, 140px);
+	}
+}
+@media screen and (max-width: 1023px) {
+	.section_padding {
+		padding: 30px 3vw;
+	}
+}
+
 /* TEMPLATE */
 /* TEMPLATE DESKTOP */
 
@@ -1395,7 +1407,7 @@ html {
 		justify-content: space-evenly;
 		background-color: #533ca8;
 		color: white;
-		padding: 50px min(6vw, 140px);
+		padding: 30px 3vw;
 		padding-top: 0;
 	}
 
@@ -1423,7 +1435,7 @@ html {
 		justify-content: space-evenly;
 		background-color: white;
 		color: #401177;
-		padding: 50px min(6vw, 140px);
+		padding: 30px 3vw;
 	}
 
 	.template_section_2 .curve_bottom {
@@ -1451,7 +1463,7 @@ html {
 		justify-content: space-evenly;
 		background-color: #401177;
 		color: white;
-		padding: 50px min(6vw, 140px);
+		padding: 30px 3vw;
 		padding-top: 100px;
 	}
 
