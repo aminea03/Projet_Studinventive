@@ -56,24 +56,30 @@
 	.landing_section {
 		width: 100%;
 		color: #fff;
-		height: auto;
+		height: 100%;
 		position: relative;
-		display: flex;
-		justify-content: space-between;
-		flex-direction: row;
+		display: grid;
+		grid-template-columns: 60% 37%;
+		grid-template-rows: auto 0;
+		column-gap: 3%;
 		top: -120px;
 		padding-top: 140px;
-		padding-bottom: 50px;
-		padding-left:  min(6vw, 140px) ;
-		padding-right:  min(6vw, 140px) ;
 		background-image: url(../images/formation_details_landing_image.svg);
 		background-repeat: no-repeat;
 		background-size: 2200px;
 	}
 
+	.landing_section_container{
+		grid-column: 1/3;
+		grid-row: 1/2;
+		display: flex;
+		flex-direction: column;
+	}
 
 	.landing_section_left{
-		width: 62%;
+		padding-bottom: 50px;
+		padding-left:  min(6vw, 140px) ;
+		width: 60%;
 		height: fit-content;
 	}
 
@@ -86,7 +92,6 @@
 		padding: 30px 0;
 		z-index: 1;
 	}
-	
 
 	.data_container{
 		display: flex;
@@ -126,18 +131,29 @@
 	}
 
 
+
 	
-	.landing_section_right{
-		width: 32%;
-		display: flex;
-		flex-direction: row;
-		align-items: stretch;
-		position: absolute;
-		top: 200px;
-		right: 70px;
+	.landing_section_right_container{
+		height: min-content;
+		grid-column: 2/3;
+		grid-row: 1/2;
+		position: sticky;
+		top:100px;
+		bottom: 70px;
+		margin-right:  min(6vw, 140px) ;
+		margin-bottom: 30px;
 		color: #401177;
 		z-index: 500;
 	}
+
+	.landing_section_right{
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+		position: relative;
+		top: 30px;
+	}
+
 	.landing_background_rectangle{
 		width: 100%;
 		height: 100%;
@@ -148,6 +164,7 @@
 		position: absolute;
 		top: -20px;
 		right:20px;
+		z-index: 5;
 	}
 	.landing_section_right_content{
 		background-color: #fff;
@@ -156,7 +173,7 @@
 		flex-direction: column;
 		justify-content: space-between;
 		height: fit-content;
-		z-index: 10;
+		z-index: 1000;
 	}
 	.landing_section_right_top{
 		display: flex;
@@ -249,13 +266,10 @@
 
 	.details_section{
 		width: 100%;
+		height: auto;
 		background-color:#efefef;
 		position: relative;
-		top: -125px;
-		/*display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;*/
+		top: 50px;
 		z-index: 5;
 		
 	}
@@ -267,21 +281,22 @@
 	
 
 	.details_section_container{
-		width: 63%;
+		width: 60%;
 		background-color:transparent;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
 		align-items: flex-end;
 		position: relative;
-		padding-bottom: 100px;
 		top: 50px;
 	}
 
 
 	.tab_container{
 		width: 90%;
-		height: 1400px;
+		height: auto;
+		padding-bottom: 100px;
+
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -366,7 +381,7 @@
 		justify-content: space-around;
 		text-align: center;
 		position: relative;
-		top: -130px;
+		top: -70px;
 		padding: 50px 0;
 	}
 	.financing_section p{
@@ -619,7 +634,7 @@
 
 	footer {
 		position: absolute;
-		bottom: 0px;
+		bottom: -420px;
 		background-color: #533ca8;
 	}
 
