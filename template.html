@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/notremethode.css">
     <link rel="icon" href="images/logo_rocket.svg" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="js/materialize.js" defer></script>
     <script src="js/header.js" defer></script>
-    <script>
-        function scrollToAnchor(id) {
-            destinationOffset = document.getElementById("anchor_" + id).offsetTop - 160;
-            window.scrollTo(0, destinationOffset);
+    <script src="js/accueil.js" defer></script>
+    <!--     <script src="js/accueil.js" defer></script> -->
+    <title>Studinventive</title>
+    <style>
+        .template_landing_section {
+            background-image: url(../images/partenariat_landing_background.jpg);
         }
-    </script>
-    <title>La méthode studinventive</title>
+    </style>
 </head>
 
 <body>
@@ -55,7 +55,8 @@
                     <div class="divider"></div>
                 </li>
                 <li class="subheader_row"><a class="subheader">Menu</a><a href="#!"
-                        class="close_button_nav sidenav-close"></a></li>
+                        class="close_button_nav sidenav-close"></a>
+                </li>
                 <li><a href="index.html" class="current_page">Accueil</a></li>
                 <li><a href="notremethode.html">Notre méthode</a></li>
                 <ul class="collapsible collapsible-accordion">
@@ -94,8 +95,7 @@
                 </li>
                 <li><a href="https://www.instagram.com/studinventive/" target="_blank"><img
                             class="nav_container_mobile_social" src="images/instagram_icon.svg"
-                            alt="Icone Instagram"></a>
-                </li>
+                            alt="Icone Instagram"></a></li>
             </ul>
             <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
@@ -118,9 +118,11 @@
             </ul>
             <nav>
                 <ul>
+                    <!-- Ajouter class="current_page" au <a> correspondant -->
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="notremethode.html" class="current_page">Notre méthode</a></li>
-                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Nos formations</a></li>
+                    <li><a href="notremethode.html">Notre méthode</a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Nos formations</a>
+                    </li>
                     <li><a href="partenariat.html">Partenariat</a></li>
                     <li><a href="studshop.html">Studshop</a></li>
                     <li class="nav_li_campus"><a href="connexion.html">Accès campus</a></li>
@@ -129,136 +131,83 @@
         </div>
     </header>
     <main>
-        <section class="landing_section">
-            <h1>Notre méthode</h1>
-            <p>Une méthode d'apprentissage innovante, proposant une personnalisation hautement flexible, avec un service
-                de qualité à vos côtés.</p>
-            <a href="faq.html" class="waves-effect waves-light btn-large orange_btn">Contactez-nous</a>
-            <img src="images/method_landing.svg" alt="Etudiants">
-            <img id="goto1" onclick="scrollToAnchor(id)" src="images/white_arrow01.svg" alt="flèche blanche"
-                class="white_arrow">
+        <section class="template_landing_section">
+            <h1>Titre</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione in natus animi ex tenetur nulla quae
+                provident, ab eligendi alias magni placeat.</p>
+            <div class="landing_buttons">
+                <a href="" class="waves-effect waves-light btn-large">Bouton</a>
+                <a href="" class="waves-effect waves-light btn-large white_btn">Bouton</a>
+            </div>
         </section>
-        <section id="anchor_goto1" class="learning_section">
+        <section class="template_section_1">
             <div class="curve_top"></div>
             <div class="section_title">
-                <h2>Construisons ensemble votre projet de formation</h2>
-                <p>Améliorez votre image et votre notoriété.</p>
+                <h2>Titre</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque corrupti obcaecati, nisi ipsa
+                    non tempora nemo eius est asperiores iste iure repellat dolor, minus dignissimos nesciunt eum. Quae,
+                    ipsa. Exercitationem!</p>
             </div>
-            <div class="card_container">
-                <div class="card_model_1">
-                    <h3>Personnalisation de l'apprentissage</h3>
-                    <img src="images/notremethode1.svg" alt="Etudiant">
-                    <p>Personnalisez votre apprentissage, avec nos formations adaptés et un accompagnement sur
-                        mesure.</p>
+            <div class="template_section_content">
+                <div class="template_section_content_element">Your content here Your content here Your content here
                 </div>
-                <div class="card_model_1">
-                    <h3>Réalité virtuelle</h3>
-                    <img src="images/notremethode2.svg" alt="Casque de réalité virtuelle">
-                    <p>Suivez différents conseils pour luter contre le décrochage académique et garder le cap.</p>
+                <div class="template_section_content_element">Your content here Your content here Your content here
                 </div>
-                <div class="card_model_1">
-                    <h3>Prévention au décrochage accadémique</h3>
-                    <img src="images/notremethode3.svg" alt="Ordinateur">
-                    <p>Suivez différents conseils pour luter contre le décrochage académique et garder le cap.</p>
+                <div class="template_section_content_element">Your content here Your content here Your content here
                 </div>
-            </div>
-            <div class="curve_bottom"></div>
-        </section>
-        <section class="pedagogy_section">
-            <div class="section_title">
-                <h2>Pédagogie inversée par projet</h2>
-            </div>
-            <div class="pedagogy_content">
-                <div class="img_container">
-                    <img src="images/method_pedagogy.svg" alt="Elève">
-                </div>
-                <p>Optez pour une pédagogie inversée, visant à inverser le processus habituel. Les apprenants sont
-                    invités à préparer le
-                    cours chez eux à l'aide de vidéos et cours transmis par l'enseignant. Ensuite, participez, en
-                    classe, à des activités de
-                    groupe, réalisées à partir des travaux déjà préparé en amont.</p>
-            </div>
-        </section>
-        <section class="ia_section">
-            <div class="curve_top"></div>
-            <div class="section_title">
-                <h2>L'IA dans l'apprentissage</h2>
-            </div>
-            <div class="ia_content">
 
-                <p>Optez pour une pédagogie inversée, visant à inverser le processus habituel. Les apprenants sont
-                    invités à préparer le
-                    cours chez eux à l'aide de vidéos et cours transmis par l'enseignant. Ensuite, participez, en
-                    classe, à des activités de
-                    groupe, réalisées à partir des travaux déjà préparé en amont.</p>
-                <div class="img_container">
-                    <img src="images/method_ia.svg" alt="Cerveau">
+            </div>
+        </section>
+        <section class="template_section_2">
+            <div class="section_title">
+                <h2>Titre</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque corrupti obcaecati, nisi ipsa
+                    non tempora nemo eius est asperiores iste iure repellat dolor, minus dignissimos nesciunt eum. Quae,
+                    ipsa. Exercitationem!</p>
+            </div>
+            <div class="template_section_content">
+                <div class="template_section_content_element">Your content here Your content here Your content here
+                </div>
+                <div class="template_section_content_element">Your content here Your content here Your content here
+                </div>
+                <div class="template_section_content_element">Your content here Your content here Your content here
                 </div>
             </div>
             <div class="curve_bottom"></div>
         </section>
-        <section class="rv_section">
+        <section class="template_section_3">
             <div class="section_title">
-                <h2>La réalité virtuelle</h2>
-                <p>Bla bla bla.</p>
+                <h2>Titre</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque corrupti obcaecati, nisi ipsa
+                    non tempora nemo eius est asperiores iste iure repellat dolor, minus dignissimos nesciunt eum. Quae,
+                    ipsa. Exercitationem!</p>
             </div>
-            <div class="card_container">
-                <div class="card_model_1">
-                    <h3>Motivation</h3>
-                    <img src="images/notremethode2.svg" alt="">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        mesure.</p>
+            <div class="template_section_content">
+                <div class="template_section_content_element">Your content here Your content here Your content here
                 </div>
-                <div class="card_model_1">
-                    <h3>Engagement</h3>
-                    <img src="images/notremethode2.svg" alt="">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                <div class="template_section_content_element">Your content here Your content here Your content here
                 </div>
-                <div class="card_model_1">
-                    <h3>Socialisation</h3>
-                    <img src="images/notremethode2.svg" alt="">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                <div class="template_section_content_element">Your content here Your content here Your content here
                 </div>
             </div>
         </section>
-        <section class="publications_section">
+        <section class="more_section">
             <div class="section_title">
-                <h2>Nos publications scientifiques sur notre méthode</h2>
-                <p>Bla bla bla.</p>
+                <h2>Nos partenaires</h2>
+                <p>Ces entreprises soutiennent l'éducation</p>
             </div>
-            <div class="publications_container">
-                <div class="publication">
-                    <img src="" alt="">
-                    <h3>Nom publication</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard
-                        dummy text.</p>
-                </div>
-                <div class="publication">
-                    <img src="" alt="">
-                    <h3>Nom publication</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard
-                        dummy text.</p>
-                </div>
-                <div class="publication">
-                    <img src="" alt="">
-                    <h3>Nom publication</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard
-                        dummy text.</p>
-                </div>
-                <div class="publication">
-                    <img src="" alt="">
-                    <h3>Nom publication</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard
-                        dummy text.</p>
-                </div>
+            <div class="marquee">
+                <ul class="marquee-content">
+                    <li><img src="images/label1.png" alt=""></li>
+                    <li><img src="images/label2.png" alt=""></li>
+                    <li><img src="images/label3.png" alt=""></li>
+                    <li><img src="images/label4.png" alt=""></li>
+                    <li><img src="images/label5.png" alt=""></li>
+                    <li><img src="images/label6.png" alt=""></li>
+                </ul>
             </div>
-            <a href="" class="waves-effect waves-light btn-large">Plus de publications</a>
         </section>
-        <section class="cta_section">
+        <section class="cta_section template_cta_section">
             <div class="section_title">
                 <h2>Vous souhaitez une formation de qualité ?</h2>
                 <p>Démarrez gratuitement votre projet de formation avec Studinventive.</p>
@@ -269,7 +218,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="template_footer">
         <div class="footer_container">
             <div class="footer_container_left">
                 <img class="footer_logo_studinventive" src="images/logo_studinventive_blanc.svg"

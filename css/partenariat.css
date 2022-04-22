@@ -66,7 +66,7 @@
 		background-repeat: no-repeat;
 		background-size: 1925px;
 		background-position: bottom -100px center;
-		box-shadow: inset 0 0 0 2000px #fb940560;
+		box-shadow: inset 0 0 0 2000px #41117770;
 	}
 
 	.landing_section h1,
@@ -114,7 +114,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
-		width: 40%;
+		width: 80%;
 		margin-right: 1%;
 	}
 
@@ -147,72 +147,13 @@
 		padding-top: 100px;
 	}
 
-	.project_section_card {
-		position: relative;
-		width: 320px;
-		min-width: 320px;
-		height: 320px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: flex-start;
-		background-color: white;
-		border-top-right-radius: 30px;
-		border-bottom-right-radius: 30px;
-		box-sizing: border-box;
-		border: thick solid #533ca8;
-		margin: 2%;
+	.project_section .card_model_1 h3 {
+		background-color: #401177 !important;
+		border: thin solid #401177 !important;
 	}
 
-	.project_card_header {
-		width: 270px;
-		min-height: 37px;
-		align-self: flex-start;
-		padding-top: 10px;
-		background-color: #533ca8;
-		border-bottom-right-radius: 20px;
-		border: thin solid #533ca8;
-	}
-
-	.project_card_header h3 {
-		font-size: 0.85rem;
-		color: white;
-	}
-
-	.project_section_card .card_circle1,
-	.project_section_card .card_circle2,
-	.project_section_card .card_circle3 {
-		min-width: 28px;
-		min-height: 28px;
-		border-radius: 50px;
-		content: "";
-		position: absolute;
-		top: 3px;
-		right: 46px;
-	}
-
-	.project_section_card p {
-		color: #401177;
-		font-size: 1rem;
-		text-align: center;
-		padding: 0 10px 20px 10px;
-	}
-
-	.project_section_img {
-		width: 130px;
-		margin: 20px 0 10px 0;
-	}
-
-	.card_circle1 {
-		background-color: #401177;
-	}
-
-	.card_circle2 {
-		background-color: #f5b848;
-	}
-
-	.card_circle3 {
-		background-color: #fb9505;
+	.project_section .card_model_1 {
+		outline: thick solid #401177 !important;
 	}
 
 	.curve_top {
@@ -240,7 +181,7 @@
 		justify-content: space-between;
 		padding: 50px min(6vw, 140px);
 		color: #401177;
-		background-color: #fb9505;
+		background-color: #efefef;
 	}
 
 	.participate_section img {
@@ -412,7 +353,7 @@
 		background-repeat: no-repeat;
 		background-size: 1500px;
 		background-position: bottom center;
-		box-shadow: inset 0 0 0 2000px #fb940560;
+		box-shadow: inset 0 0 0 2000px #41117770;
 	}
 
 	.landing_section h1,
@@ -486,6 +427,7 @@
 		left: 0;
 		right: 0;
 		margin: auto;
+		margin-bottom: 50px;
 	}
 
 	.project_card_container1 {
@@ -509,72 +451,13 @@
 		}
 	}
 
-	.project_section_card {
-		position: relative;
-		width: 320px;
-		min-width: 320px;
-		height: 320px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: flex-start;
-		background-color: white;
-		border-top-right-radius: 30px;
-		border-bottom-right-radius: 30px;
-		box-sizing: border-box;
-		border: thick solid #533ca8;
-		margin: 2%;
+	.project_section .card_model_1 h3 {
+		background-color: #401177 !important;
+		border: thin solid #401177 !important;
 	}
 
-	.project_card_header {
-		width: 270px;
-		min-height: 37px;
-		align-self: flex-start;
-		padding-top: 10px;
-		background-color: #533ca8;
-		border-bottom-right-radius: 20px;
-		border: thin solid #533ca8;
-	}
-
-	.project_card_header h3 {
-		font-size: 0.85rem;
-		color: white;
-	}
-
-	.project_section_card .card_circle1,
-	.project_section_card .card_circle2,
-	.project_section_card .card_circle3 {
-		min-width: 28px;
-		min-height: 28px;
-		border-radius: 50px;
-		content: "";
-		position: absolute;
-		top: 3px;
-		right: 46px;
-	}
-
-	.project_section_card p {
-		color: #401177;
-		font-size: 1rem;
-		text-align: center;
-		padding: 0 10px 20px 10px;
-	}
-
-	.project_section_img {
-		width: 130px;
-		margin: 20px 0 10px 0;
-	}
-
-	.card_circle1 {
-		background-color: #401177;
-	}
-
-	.card_circle2 {
-		background-color: #f5b848;
-	}
-
-	.card_circle3 {
-		background-color: #fb9505;
+	.project_section .card_model_1 {
+		outline: thick solid #401177 !important;
 	}
 
 	.curve_top {
@@ -602,7 +485,7 @@
 		justify-content: space-between;
 		padding: 30px 3vw;
 		color: #401177;
-		background-color: #fb9505;
+		background-color: #efefef;
 	}
 
 	.participate_section img {

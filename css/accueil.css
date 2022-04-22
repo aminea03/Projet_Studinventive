@@ -193,70 +193,6 @@
 		border-radius: 25px;
 	}
 
-	.model_section_card {
-		position: relative;
-		width: 30%;
-		min-width: 290px;
-		height: 296px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: flex-start;
-		background-color: white;
-		border-top-right-radius: 30px;
-		border-bottom-right-radius: 30px;
-		box-sizing: border-box;
-		outline: thick solid #533ca8;
-	}
-
-	.model_section_img {
-		width: 130px;
-		margin: 20px 0 10px 0;
-	}
-
-	.model_section_card h3 {
-		width: 254px;
-		min-height: 37px;
-		align-self: flex-start;
-		padding-top: 10px;
-		font-size: 0.85rem;
-		background-color: #533ca8;
-		border-bottom-right-radius: 20px;
-		border: thin solid #533ca8;
-		box-sizing: border-box;
-	}
-
-	.model_section_card .card_circle1,
-	.model_section_card .card_circle2,
-	.model_section_card .card_circle3 {
-		min-width: 28px;
-		min-height: 28px;
-		border-radius: 50px;
-		content: "";
-		position: absolute;
-		top: 3px;
-		left: 220px;
-	}
-
-	.card_circle1 {
-		background-color: #401177;
-	}
-
-	.card_circle2 {
-		background-color: #f5b848;
-	}
-
-	.card_circle3 {
-		background-color: #fb9505;
-	}
-
-	.model_section_card p {
-		color: #401177;
-		font-size: 1rem;
-		text-align: center;
-		padding: 0 10px 20px 10px;
-	}
-
 	/* Video section */
 
 	.video_section {
@@ -566,107 +502,6 @@
 		width: 100%;
 	}
 
-	.challenge {
-		position: relative;
-		flex-basis: 30%;
-		min-width: 350px;
-		height: 300px;
-		max-height: 300px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-between;
-		background-color: white;
-		border-radius: 30px;
-		margin: 30px 0;
-	}
-
-	.challenge_header {
-		width: 100%;
-		background-color: #fb9505;
-		font-family: "MontserratBold", sans-serif;
-		font-size: 1.5rem;
-		text-transform: uppercase;
-		text-align: center;
-		padding: 10px 0;
-		border-radius: 30px 30px 0 0;
-	}
-
-	.challenge_content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-around;
-		color: #401177;
-		flex-grow: 2;
-	}
-
-	.challenge_content h3 {
-		font-size: 1.2rem;
-	}
-
-	.challenge_content img {
-		max-height: 100px;
-	}
-
-	.challenge_provider {
-		font-size: 1.2rem;
-	}
-
-	.challenge_time {
-		position: absolute;
-		bottom: 20px;
-		left: 20px;
-		width: 50px;
-		height: 50px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background-image: url("../images/challenge_time.svg");
-		background-repeat: no-repeat;
-		background-size: contain;
-		font-size: 1rem;
-	}
-
-	.challenge_level {
-		width: 80%;
-		height: 40px;
-		display: flex;
-		justify-content: space-around;
-		align-self: flex-end;
-		color: #401177;
-		border-radius: 30px 0;
-	}
-
-	.challenge_level p {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height: 100%;
-	}
-
-	.challenge_level_1 {
-		border-top-left-radius: 30px;
-		background-color: #533ca8;
-		flex-grow: 1;
-	}
-
-	.challenge_level_2 {
-		background-color: #533ca8;
-		flex-grow: 1;
-	}
-
-	.challenge_level_3 {
-		border-bottom-right-radius: 30px;
-		background-color: #533ca8;
-		flex-grow: 1;
-	}
-
-	.level_on {
-		color: white;
-		background-color: #fb9505;
-	}
-
 	.challenge_btn {
 		margin: 30px 0 50px 0;
 	}
@@ -830,83 +665,29 @@
 		top: -450px;
 		height: 900px;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		align-items: center;
 		justify-content: space-evenly;
 		background-color: #533ca8;
 		color: white;
-		padding: 50px min(6vw, 140px);
+		padding: 100px min(6vw, 140px) 50px min(6vw, 140px);
 	}
 
-	.project_card_container1 {
+	.project_card_container {
 		display: flex;
-		flex-flow: column;
+		flex-flow: row wrap;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: space-evenly;
+		padding: 20px 0;
 	}
 
-	.project_card_container2 {
-		display: flex;
-		flex-flow: column;
-		align-items: center;
-		justify-content: space-between;
-		padding-top: 100px;
+	.project_card_container h3 {
+		background-color: #401177 !important;
+		border: thin solid #401177 !important;
 	}
 
-	.project_section_card {
-		position: relative;
-		width: 320px;
-		min-width: 320px;
-		height: 320px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: flex-start;
-		background-color: white;
-		border-top-right-radius: 30px;
-		border-bottom-right-radius: 30px;
-		box-sizing: border-box;
-		border: thick solid #533ca8;
-		margin: 20px;
-	}
-
-	.project_card_header {
-		width: 270px;
-		min-height: 37px;
-		align-self: flex-start;
-		padding-top: 10px;
-		background-color: #533ca8;
-		border-bottom-right-radius: 20px;
-		border: thin solid #533ca8;
-	}
-
-	.project_card_header h3 {
-		font-size: 0.85rem;
-		color: white;
-	}
-
-	.project_section_card .card_circle1,
-	.project_section_card .card_circle2,
-	.project_section_card .card_circle3 {
-		min-width: 28px;
-		min-height: 28px;
-		border-radius: 50px;
-		content: "";
-		position: absolute;
-		top: 3px;
-		right: 46px;
-	}
-
-	.project_section_card p {
-		color: #401177;
-		font-size: 1rem;
-		text-align: center;
-		padding: 0 10px 20px 10px;
-	}
-
-	.project_section_img {
-		width: 130px;
-		margin: 20px 0 10px 0;
+	.project_card_container .card_model_1 {
+		outline: thick solid #401177 !important;
 	}
 
 	/* More section */
@@ -1060,11 +841,20 @@
 		padding-right: 10px;
 	}
 
+	/* CTA section */
+
+	.cta_section {
+		position: relative;
+		top: -450px;
+		height: 500px;
+	}
+
 	/* Footer */
 
 	footer {
 		position: absolute;
 		bottom: 0;
+		background-color: #533ca8;
 	}
 }
 
@@ -1272,71 +1062,6 @@
 		align-items: center;
 		justify-content: space-around;
 		border-radius: 25px;
-	}
-
-	.model_section_card {
-		position: relative;
-		width: 290px;
-		min-width: 290px;
-		height: 296px;
-		margin: 15px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: flex-start;
-		background-color: white;
-		border-top-right-radius: 30px;
-		border-bottom-right-radius: 30px;
-		box-sizing: border-box;
-		outline: thick solid #533ca8;
-	}
-
-	.model_section_img {
-		width: 130px;
-		margin: 20px 0 10px 0;
-	}
-
-	.model_section_card h3 {
-		width: 254px;
-		min-height: 37px;
-		align-self: flex-start;
-		padding-top: 10px;
-		font-size: 0.85rem;
-		background-color: #533ca8;
-		border-bottom-right-radius: 20px;
-		border: thin solid #533ca8;
-		box-sizing: border-box;
-	}
-
-	.model_section_card .card_circle1,
-	.model_section_card .card_circle2,
-	.model_section_card .card_circle3 {
-		min-width: 28px;
-		min-height: 28px;
-		border-radius: 50px;
-		content: "";
-		position: absolute;
-		top: 3px;
-		left: 220px;
-	}
-
-	.card_circle1 {
-		background-color: #401177;
-	}
-
-	.card_circle2 {
-		background-color: #f5b848;
-	}
-
-	.card_circle3 {
-		background-color: #fb9505;
-	}
-
-	.model_section_card p {
-		color: #401177;
-		font-size: 1rem;
-		text-align: center;
-		padding: 0 10px 20px 10px;
 	}
 
 	/* Video section */
@@ -1733,107 +1458,6 @@
 		width: 100%;
 	}
 
-	.challenge {
-		position: relative;
-		flex-basis: 30%;
-		min-width: min(350px, 90vw);
-		height: 300px;
-		max-height: 300px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-between;
-		background-color: white;
-		border-radius: 30px;
-		margin: 30px 15px;
-	}
-
-	.challenge_header {
-		width: 100%;
-		background-color: #fb9505;
-		font-family: "MontserratBold", sans-serif;
-		font-size: 1.5rem;
-		text-transform: uppercase;
-		text-align: center;
-		padding: 10px 0;
-		border-radius: 30px 30px 0 0;
-	}
-
-	.challenge_content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-around;
-		color: #401177;
-		flex-grow: 2;
-	}
-
-	.challenge_content h3 {
-		font-size: 1.2rem;
-	}
-
-	.challenge_content img {
-		max-height: 100px;
-	}
-
-	.challenge_provider {
-		font-size: 1.2rem;
-	}
-
-	.challenge_time {
-		position: absolute;
-		bottom: 20px;
-		left: 20px;
-		width: 50px;
-		height: 50px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background-image: url("../images/challenge_time.svg");
-		background-repeat: no-repeat;
-		background-size: contain;
-		font-size: 1rem;
-	}
-
-	.challenge_level {
-		width: 80%;
-		height: 40px;
-		display: flex;
-		justify-content: space-around;
-		align-self: flex-end;
-		color: #401177;
-		border-radius: 30px 0;
-	}
-
-	.challenge_level p {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height: 100%;
-	}
-
-	.challenge_level_1 {
-		border-top-left-radius: 30px;
-		background-color: #533ca8;
-		flex-grow: 1;
-	}
-
-	.challenge_level_2 {
-		background-color: #533ca8;
-		flex-grow: 1;
-	}
-
-	.challenge_level_3 {
-		border-bottom-right-radius: 30px;
-		background-color: #533ca8;
-		flex-grow: 1;
-	}
-
-	.level_on {
-		color: white;
-		background-color: #fb9505;
-	}
-
 	.challenge_btn {
 		margin: 30px 0 50px 0;
 	}
@@ -2015,81 +1639,20 @@
 		padding: 30px 3vw;
 	}
 
-	.project_card_container1 {
+	.project_card_container {
 		display: flex;
-		flex-flow: column;
+		flex-flow: row wrap;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: space-evenly;
 	}
 
-	.project_card_container2 {
-		display: flex;
-		flex-flow: column;
-		align-items: center;
-		justify-content: space-between;
-		padding-top: 100px;
+	.project_card_container h3 {
+		background-color: #401177 !important;
+		border: thin solid #401177 !important;
 	}
 
-	@media screen and (max-width: 765px) {
-		.project_card_container2 {
-			padding-top: 0;
-		}
-	}
-
-	.project_section_card {
-		position: relative;
-		width: 320px;
-		min-width: 320px;
-		height: 296px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: flex-start;
-		background-color: white;
-		border-top-right-radius: 30px;
-		border-bottom-right-radius: 30px;
-		box-sizing: border-box;
-		border: thick solid #533ca8;
-		margin: 20px;
-	}
-
-	.project_card_header {
-		width: 254px;
-		min-height: 37px;
-		align-self: flex-start;
-		padding-top: 10px;
-		background-color: #533ca8;
-		border-bottom-right-radius: 20px;
-		border: thin solid #533ca8;
-	}
-
-	.project_card_header h3 {
-		font-size: 0.85rem;
-		color: white;
-	}
-
-	.project_section_card .card_circle1,
-	.project_section_card .card_circle2,
-	.project_section_card .card_circle3 {
-		min-width: 28px;
-		min-height: 28px;
-		border-radius: 50px;
-		content: "";
-		position: absolute;
-		top: 3px;
-		right: 61px;
-	}
-
-	.project_section_card p {
-		color: #401177;
-		font-size: 1rem;
-		text-align: center;
-		padding: 0 10px 20px 10px;
-	}
-
-	.project_section_img {
-		width: 130px;
-		margin: 20px 0 10px 0;
+	.project_card_container .card_model_1 {
+		outline: thick solid #401177 !important;
 	}
 
 	/* More section */
@@ -2244,10 +1807,18 @@
 		padding-right: 10px;
 	}
 
+	/* CTA section */
+
+	.cta_section {
+		position: relative;
+		top: -167px;
+	}
+
 	/* Footer */
 
 	footer {
 		position: absolute;
 		bottom: -600px;
+		background-color: #533ca8;
 	}
 }
