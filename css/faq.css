@@ -121,8 +121,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		background-color: #fb9505;
-		color: white;
+		border: thin solid #efefef;
+		color: black;
 		border-radius: 10px;
 		transition: 0.5s;
 	}

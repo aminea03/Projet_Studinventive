@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="icon" href="images/logo_rocket.svg" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/materialize.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/accueil.js" defer></script>
+    <!--     <script src="js/accueil.js" defer></script> -->
+    <title>Studinventive</title>
+    <style>
+        .template_landing_section {
+            background-image: url(../images/partenariat_landing_background.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top_menu_bar">
+        <div class="top_menu_bar_social">
+            <a href="https://www.facebook.com/studinventive" target="_blank"><img src="images/facebook_icon.svg"
+                    alt="Icone Facebook"></a>
+            <a href="https://twitter.com/studinventive" target="_blank"><img src="images/twitter_icon.svg"
+                    alt="Icone twitter"></a>
+            <a href="https://www.linkedin.com/company/studinventive" target="_blank"><img src="images/linkedin_icon.svg"
+                    alt="Icone LinkedIn"></a>
+            <a href="https://www.instagram.com/studinventive/" target="_blank"><img src="images/instagram_icon.svg"
+                    alt="Icone Instagram"></a>
+        </div>
+        <ul class="top_menu_bar_links">
+            <li><a href=""><img src="images/account_icon.svg" alt="Icone compte">Inscription</a></li>
+            <li><a href="connexion.html"><img src="images/connection_icon.svg" alt="Icone connexion">Connexion</a></li>
+        </ul>
+    </div>
+    <header>
+        <!-- mobile sidenav -->
+        <div class="nav_container_mobile">
+            <img class="nav_container_mobile_logo" src="images/logo_studinventive.svg" alt="Logo studinventive">
+            <ul id="slide-out" class="sidenav">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#!"><i class="material-icons color_purple">mode_edit</i>Inscription</a></li>
+                <li><a href="connexion.html"><i class="material-icons color_orange">forward</i>Connexion</a></li>
+                <li>
+                    <div class="divider"></div>
+                </li>
+                <li class="subheader_row"><a class="subheader">Menu</a><a href="#!"
+                        class="close_button_nav sidenav-close"></a>
+                </li>
+                <li><a href="index.html" class="current_page">Accueil</a></li>
+                <li><a href="notremethode.html">Notre méthode</a></li>
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header">Nos formations</a>
+                        <div class="collapsible-body">
+                            <ul id="" class="">
+                                <li><a href="#!">Nos challenges</a></li>
+                                <li><a href="#!">Bachelors (niveau Bac +3/4)</a></li>
+                                <li><a href="#!">Magistère (niveau Bac +5)</a></li>
+                                <li><a href="#!">Titres professionnels</a></li>
+                                <li><a href="#!">Certifications Studinventive</a></li>
+                                <li><a href="#!">Certifications langues (TOEIC)</a></li>
+                                <li><a href="#!">Autres formations</a></li>
+                                <li class="divider"></li>
+                                <li><a href="entreprises.html">Offres entreprises</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <li><a href="partenariat.html">Partenariat</a></li>
+                <li><a href="studshop.html">Studshop</a></li>
+                <li class="nav_li_campus"><a href="connexion.html">Accès campus</a></li>
+                <li>
+                    <div class="divider"></div>
+                </li>
+                <li><a class="subheader">Suivez-nous</a></li>
+                <li><a href="https://www.facebook.com/studinventive" target="_blank"><img
+                            class="nav_container_mobile_social" src="images/facebook_icon.svg" alt="Icone Facebook"></a>
+                </li>
+                <li> <a href="https://twitter.com/studinventive" target="_blank"><img
+                            class="nav_container_mobile_social" src="images/twitter_icon.svg" alt="Icone twitter"></a>
+                </li>
+                <li><a href="https://www.linkedin.com/company/studinventive" target="_blank"><img
+                            class="nav_container_mobile_social" src="images/linkedin_icon.svg" alt="Icone LinkedIn"></a>
+                </li>
+                <li><a href="https://www.instagram.com/studinventive/" target="_blank"><img
+                            class="nav_container_mobile_social" src="images/instagram_icon.svg"
+                            alt="Icone Instagram"></a></li>
+            </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+        <!-- desktop nav -->
+        <div class="nav_container">
+            <a href="/index.html"><img class="nav_logo_studinventive" src="images/logo_studinventive.svg"
+                    alt="Logo Studinventive"></a>
+            <a href="/index.html"><img class="nav_logo_rocket" src="images/logo_rocket.svg"
+                    alt="Logo Studinventive rocket"></a>
+            <!-- ul dropdown1 = liste qui sert au dropdown "Formation" du nav -->
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#!">Nos challenges</a></li>
+                <li><a href="#!">Bachelors (niveau Bac +3/4)</a></li>
+                <li><a href="#!">Magistère (niveau Bac +5)</a></li>
+                <li><a href="#!">Titres professionnels</a></li>
+                <li><a href="#!">Certifications Studinventive</a></li>
+                <li><a href="#!">Certifications langues (TOEIC)</a></li>
+                <li><a href="#!">Autres formations</a></li>
+                <li><a href="entreprises.html">Offres entreprises</a></li>
+            </ul>
+            <nav>
+                <ul>
+                    <!-- Ajouter class="current_page" au <a> correspondant -->
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="notremethode.html">Notre méthode</a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Nos formations</a>
+                    </li>
+                    <li><a href="partenariat.html">Partenariat</a></li>
+                    <li><a href="studshop.html">Studshop</a></li>
+                    <li class="nav_li_campus"><a href="connexion.html">Accès campus</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="template_landing_section">
+            <h1>Titre</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione in natus animi ex tenetur nulla quae
+                provident, ab eligendi alias magni placeat.</p>
+            <div class="landing_buttons">
+                <a href="" class="waves-effect waves-light btn-large">Bouton</a>
+                <a href="" class="waves-effect waves-light btn-large white_btn">Bouton</a>
+            </div>
+        </section>
+        <section class="template_section_1">
+            <div class="curve_top"></div>
+            <div class="section_title">
+                <h2>Titre</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque corrupti obcaecati, nisi ipsa
+                    non tempora nemo eius est asperiores iste iure repellat dolor, minus dignissimos nesciunt eum. Quae,
+                    ipsa. Exercitationem!</p>
+            </div>
+            <div class="template_section_content">
+                <div class="template_section_content_element">Your content here Your content here Your content here
+                </div>
+                <div class="template_section_content_element">Your content here Your content here Your content here
+                </div>
+                <div class="template_section_content_element">Your content here Your content here Your content here
+                </div>
+
+            </div>
+        </section>
+        <section class="template_section_2">
+            <div class="section_title">
+                <h2>Titre</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque corrupti obcaecati, nisi ipsa
+                    non tempora nemo eius est asperiores iste iure repellat dolor, minus dignissimos nesciunt eum. Quae,
+                    ipsa. Exercitationem!</p>
+            </div>
+            <div class="template_section_content">
+                <div class="template_section_content_element">Your content here Your content here Your content here
+                </div>
+                <div class="template_section_content_element">Your content here Your content here Your content here
+                </div>
+                <div class="template_section_content_element">Your content here Your content here Your content here
+                </div>
+            </div>
+            <div class="curve_bottom"></div>
+        </section>
+        <section class="template_section_3">
+            <div class="section_title">
+                <h2>Titre</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque corrupti obcaecati, nisi ipsa
+                    non tempora nemo eius est asperiores iste iure repellat dolor, minus dignissimos nesciunt eum. Quae,
+                    ipsa. Exercitationem!</p>
+            </div>
+            <div class="template_section_content">
+                <div class="template_section_content_element">Your content here Your content here Your content here
+                </div>
+                <div class="template_section_content_element">Your content here Your content here Your content here
+                </div>
+                <div class="template_section_content_element">Your content here Your content here Your content here
+                </div>
+            </div>
+        </section>
+        <section class="more_section">
+            <div class="section_title">
+                <h2>Nos partenaires</h2>
+                <p>Ces entreprises soutiennent l'éducation</p>
+            </div>
+            <div class="marquee">
+                <ul class="marquee-content">
+                    <li><img src="images/label1.png" alt=""></li>
+                    <li><img src="images/label2.png" alt=""></li>
+                    <li><img src="images/label3.png" alt=""></li>
+                    <li><img src="images/label4.png" alt=""></li>
+                    <li><img src="images/label5.png" alt=""></li>
+                    <li><img src="images/label6.png" alt=""></li>
+                </ul>
+            </div>
+        </section>
+        <section class="cta_section template_cta_section">
+            <div class="section_title">
+                <h2>Vous souhaitez une formation de qualité ?</h2>
+                <p>Démarrez gratuitement votre projet de formation avec Studinventive.</p>
+            </div>
+            <div class="cta_section_content">
+                <a href="" class="waves-effect waves-light btn-large">Inscription gratuite</a>
+                <img src="images/rounded_arrow_image.svg" alt="Flèche">
+            </div>
+        </section>
+    </main>
+    <footer class="template_footer">
+        <div class="footer_container">
+            <div class="footer_container_left">
+                <img class="footer_logo_studinventive" src="images/logo_studinventive_blanc.svg"
+                    alt="Logo Studinventive en noir et blanc">
+                <div class="footer_contact">
+                    <p>Adresse : 15 rue des Halles 75001 Paris</p>
+                    <p>Email : contact@studinventive.com</p>
+                </div>
+                <div class="footer_social">
+                    <a href="https://www.facebook.com/studinventive" target="_blank"><img src="images/facebook_icon.svg"
+                            alt="Icone Facebook"></a>
+                    <a href="https://twitter.com/studinventive" target="_blank"><img src="images/twitter_icon.svg"
+                            alt="Icone twitter"></a>
+                    <a href="https://www.linkedin.com/company/studinventive" target="_blank"><img
+                            src="images/linkedin_icon.svg" alt="Icone LinkedIn"></a>
+                    <a href="https://www.instagram.com/studinventive/" target="_blank"><img
+                            src="images/instagram_icon.svg" alt="Icone Instagram"></a>
+                </div>
+            </div>
+            <div class="footer_white_line"></div>
+            <div class="footer_container_middle">
+                <h3>Nos formations</h3>
+                <ul>
+                    <li><a href="">Nos challenges</a></li>
+                    <li><a href="">Nos parcours</a></li>
+                    <li><a href="">Financements</a></li>
+                </ul>
+            </div>
+            <div class="footer_white_line"></div>
+            <div class="footer_container_right">
+                <h3>Informations légales</h3>
+                <ul>
+                    <li><a href="">Mentions légales</a></li>
+                    <li><a href="">Politique de confidentialité</a></li>
+                    <li><a href="">Conditions générales d'utilisation</a></li>
+                    <li><a href="">Conditions générales de vente</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_container_bottom">
+            <p>Studinventive, SAS immatriculée au RCS de Paris B 901 687 152 &#40;SIRET 90168715200016&#41; ; marque
+                déposée
+                auprès de l'INPI sous le numéro 4789871 du 31-07-2021 ; organisme de formation et CFA certifié
+                Qualiopi dont la déclaration d'activité est enregistrée sous le numéro 11756297475 à la Préfecture
+                de Paris, Ile de France &#40;cet enregistrement ne vaut pas agrément de l'Etat&#41;.</p>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2021 Studinventive Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
