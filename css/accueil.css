@@ -841,11 +841,20 @@
 		padding-right: 10px;
 	}
 
+	/* CTA section */
+
+	.cta_section {
+		position: relative;
+		top: -450px;
+		height: 500px;
+	}
+
 	/* Footer */
 
 	footer {
 		position: absolute;
 		bottom: 0;
+		background-color: #533ca8;
 	}
 }
 
@@ -1798,10 +1807,18 @@
 		padding-right: 10px;
 	}
 
+	/* CTA section */
+
+	.cta_section {
+		position: relative;
+		top: -167px;
+	}
+
 	/* Footer */
 
 	footer {
 		position: absolute;
 		bottom: -600px;
+		background-color: #533ca8;
 	}
 }
