@@ -121,8 +121,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		border: thin solid #efefef;
-		color: black;
+		background-color: #533ca8;
+		color: #fff;
 		border-radius: 10px;
 		transition: 0.5s;
 	}
@@ -137,6 +137,7 @@
 		color: #401177;
 		background-color: #efefef;
 		border: none;
+		line-height: 150%;
 		border-bottom-left-radius: 10px;
 		border-bottom-right-radius: 10px;
 	}
@@ -183,6 +184,7 @@
 		border: thin solid #fb9505 !important;
 		border-radius: 10px;
 		box-shadow: none !important;
+		margin-top: 15px;
 	}
 
 	.faq_form .input-field input,
