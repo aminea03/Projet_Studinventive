@@ -84,6 +84,7 @@
 		padding-left:  min(6vw, 140px) ;
 		width: 60%;
 		height: fit-content;
+		z-index: 1;
 	}
 
 	.landing_section_left p{
@@ -141,12 +142,13 @@
 		grid-column: 2/3;
 		grid-row: 1/2;
 		position: sticky;
-		top:100px;
+		top:160px;
 		bottom: 70px;
 		margin-right:  min(6vw, 140px) ;
 		margin-bottom: 30px;
 		color: #401177;
-		z-index: 500;
+		z-index: 10;
+
 	}
 
 	.landing_section_right{
@@ -167,7 +169,8 @@
 		position: absolute;
 		top: -20px;
 		right:20px;
-		z-index: 5;
+		z-index: -1;
+		
 	}
 	.landing_section_right_content{
 		background-color: #fff;
@@ -310,7 +313,7 @@
 	}
 	.tabs{
 		width: 54%;
-		height: 100px;
+		height: 80px;
 		margin-left:  min(6vw, 140px) ;
 		display: flex;
 		flex-direction: row;
