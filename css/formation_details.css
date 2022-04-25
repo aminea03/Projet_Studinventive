@@ -302,9 +302,11 @@
 		margin-left:  min(6vw, 140px) ;
 		display: flex;
 		flex-direction: row;
-		background-color: transparent;
 		position: sticky;
-		top:130px;
+		background-color: transparent;
+		border-radius: 20px;
+		/*top:130px;*/  /* barre d'onglets alignés sur hauteur de la carte de droite au scroll*/
+		top: 80px; 		/* barre d'onglets alignés en hauteur sur le header au scroll*/
 
 	}
 	.tabs{
@@ -313,7 +315,9 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		background-color: transparent;
+		background-color: #fff;
+		border-radius: 20px;
+
 	}
 
 	.tabs .indicator {
@@ -329,16 +333,18 @@
 	.tab.col.s2 a{
 		background-color: #fff;
 		color: #401177;
-		border: 0.5px solid #401177;
 		font-family: "MontserratRegular", sans-serif;
 		font-size: 0.8vw;
 		padding: 5px 1.5vw 0 1.5vw;
-		border-radius: 20px ;
+		border-radius: 20px;
+
 
 	}
 	.tab.col.s2 a.active{
-		background-color: #401177;
-		color: #fff;
+		background-color: #fff;
+		color: #fb9505;
+		font-family: "MontserratMedium", sans-serif;
+
 	}
 
 
