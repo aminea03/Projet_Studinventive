@@ -305,12 +305,12 @@
 		position: sticky;
 		background-color: #fff;
 		/*top:130px;*/  /* barre d'onglets alignés sur hauteur de la carte de droite au scroll*/
-		top: 80px; 		/* barre d'onglets alignés en hauteur sur le header au scroll*/
+		top: 70px; 		/* barre d'onglets alignés en hauteur sur le header au scroll*/
 
 	}
 	.tabs{
 		width: 54%;
-		height: 60px;
+		height: 100px;
 		margin-left:  min(6vw, 140px) ;
 		display: flex;
 		flex-direction: row;
