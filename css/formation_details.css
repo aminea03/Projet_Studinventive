@@ -280,7 +280,7 @@
 		flex-direction: column;
 		position: relative;
 		top: 50px;
-		padding: 50px 0;
+		padding-bottom: 50px;
 		z-index: 5;
 		
 	}
