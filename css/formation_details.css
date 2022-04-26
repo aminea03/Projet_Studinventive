@@ -59,9 +59,9 @@
 		height: 100%;
 		position: relative;
 		display: grid;
-		grid-template-columns: 60% 37%;
+		grid-template-columns: 65% 33%;
 		grid-template-rows: auto 0;
-		column-gap: 3%;
+		column-gap: 2%;
 		top: -120px;
 		padding-top: 140px;
 		background-image: url(../images/formation_details_landing_image.svg);
@@ -82,7 +82,7 @@
 	.landing_section_left{
 		padding-bottom: 50px;
 		padding-left:  min(6vw, 140px) ;
-		width: 60%;
+		width: 65%;
 		height: fit-content;
 		z-index: 1;
 	}
@@ -314,7 +314,7 @@
 
 	}
 	.tabs{
-		width: 54%;
+		width: 63%;
 		height: 80px;
 		margin-left:  min(6vw, 140px) ;
 		display: flex;
@@ -357,7 +357,7 @@
 
 
 	.tab_container{
-		width: 54%;
+		width: 58%;
 		margin-left:  min(6vw, 140px) ;
 		height: fit-content;
 		display: flex;
