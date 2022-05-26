@@ -13,7 +13,10 @@
     <script src="js/materialize.js" defer></script>
     <script src="js/header.js" defer></script>
     <script src="js/accueil.js" defer></script>
-    <!--     <script src="js/accueil.js" defer></script> -->
+    <script>document.addEventListener("DOMContentLoaded", function () {
+            var elems = document.querySelectorAll(".modal");
+            var instances = M.Modal.init(elems);
+        });</script>
     <title>Studinventive : Partenariat</title>
 </head>
 
@@ -131,7 +134,8 @@
             <p>Nous mettons en place une plateforme de partenariat avec les entreprises dans le but d'adapter nos
                 formations pour répondre aux besoins réels du marché.</p>
             <div class="landing_buttons">
-                <a href="" class="waves-effect waves-light btn-large">Demande de partenariat</a>
+                <a href="#partenariat_modal" class="waves-effect waves-light btn-large modal-trigger">Demande de
+                    partenariat</a>
                 <a href="faq.html" class="waves-effect waves-light btn-large white_btn">Contactez-nous</a>
             </div>
             <img src="images/puzzle_white.svg" alt="Pièce de puzzle">
@@ -181,7 +185,8 @@
                 <h2>Vous souhaitez participer à l'aventure ?</h2>
                 <p>Devenez partenaire de Studinventive.</p>
             </div>
-            <a href="" class="waves-effect waves-light btn-large orange_btn">Demande de partenariat</a>
+            <a href="#partenariat_modal" class="waves-effect waves-light btn-large orange_btn modal-trigger">Demande de
+                partenariat</a>
             <img src="images/puzzle_purple.svg" alt="Pièce de puzzle">
         </section>
         <section class="more_section">
@@ -210,6 +215,79 @@
                 <img src="images/rounded_arrow_image.svg" alt="Flèche">
             </div>
         </section>
+        <div id="partenariat_modal" class="modal general_modal_wrapper">
+            <div class="modal-content general_modal_content">
+                <a href="#!" class="close_button modal-close waves-effect waves-green btn-flat"></a>
+                <div class="general_form_wrapper">
+                    <div class="general_form">
+                        <div class="row">
+                            <form class="col s12" id="partenariat_form" method="POST">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="prenom" type="text" class="validate">
+                                        <label for="prenom">Votre prénom</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="organisme" type="text" class="validate">
+                                        <label for="organisme">Votre organisme</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="email" type="email" class="validate">
+                                        <label for="email">Votre E-mail</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="tel" type="tel" class="validate">
+                                        <label for="tel">Votre téléphone</label>
+                                    </div>
+                                </div>
+                                <div class="input-field col s12 nohover">
+                                    <select class="nohover">
+                                        <option value="-" disabled selected></option>
+                                        <optgroup label="Particulier">
+                                            <option value="Comment puis-je utiliser mon CPF pour financer ma formation">
+                                                Comment puis-je utiliser mon CPF pour financer ma formation</option>
+                                            <option
+                                                value="En savoir plus sur les autres moyens de financement de la formation">
+                                                En savoir plus sur les autres moyens de financement de la formation
+                                            </option>
+                                        </optgroup>
+                                        <optgroup label="Entreprise">
+                                            <option
+                                                value="En savoir plus sur la formation des salariés de mon entreprise">
+                                                En savoir plus sur la formation des salariés de mon entreprise</option>
+                                        </optgroup>
+                                        <optgroup label="Association">
+                                            <option
+                                                value="En savoir plus la prise en charge partiel ou total du coût de formation">
+                                                En savoir plus la prise en charge partiel ou total du coût de formation
+                                            </option>
+                                        </optgroup>
+                                    </select>
+                                    <label class="select_label">Votre question</label>
+                                </div>
+                                <div class="input-field col s12 nohover">
+                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                    <label for="textarea1">Votre question</label>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Reste à paramétrer l'action submit -->
+                        <button class="btn-large waves-effect waves-light purple_btn" type="submit"
+                            name="faq_form">Envoyer
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                    <img class="logo_s_transparent" src="images/logo_s_transparent.svg" alt="logo Studinventive"><img
+                        class="logo_s" src="images/logo_s.svg" alt="logo studinventive">
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footer_container">

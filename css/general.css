@@ -507,6 +507,219 @@ html {
 	}
 }
 
+/* Modal & form desktop */
+
+@media screen and (min-width: 1024px) {
+	.general_modal_wrapper {
+		min-height: 100vh;
+		min-width: 80%;
+	}
+
+	.general_modal_content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+	}
+
+	.general_form_wrapper {
+		position: relative;
+		width: 100%;
+		max-width: 800px;
+	}
+
+	.general_form {
+		position: relative;
+		width: 100%;
+		max-width: 800px;
+		margin: 25px;
+		padding: 25px;
+		background-color: white;
+		border-radius: 25px;
+		z-index: 1;
+	}
+
+	.general_form .input-field input:focus + label,
+	textarea:focus + label {
+		color: #fb9505 !important;
+	}
+
+	.general_form .input-field input:focus,
+	.general_form textarea:focus {
+		border: thin solid #fb9505 !important;
+		border-radius: 10px;
+		box-shadow: none !important;
+		margin-top: 15px;
+	}
+
+	.general_form .input-field input,
+	.general_form textarea {
+		color: #401177 !important;
+		border-bottom: thin solid #533ca8 !important;
+	}
+	.general_form .select_label,
+	.general_form textarea,
+	.general_form .nohover label {
+		font-size: 1rem !important;
+		left: 0 !important;
+	}
+
+	.general_form textarea {
+		min-height: 200px !important;
+	}
+	.general_form .nohover {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	.general_form *:not(button, button i) {
+		color: #401177;
+	}
+
+	.general_modal_content .close_button {
+		min-height: 15px;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		font-weight: bold;
+		color: #fb9505;
+		background-image: url("../images/close_x.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	.logo_s_transparent {
+		position: absolute;
+		top: -55px;
+		left: -40px;
+		width: 120px;
+		transform: rotate(-45deg);
+		z-index: 0;
+	}
+
+	.logo_s {
+		position: absolute;
+		width: 150px;
+		bottom: -40px;
+		right: -100px;
+		transform: rotate(30deg);
+		z-index: 1;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.general_modal_wrapper {
+		min-height: 100vh;
+		min-width: 100%;
+	}
+
+	.general_modal_content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+		padding: 0;
+	}
+
+	.general_form_wrapper {
+		position: relative;
+		width: 100%;
+	}
+
+	.general_form {
+		position: relative;
+		max-width: 800px;
+		margin: 0;
+		padding: 25px;
+		background-color: white;
+		border-radius: 25px;
+		z-index: 1;
+	}
+
+	.general_form .input-field input:focus + label,
+	.general_form textarea:focus + label {
+		color: #fb9505 !important;
+	}
+
+	.general_form .input-field input:focus,
+	.general_form textarea:focus {
+		border: thin solid #fb9505 !important;
+		border-radius: 10px;
+		box-shadow: none !important;
+	}
+
+	.general_form .general_form .input-field input,
+	.general_form textarea {
+		color: #401177 !important;
+		border-bottom: thin solid #533ca8 !important;
+	}
+	.general_form .select_label,
+	.general_form textarea,
+	.general_form .nohover label {
+		font-size: 1rem !important;
+		left: 0 !important;
+	}
+
+	.general_form textarea {
+		min-height: 200px !important;
+		padding: 15px !important;
+	}
+	.general_form .nohover {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	.general_form .nohover span {
+		font-size: 1.2rem !important;
+	}
+
+	.general_form input {
+		font-size: 1.2rem !important;
+	}
+
+	.general_form .input-field input {
+		padding-left: 15px;
+	}
+
+	.general_form .nohover ul {
+		height: max-content !important;
+	}
+
+	.general_form *:not(button, button i) {
+		color: #401177;
+	}
+
+	.general_modal_content .close_button {
+		min-height: 15px;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		font-weight: bold;
+		color: #fb9505;
+		background-image: url("../images/close_x.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	.general_form_wrapper .logo_s_transparent {
+		position: absolute;
+		top: -55px;
+		left: -40px;
+		width: 120px;
+		transform: rotate(-45deg);
+		z-index: 0;
+	}
+
+	.general_form_wrapper .logo_s {
+		position: absolute;
+		width: 150px;
+		bottom: -40px;
+		right: -50px;
+		transform: rotate(30deg);
+		z-index: 1;
+	}
+}
+
 /*Header desktop*/
 
 @media screen and (min-width: 1024px) {

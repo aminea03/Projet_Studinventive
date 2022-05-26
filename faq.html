@@ -19,13 +19,7 @@
             window.scrollTo(0, destinationOffset);
         }
 
-        /* Initialize materialize select element */
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('select');
-            var instances = M.FormSelect.init(elems, {
-                hover: false
-            });
-        });
+
 
         /* FAQ collapsible accordions initializer */
         document.addEventListener("DOMContentLoaded", function () {
@@ -385,8 +379,8 @@
                 <h2>Formulaire de contact</h2>
                 <p>Promis on vous répond</p>
             </div>
-            <div class="faq_form_wrapper">
-                <div class="faq_form">
+            <div class="general_form_wrapper">
+                <div class="general_form">
                     <div class="row">
                         <form class="col s12" id="faq_form" method="POST">
                             <div class="row">
