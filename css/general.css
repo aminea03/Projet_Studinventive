@@ -556,6 +556,7 @@ html {
 	.general_form textarea {
 		color: #401177 !important;
 		border-bottom: thin solid #533ca8 !important;
+		padding-left: 15px;
 	}
 	.general_form .select_label,
 	.general_form textarea,
@@ -648,10 +649,11 @@ html {
 		box-shadow: none !important;
 	}
 
-	.general_form .general_form .input-field input,
+	.general_form .input-field input,
 	.general_form textarea {
 		color: #401177 !important;
 		border-bottom: thin solid #533ca8 !important;
+		padding-left: 15px;
 	}
 	.general_form .select_label,
 	.general_form textarea,
@@ -675,10 +677,6 @@ html {
 
 	.general_form input {
 		font-size: 1.2rem !important;
-	}
-
-	.general_form .input-field input {
-		padding-left: 15px;
 	}
 
 	.general_form .nohover ul {
