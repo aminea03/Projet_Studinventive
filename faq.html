@@ -32,6 +32,11 @@
 
         function faq_open() {
             if (event.target.parentElement.querySelector(".collapsible-body").style.display != "block") {
+                document.querySelectorAll(".faq_container .collapsible-header").forEach(element => {
+                    element.style.borderBottomRightRadius = "10px";
+                    element.style.borderBottomLeftRadius = "10px";
+                    element.querySelector(".material-icons").style.transform = "";;
+                });
                 event.target.style.borderBottomRightRadius = "0";
                 event.target.style.borderBottomLeftRadius = "0";
                 event.target.querySelector(".material-icons").style.transform = "rotate(90deg)";
