@@ -222,7 +222,7 @@ html {
 
 .card_model_1 {
 	position: relative;
-	flex-basis: 23%;
+	width: 30%;
 	min-width: 290px;
 	height: 320px;
 	margin: 15px;
