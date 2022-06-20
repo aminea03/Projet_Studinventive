@@ -99,13 +99,12 @@
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
-		align-items: center;
+		align-items: stretch;
 	}
 
 	.card_container1,
 	.card_container2 {
 		flex-basis: 50%;
-		min-height: 350px;
 		display: flex;
 		padding: 30px;
 	}
@@ -454,14 +453,13 @@
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: center;
-		align-items: center;
+		align-items: stretch;
 	}
 
 	.card_container1,
 	.card_container2 {
 		width: 90%;
 		min-width: 350px;
-		min-height: 350px;
 		display: flex;
 		padding: 3vw;
 	}
